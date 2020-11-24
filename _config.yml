@@ -89,7 +89,7 @@ backup:
   message: backup my blog of https://dummerchen.github.io/
   repo:
     github: git@github.com:dummerchen/dummerchen.github.io.git
-  branch: master
+  branch: backup
 
 #RSS
 feed:
