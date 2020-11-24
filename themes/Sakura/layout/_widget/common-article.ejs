@@ -44,6 +44,7 @@
           <%- post.content %>
         </div>
         <!-- .entry-content -->
+        <% if(theme.donate.enable){%>
         <div class="single-reward">
           <div class="reward-open">赏
             <div class="reward-main">
@@ -53,6 +54,9 @@
               </ul>
             </div>
           </div>
+          <%}else{%>
+            <p></p>
+              <%}%>
         </div>
         <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
         <footer class="post-footer">
@@ -110,7 +114,7 @@
         <% } %>
       </section>
       <%- partial('_partial/comment') %>
-      <section class="author-profile">
+      <!-- <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
           <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="<%- post.author %>" height="70" width="70"></a>
           <div class="meta">
@@ -122,7 +126,7 @@
         </div>
         <hr>
         <p><i class="iconfont icon-write"></i><%- post.authorAbout%></p>
-      </section>
+      </section> -->
     </main><!-- #main -->
   </div><!-- #primary -->
 </div>
