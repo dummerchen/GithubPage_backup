@@ -41,39 +41,40 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172326.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201102231714.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg,
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172229.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115205545.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125659.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125638.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103130311.png,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121121.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121005.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121655.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121654.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210146.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210118.jpg,
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210440.jpg,
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172326.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201102231714.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172229.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115205545.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125659.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125638.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103130311.png
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121121.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121005.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121655.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121654.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210146.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210118.jpg
+  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210440.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121173038.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191328.jpg,
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191259.jpg,
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192651.jpg,
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192521.png,
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119193802.png,
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119193902.jpg,
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192304.jpg,
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191328.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191259.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192651.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192521.png
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119193802.png
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119193902.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192304.jpg
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 
 
 # startdash url, title, desc img
-# startdash: 
-#   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/sakura.md.png}
-#   - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/bilibili.jpg}
-#   - {url: /, title: dummerchen的万事屋, desc: 技术服务, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/wangshiwu.jpg}
-
+startdash: 
+  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/sakura.md.png}
+  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/bilibili.jpg}
+  - {url: /, title: dummerchen的万事屋, desc: 技术服务, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/wangshiwu.jpg}
+# 自己增加的是否使用startdash
+usestartdash: enable:false
 
 
 # your site build time or founded date
@@ -92,6 +93,7 @@ msocial:
   qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
 donate:
+  enable: false
   paypal: https://www.paypal.me/hojuncn
   alipay: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/custom/donate/AliPayQR.jpg
   wechat: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/custom/donate/WeChanQR.jpg
