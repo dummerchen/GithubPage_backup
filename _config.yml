@@ -87,9 +87,9 @@ deploy:
 backup:
   type: git
   message: backup my blog of https://dummerchen.github.io/
-  repository:
-    github: git@github.com:dummerchen/blog-theme.git
-  branch: main
+  repo:
+    github: git@github.com:dummerchen/dummerchen.github.io.git
+  branch: master
 
 #RSS
 feed:
