@@ -11,6 +11,19 @@
     </div>
   <% } %>
   <div id="content" class="site-content">
+    <section class="author-profile">
+      <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+        <a href="/about/" class="profile gravatar"><img src="<%- (theme.cdn || '') + theme.avatar%>" itemprop="image" alt="<%- theme.siteName %>" height="70" width="70"></a>
+        <div class="meta">
+          <span class="title">Author</span>
+          <h3 itemprop="name">
+          <a href="<%- theme.url%>" itemprop="url" rel="author"><%- theme.siteName %></a>
+          </h3>
+        </div>
+      </div>
+      <hr>
+      <p><i class="iconfont icon-write"></i><%- theme.description%></p>
+    </section>
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
       <%- post.content %>
       <!-- .entry-content -->
@@ -39,18 +52,6 @@
       </footer><!-- .entry-footer -->
     </article>
       <!-- #post-## -->
-      <!-- <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="<%- (theme.cdn || '') + theme.avatar%>" itemprop="image" alt="<%- theme.siteName %>" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="<%- theme.url%>" itemprop="url" rel="author"><%- theme.siteName %></a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i><%- theme.description%></p>
-      </section> -->
+      
   </div><!-- #primary -->
 </div>
