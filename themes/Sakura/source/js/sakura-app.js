@@ -558,27 +558,30 @@ $(document).ready(function() {
         add_upload_tips()
     })
     // 反正会重新用swiper写的算了
-function nextBG() {
-    bgindex = bgindex + 1
-    console.log(bgindex)
-    console.log(bg[Math.abs(bgindex % bg.length)])
-    $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
-}
-
-function preBG() {
-    bgindex = bgindex - 1
-    console.log(bg[Math.abs(bgindex % bg.length)])
-    $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
-}
 $(document).ready(function() {
     var bgindex = Math.floor(Math.random() * bg.length)
-    $('.centerbg').css('background-image', 'url("' + bg[bgindex] + '")')
-    $('#bg-next').click(function() {
-        nextBG()
-    })
-    $('#bg-pre').click(function() {
-        preBG()
-    })
+    $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
+    
+    for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
+	{
+		let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;">'+i+'</div>'
+		$(".swiper-wrapper").append(t)
+		console.log(t)
+    }
+    var myswiper=new Swiper('.swiper-container',{
+        autoplay: false,
+		// autoplay: {
+		// 	delay:1000,
+		// 	disableOnInteraction:false,
+        // },
+        direction:'vertical',
+		navigation:{
+			nextEl: '.nextBg',
+			prevEl: '.preBg',
+		},
+		loop: false,
+		
+	})
 })
 if (document.body.clientWidth <= 860 && !window.is_app) {
     window.onscroll = function() {

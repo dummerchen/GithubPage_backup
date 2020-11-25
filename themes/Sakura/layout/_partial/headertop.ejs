@@ -1,7 +1,12 @@
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">???</div>
+  </div>
+</div>
 <div class="headertop <%- theme.bgclass %>">
   <div id="banner_wave_1"></div>
   <div id="banner_wave_2"></div>
-  <figure id="centerbg" class="centerbg">
+  <div id="centerbg">
     <div class="focusinfo no-select">
       <div class="header-tou">
         <a href="<%- theme.url%>">
@@ -11,7 +16,7 @@
       <div class="header-info">
         <p><%= theme.description %></p>
         <div class="top-social_v2">
-          <li id="bg-pre">
+          <li class="bg-pre">
             <img class="flipx" src="https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/other/next-b.svg">
           </li>
           <% if (theme.social) {%>
@@ -34,13 +39,13 @@
               <% } %>
             <% } %>
           <% } %>
-          <li id="bg-next">
+          <li class="bg-next">
             <img src="https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/other/next-b.svg">
           </li>
         </div>
       </div>
     </div>
-  </figure>
+  </div>
   <div id="video-container" style="">
     <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
     </video>
