@@ -1,12 +1,11 @@
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">???</div>
-  </div>
-</div>
 <div class="headertop <%- theme.bgclass %>">
   <div id="banner_wave_1"></div>
   <div id="banner_wave_2"></div>
   <div id="centerbg">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+      </div>
+    </div>
     <div class="focusinfo no-select">
       <div class="header-tou">
         <a href="<%- theme.url%>">
@@ -16,8 +15,7 @@
       <div class="header-info">
         <p><%= theme.description %></p>
         <div class="top-social_v2">
-          <li class="bg-pre">
-            <img class="flipx" src="https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/other/next-b.svg">
+          <li class="bg-pre iconfont icon-pull_left">
           </li>
           <% if (theme.social) {%>
             <% for (i in theme.social) {%>
@@ -39,8 +37,7 @@
               <% } %>
             <% } %>
           <% } %>
-          <li class="bg-next">
-            <img src="https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/other/next-b.svg">
+          <li class="bg-next iconfont icon-pull_right">
           </li>
         </div>
       </div>

@@ -564,7 +564,7 @@ $(document).ready(function() {
     
     for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
 	{
-		let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;">'+i+'</div>'
+		let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
 		$(".swiper-wrapper").append(t)
 		console.log(t)
     }
@@ -574,12 +574,12 @@ $(document).ready(function() {
 		// 	delay:1000,
 		// 	disableOnInteraction:false,
         // },
-        direction:'vertical',
+        direction:'horizontal',
 		navigation:{
-			nextEl: '.nextBg',
-			prevEl: '.preBg',
+			nextEl: '.bg-next',
+			prevEl: '.bg-pre',
 		},
-		loop: false,
+		loop: true,
 		
 	})
 })
@@ -842,7 +842,8 @@ function add_copyright() {
         }
     }
 }
-add_copyright()
+// 不用copyright 
+// add_copyright()
 $(function() {
     inlojv_js_getqqinfo()
 })
