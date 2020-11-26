@@ -414,7 +414,7 @@ function scrollBar() {
                     $('#bar').css('background', '#5aaadb')
                 }
             } else {
-                $('#bar').css('background', 'orange')
+                $('#bar').css('background', '#77B6FF')
             }
             $('.toc-container').css('height', $('.site-content').outerHeight())
             $('.skin-menu').removeClass('show')
@@ -736,7 +736,7 @@ $.fn.commentPrivate = function() {
 }
 
 function show_date_time() {
-    BirthDay = new Date('06/02/2017 18:00:00')
+    BirthDay = new Date('11/11/2020 18:00:00')
     today = new Date()
     timeold = (today.getTime() - BirthDay.getTime())
     sectimeold = timeold / 1000

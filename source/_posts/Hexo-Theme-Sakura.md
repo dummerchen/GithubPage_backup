@@ -1,6 +1,6 @@
 ---
 title: Hexo-Theme-Sakura
-author: hojun
+author: dummerchen
 avatar: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
 authorLink: hojun.cn
 authorAbout: 一个好奇的人
@@ -13,7 +13,7 @@ tags:
  - 悦读
 keywords: Sakura
 description: hexo-sakura主题使用教程
-photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
+photos: https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103130311.png
 ---
 hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-sakura/blob/master/README.md)
 

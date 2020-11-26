@@ -4,17 +4,12 @@
 <% if (post.photos && post.photos.length){ %>
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
+    <div class="pattern-attachment-img lazyload" style="background: url(<%= post.photos[0] %>) center center / cover no-repeat;" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
       <%- post.title %></h1>
       <p class="entry-census">
-        <span>
-          <a href="<%- post.authorLink%>">
-            <img src="<%- post.avatar%>">
-          </a>
-        </span>
         <span>
           <a href="<%- post.authorLink%>"><%- post.author %></a>
         </span>
