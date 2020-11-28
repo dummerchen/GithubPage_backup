@@ -14,17 +14,17 @@ jobs:
         node_version: '12.x'
     
     - name: Setup hexo
-        env: 
+      env: 
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "1179502349@qq.com"
-          git config --global user.name "dummerchen"
-          npm install hexo-cli -g
-          npm install
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "1179502349@qq.com"
+        git config --global user.name "dummerchen"
+        npm install hexo-cli -g
+        npm install
     
     - name: Generate
       run: hexo clean && hexo g && hexo d
