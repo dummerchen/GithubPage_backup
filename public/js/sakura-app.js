@@ -414,7 +414,7 @@ function scrollBar() {
                     $('#bar').css('background', '#5aaadb')
                 }
             } else {
-                $('#bar').css('background', 'orange')
+                $('#bar').css('background', '#77B6FF')
             }
             $('.toc-container').css('height', $('.site-content').outerHeight())
             $('.skin-menu').removeClass('show')
@@ -558,27 +558,30 @@ $(document).ready(function() {
         add_upload_tips()
     })
     // 反正会重新用swiper写的算了
-function nextBG() {
-    bgindex = bgindex + 1
-    console.log(bgindex)
-    console.log(bg[Math.abs(bgindex % bg.length)])
-    $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
-}
-
-function preBG() {
-    bgindex = bgindex - 1
-    console.log(bg[Math.abs(bgindex % bg.length)])
-    $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
-}
 $(document).ready(function() {
     var bgindex = Math.floor(Math.random() * bg.length)
-    $('.centerbg').css('background-image', 'url("' + bg[bgindex] + '")')
-    $('#bg-next').click(function() {
-        nextBG()
-    })
-    $('#bg-pre').click(function() {
-        preBG()
-    })
+    $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
+    
+    for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
+	{
+		let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
+		$(".swiper-wrapper").append(t)
+		console.log(t)
+    }
+    var myswiper=new Swiper('.swiper-container',{
+        autoplay: false,
+		// autoplay: {
+		// 	delay:1000,
+		// 	disableOnInteraction:false,
+        // },
+        direction:'horizontal',
+		navigation:{
+			nextEl: '.bg-next',
+			prevEl: '.bg-pre',
+		},
+		loop: true,
+		
+	})
 })
 if (document.body.clientWidth <= 860 && !window.is_app) {
     window.onscroll = function() {
@@ -733,7 +736,7 @@ $.fn.commentPrivate = function() {
 }
 
 function show_date_time() {
-    BirthDay = new Date('06/02/2017 18:00:00')
+    BirthDay = new Date('11/11/2020 18:00:00')
     today = new Date()
     timeold = (today.getTime() - BirthDay.getTime())
     sectimeold = timeold / 1000
@@ -839,7 +842,8 @@ function add_copyright() {
         }
     }
 }
-add_copyright()
+// 不用copyright 
+// add_copyright()
 $(function() {
     inlojv_js_getqqinfo()
 })
@@ -1643,9 +1647,8 @@ $(function() {
     $(document).on('click', '.specsZan', function() {
         $(this).postLike()
     })
-    console.log('%c Mashiro %c', 'background:#24272A; color:#ffffff', '', 'https://2heng.xin/')
     console.log('%c hojun %c', 'background:#24272A; color:#ffffff', '', 'https://www.hojun.cn/')
-    console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/dummerchen/hexo-theme-sakura')
+    console.log('%c dummerchen %c', 'background:#24272A; color:#ffffff','','https://github.com/dummerchen')
 })
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
     isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,
@@ -1666,11 +1669,6 @@ if ((isWebkit || isOpera || isIe) && document.getElementById && window.addEventL
         }
     }, false)
 }
-// loadCSS(mashiro_option.jsdelivr_css_src);
-// loadCSS("https://at.alicdn.com/t/font_679578_dishi1yoavm.css");
-// loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.4/fonts/Moe-Mashiro/stylesheet.css");
-// loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700");
-// loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.9/css/sharejs.css");;
 
 function render(template, context) {
     var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g
@@ -1702,103 +1700,3 @@ $(document).ready(function() {
         $('p').remove('.head-copyright')
     }, 0)
 })
-
-// function aplayerF() {
-//     'use strict';
-//     var aplayers = [],
-//         loadMeting = function () {
-//             function a(a, b) {
-//                 var c = {
-//                     container: a,
-//                     audio: b,
-//                     mini: null,
-//                     fixed: null,
-//                     autoplay: !1,
-//                     mutex: !0,
-//                     lrcType: 3,
-//                     listFolded: !1,
-//                     preload: 'auto',
-//                     theme: '#2980b9',
-//                     loop: 'all',
-//                     order: 'list',
-//                     volume: null,
-//                     listMaxHeight: null,
-//                     customAudioType: null,
-//                     storageName: 'metingjs'
-//                 };
-//                 if (b.length) {
-//                     b[0].lrc || (c.lrcType = 0);
-//                     var d = {};
-//                     for (var e in c) {
-//                         var f = e.toLowerCase();
-//                         (a.dataset.hasOwnProperty(f) || a.dataset.hasOwnProperty(e) || null !== c[e]) && (d[e] = a.dataset[f] || a.dataset[e] || c[e], ('true' === d[e] || 'false' === d[e]) && (d[e] = 'true' == d[e]))
-//                     }
-//                     aplayers.push(new APlayer(d))
-//                 }
-//                 for (var f = 0; f < aplayers.length; f++) try {
-//                     aplayers[f].lrc.hide();
-//                 } catch (a) {
-//                     console.log(a)
-//                 }
-//                 var lrcTag = 1;
-//                 $(".aplayer.aplayer-fixed").click(function () {
-//                     if (lrcTag == 1) {
-//                         for (var f = 0; f < aplayers.length; f++) try {
-//                             aplayers[f].lrc.show();
-//                         } catch (a) {
-//                             console.log(a)
-//                         }
-//                     }
-//                     lrcTag = 2;
-//                 });
-//                 var apSwitchTag = 0;
-//                 $(".aplayer.aplayer-fixed .aplayer-body").addClass("ap-hover");
-//                 $(".aplayer-miniswitcher").click(function () {
-//                     if (apSwitchTag == 0) {
-//                         $(".aplayer.aplayer-fixed .aplayer-body").removeClass("ap-hover");
-//                         apSwitchTag = 1;
-//                     } else {
-//                         $(".aplayer.aplayer-fixed .aplayer-body").addClass("ap-hover");
-//                         apSwitchTag = 0;
-//                     }
-//                 });
-//             }
-//             var b = 'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r';
-//             'undefined' != typeof meting_api && (b = meting_api);
-//             for (var f = 0; f < aplayers.length; f++) try {
-//                 aplayers[f].destroy()
-//             } catch (a) {
-//                 console.log(a)
-//             }
-//             aplayers = [];
-//             for (var c = document.querySelectorAll('.aplayer'), d = function () {
-//                 var d = c[e],
-//                     f = d.dataset.id;
-//                 if (f) {
-//                     var g = d.dataset.api || b;
-//                     g = g.replace(':server', d.dataset.server), g = g.replace(':type', d.dataset.type), g = g.replace(':id', d.dataset.id), g = g.replace(':auth', d.dataset.auth), g = g.replace(':r', Math.random());
-//                     var h = new XMLHttpRequest;
-//                     h.onreadystatechange = function () {
-//                         if (4 === h.readyState && (200 <= h.status && 300 > h.status || 304 === h.status)) {
-//                             var b = JSON.parse(h.responseText);
-//                             a(d, b)
-//                         }
-//                     }, h.open('get', g, !0), h.send(null)
-//                 } else if (d.dataset.url) {
-//                     var i = [{
-//                         name: d.dataset.name || d.dataset.title || 'Audio name',
-//                         artist: d.dataset.artist || d.dataset.author || 'Audio artist',
-//                         url: d.dataset.url,
-//                         cover: d.dataset.cover || d.dataset.pic,
-//                         lrc: d.dataset.lrc,
-//                         type: d.dataset.type || 'auto'
-//                     }];
-//                     a(d, i)
-//                 }
-//             }, e = 0; e < c.length; e++) d()
-//         };
-//     document.addEventListener('DOMContentLoaded', loadMeting, !1);
-// }
-// if (document.body.clientWidth > 860) {
-//     aplayerF();
-// }
