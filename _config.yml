@@ -88,7 +88,7 @@ backup:
   type: git
   message: backup my blog of https://dummerchen.github.io/
   repo:
-    github: git@github.com:dummerchen/dummerchen.github.io.git
+    github: git@github.com:dummerchen/GithubPage_backup.git
   branch: backup
 
 #RSS
