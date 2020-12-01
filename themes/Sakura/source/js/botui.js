@@ -1438,7 +1438,7 @@ function bot_ui_ini() {
     }).then(function() {
         botui.message.add({
             delay: 1100,
-            content: "这里是 Mashiro"
+            content: "这里是 dummerfu"
         }).then(function() {
             botui.message.add({
                 delay: 1100,
@@ -1461,106 +1461,113 @@ function bot_ui_ini() {
         })
     });
     var sure = function() {
-            botui.message.add({
-                delay: 600,
-                content: "😘"
-            }).then(function() {
-                secondpart()
-            })
-        },
-        end = function() {
-            botui.message.add({
-                delay: 600,
-                content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
-            })
-        },
-        secondpart = function() {
+        botui.message.add({
+            delay: 600,
+            content: "😘"
+        }).then(function() {
+            secondpart()
+        })
+    },
+    end = function() {
+        botui.message.add({
+            delay: 600,
+            content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
+        })
+    },
+    secondpart = function() {
+        botui.message.add({
+            delay: 1500,
+            content: "目前就读于西安电子科技大学"
+        }).then(function() {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于上海财经大学"
+                content: "略懂c++ 语言和 Python，偶尔也折腾 HTML/CSS/JavaScript"
             }).then(function() {
                 botui.message.add({
-                    delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
-                }).then(function() {
-                    botui.message.add({
-                        delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
-                    }).then(function() {
-                        botui.message.add({
-                            delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
-                        }).then(function() {
-                            botui.message.add({
-                                delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
-                            }).then(function() {
-                                botui.message.add({
-                                    delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
-                                }).then(function() {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
-                                        }]
-                                    }).then(function(a) {
-                                        thirdpart()
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        },
-        thirdpart = function() {
-            botui.message.add({
-                delay: 1E3,
-                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
-            }).then(function() {
-                botui.action.button({
-                    delay: 1500,
-                    action: [{
-                        text: "为什么是白猫呢？ 🤔",
-                        value: "why-cat"
-                    }]
+                    delay: 1200,
+                    content: "只是一名普通的大二学生"
                 }).then(function(a) {
-                    fourthpart()
+                    thirdpart()
                 })
             })
-        },
-        fourthpart = function() {
-            botui.message.add({
+        })
+    },
+    thirdpart = function() {
+        botui.message.add({
+            delay: 1E3,
+            content: "还是一个兴趣使然的programmer😀"
+        }).then(function() {
+            botui.action.button({
+                delay: 1500,
+                action: [{
+                    text: "为什么说是兴趣使然的programmer呢？ 🤔",
+                    value: "why-programmer"
+                }]
+            }).then(function(a) {
+                fourthpart()
+            })
+        })
+    },
+    fourthpart = function() 
+    {
+        botui.message.add({
                 delay: 1E3,
-                content: "因为对GitHub有种执念… "
+                content: "因为很喜欢埼玉老师？ "
+        }).then(function() {
+            botui.message.add({
+                delay: 2000,
+                content: "（别误会，我不是光头哇啊啊啊…"
             }).then(function() {
                 botui.message.add({
-                    delay: 1100,
-                    content: "而且我真的是猫控！"
+                    delay: 2000,
+                    content: "我真的不是！！！"
                 }).then(function() {
                     botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "域名有什么含意吗？(ง •_•)ง",
-                            value: "why-domain"
+                    delay: 1500,
+                    action: [{
+                        text: "目前有什么经历吗",
+                            value: "career"
                         }]
                     }).then(function(a) {
                         fifthpart()
                     })
                 })
             })
-        },
-        fifthpart = function() {
-            botui.message.add({
-                delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
-            }).then(function() {
-                botui.message.add({
-                    delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
-                })
+        })   
+    },
+    fifthpart = function() {
+        botui.message.add({
+            delay: 1E3,
+            content: "emmmm，目前只是一个蒟蒻的acmer。。"
+        }).then(function(){
+            botui.action.button({
+            delay: 1200,
+            action :[
+                {
+                    text:"okkk",
+                    value: 'end',
+                },
+                {
+                    text:"还有吗",
+                    value: "more",
+                },
+            ]
+            }).then(function(a){
+                "more" == a.value && more();
+                "end" == a.value && end()
             })
-        }
+        })
+    },
+    more=function(){
+        botui.message.add({
+            delay: 1600,
+            content: "只有这些了，仔细看看我的博客吧？ ^_^",
+        })
+    },
+    end = function() {
+        botui.message.add({
+            delay: 600,
+            content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
+        })
+    }
 }
