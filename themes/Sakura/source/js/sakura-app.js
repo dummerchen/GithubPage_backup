@@ -1177,7 +1177,7 @@ var home = location.href,
         spause: function() {
             $('#video-btn').addClass('video-play').removeClass('video-pause')
             $('.focusinfo').css({
-                'top': '49.3%'
+                'top': '70vh'
             })
             $('#banner_wave_1').removeClass('banner_wave_hide')
             $('#banner_wave_2').removeClass('banner_wave_hide')
