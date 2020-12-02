@@ -4850,7 +4850,6 @@ li.feature-2 {
 }
 
 
-}
 .blank {
     padding-top: 80px;
     background-color: rgba(255, 255, 255, 1)
@@ -4859,7 +4858,7 @@ li.feature-2 {
     position: relative;
     max-width: 800px;
     padding: 0 10px;
-    top: 49.3%;
+    top: 70vh;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);

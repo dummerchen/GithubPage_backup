@@ -557,7 +557,7 @@ $(document).ready(function() {
         })
         add_upload_tips()
     })
-    // 反正会重新用swiper写的算了
+
 $(document).ready(function() {
     var bgindex = Math.floor(Math.random() * bg.length)
     $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
@@ -566,14 +566,9 @@ $(document).ready(function() {
 	{
 		let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
 		$(".swiper-wrapper").append(t)
-		console.log(t)
     }
     var myswiper=new Swiper('.swiper-container',{
         autoplay: false,
-		// autoplay: {
-		// 	delay:1000,
-		// 	disableOnInteraction:false,
-        // },
         direction:'horizontal',
 		navigation:{
 			nextEl: '.bg-next',
