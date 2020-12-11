@@ -1,26 +1,22 @@
 <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<script src="/js/post_top.js"></script>
 <div class="pattern-center-blank"></div>
-<% if (post.photos && post.photos.length){ %>
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background: url(<%= post.photos[0] %>) center center / cover no-repeat;" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      <%- post.title %></h1>
-      <p class="entry-census">
-        <span>
-          <a href="<%- post.authorLink%>"><%- post.author %></a>
-        </span>
-        <span class="bull">
-        ·</span>
-        <%= date(post.date, 'YYYY-M-D') %><span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
-  </div>
-<% } %>
+<div class="pattern-center single-center">
+  <header class="pattern-header single-header">
+    <h1 class="entry-title">
+    <%- post.title %></h1>
+    <p class="entry-census">
+      <span>
+        <a href="<%- post.authorLink%>"><%- post.author %></a>
+      </span>
+      <span class="bull">
+      ·</span>
+      <%= date(post.date, 'YYYY-M-D') %><span class="bull">
+      ·</span>
+    <span id="busuanzi_value_page_pv"></span>次阅读</p>
+  </header>
+</div>
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -127,8 +123,8 @@
 </div>
 
 <% if (post.mathjax) { %>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
-  <script type="text/x-mathjax-config">
+  < type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></>
+  < type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-  </script>
+  </>
 <% } %>

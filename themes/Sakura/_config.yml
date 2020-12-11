@@ -9,7 +9,7 @@ description:
 cdn: #https://cdn.jsdelivr.net/gh/dummerchen/cdn@master
 pjax: 1
 # 1开启
-mathjax: 0
+mathjax: 1
 
 notice: false
 lazyloadImg: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/loader/orange.progress-bar-stripe-loader.svg
@@ -92,10 +92,10 @@ social:
   cnblog: {url: https://www.cnblogs.com/cherrypill/, img: https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201122224714.png}
 
 #social  url, img 移动端配置
-msocial:
-  github: {url: http://github.com/honjun, fa: fa-github, color: 333}
-  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
-
+# 目录栏头像下面的contact 个人感觉多此一举
+# msocial:
+#   github: {url: http://github.com/dummerchen, fa: fa-github, color: 333}
+  
 donate:
   enable: false
   paypal: https://www.paypal.me/hojuncn
@@ -126,4 +126,3 @@ aplayer:
 valine: true
 v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
 v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
-
