@@ -1082,12 +1082,8 @@ textarea {
     line-height: 1.5
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playball','Long Cang',cursive;
     clear: both
 }
 
@@ -1096,10 +1092,7 @@ p {
     cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur), auto
 }
 
-dfn,
-cite,
-em,
-i {
+dfn,cite,em,i {
     font-style: italic
 }
 
@@ -2647,6 +2640,22 @@ i.iconfont.hotpost {
 .entry-content {
     position: relative
 }
+.entry-content h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.entry-content h2 {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.5;
+    margin:10px 0;
+}
 
 .entry-content h3 {
     padding-bottom: 8px;
@@ -2660,23 +2669,16 @@ i.iconfont.hotpost {
     padding-left: 16px
 }
 
-.entry-content h2:after {
-    content: "\00B6";
-    position: absolute;
-    color: #ff6d6d;
-    font-family: 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
-    padding-left: 6px;
-    font-size: 1.03em
-}
 
 .serif .entry-content h2:after {
-    content: "\00B6";
-    position: absolute;
-    color: #ff6d6d;
-    font-family: 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
-    padding-left: 6px;
-    font-size: 1.13em
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
 }
+
 
 .entry-content h3:after {
     content: "#";
@@ -2748,11 +2750,17 @@ h1.entry-title {
 }
 
 .entry-content p {
-    color: #797979
-}
-
-.entry-content p {
-    line-height: 30px
+    margin: 13px auto;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    letter-spacing: .015em;
+    font-feature-settings: "tnum";
+    font-variant: tabular-nums;
+    font-weight: 400;
+    line-height: 1.8;
+    word-break: break-word;
+    line-height: 30px;
 }
 
 .entry-content hr {
@@ -5659,10 +5667,6 @@ i.iconfont.down {
     
     h1.entry-title {
         font-size: 18px
-    }
-    
-    .entry-content p {
-        font-size: 14px
     }
     
     .post-footer,
