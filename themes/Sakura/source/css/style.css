@@ -5676,7 +5676,8 @@ i.iconfont.down {
     }
     
     .share-mobile {
-        display: inline-block !important;
+        /* display: inline-block ; */
+        display: none !important;
     }
     
     .post-tags {
@@ -8426,22 +8427,17 @@ a.toc-link {
 }
 .highlight-wrap {
     position: relative;
-    background:#21252b;
-    border-radius:5px;
-    font:15px/22px "Microsoft YaHei",
-    "Arial",
-    Sans-Serif;
-    line-height:1.6;
-    margin-bottom:1.6em;
-    max-width:100%;
-    overflow:auto;
-    text-shadow:none;
-    color:#000;
-    padding-top:30px;
-    box-shadow:0 10px 30px 0 rgba(0,
-    0,
-    0,
-    .4)
+    background: #21252b;
+    border-radius: 5px;
+    font: 15px/22px "Microsoft YaHei","Arial",Sans-Serif;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    text-shadow: none;
+    color: #000;
+    padding-top: 30px;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,.4);
 }
 .highlight .line span::-moz-selection,
 .line::-moz-selection {
