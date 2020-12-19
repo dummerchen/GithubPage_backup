@@ -272,11 +272,17 @@ function code_highlight_style() {
     for (var i = 0; i < $('article pre').length; i++) {
         gen_top_bar(i)
     }
-    $('pre').on('click', function(e) {
+    // 增加点击代码也全屏显示
+    $('pre code').on('click', function(e) {
         if (e.target !== this) return
-        $(this).toggleClass('code-block-fullscreen')
+        $('pre').toggleClass('code-block-fullscreen')
         $('html').toggleClass('code-block-fullscreen-html-scroll')
     })
+    // $('code').on('click', function(e) {
+    //     if (e.target !== this) return
+    //     $('pre').toggleClass('code-block-fullscreen')
+    //     $('html').toggleClass('code-block-fullscreen-html-scroll')
+    // })
     // 不加载行号
     //hljs.initLineNumbersOnLoad()
 }
