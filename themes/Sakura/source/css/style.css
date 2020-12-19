@@ -8430,7 +8430,7 @@ a.toc-link {
     background: #21252b;
     border-radius: 5px;
     font: 15px/22px "Microsoft YaHei","Arial",Sans-Serif;
-    line-height: 1.6;
+    line-height: 1.4;
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
@@ -8438,6 +8438,7 @@ a.toc-link {
     color: #000;
     padding-top: 30px;
     box-shadow: 0 10px 30px 0px rgba(0,0,0,.4);
+    max-height: 70vh;
 }
 .highlight .line span::-moz-selection,
 .line::-moz-selection {

@@ -277,7 +277,8 @@ function code_highlight_style() {
         $(this).toggleClass('code-block-fullscreen')
         $('html').toggleClass('code-block-fullscreen-html-scroll')
     })
-    hljs.initLineNumbersOnLoad()
+    // 不加载行号
+    //hljs.initLineNumbersOnLoad()
 }
 try {
     code_highlight_style()
