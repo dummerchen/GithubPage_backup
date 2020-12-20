@@ -41,6 +41,7 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
 highlight: 
   enable: false
   line_number: false
@@ -51,7 +52,7 @@ prismjs:
   enable: false
   preprocess: true
   line_number: false
-# 加了必须开enable没用
+# 加了必须开,但是本质还是直接修改highlight css，不加这个会代码块渲染错误很神奇
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess 
   theme: 'tomorrow'
