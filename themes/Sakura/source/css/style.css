@@ -4770,7 +4770,8 @@ li.feature-2 {
 .headertop {
     position: relative;
     overflow: hidden;
-    height: 0
+    height: 0;
+    max-height: 100vh;
 }
 
 
