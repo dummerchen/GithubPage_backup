@@ -72,7 +72,7 @@ bg:
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201220152038.jpg
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass: 
+bgclass: filter-dot
 
 # startdash url, title, desc img
 startdash: 
@@ -126,5 +126,5 @@ aplayer:
 
 # Valine
 valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+v_appId: qXq4yrRs0Td8eIpiWXos75dh-gzGzoHsz
+v_appKey: QIjahFDUKODgy2LVaXXK1ho2

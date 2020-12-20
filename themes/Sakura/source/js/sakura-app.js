@@ -242,7 +242,8 @@ mashiro_global.font_control = new function() {
         }
     }
 }()
-mashiro_global.font_control.ini()
+// 加载字体？
+// mashiro_global.font_control.ini()
 
 function code_highlight_style() {
     function gen_top_bar(i) {
@@ -566,24 +567,30 @@ $(document).ready(function() {
     })
 
 $(document).ready(function() {
-    var bgindex = Math.floor(Math.random() * bg.length)
-    $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
-    
-    for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
-	{
-		let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
-		$(".swiper-wrapper").append(t)
+    var localurl=window.location.href
+    // 判断首页加载
+    if(myurl.includes(localurl))
+    {
+        
+        var bgindex = Math.floor(Math.random() * bg.length)
+        $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
+        
+        for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
+        {
+            let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
+            $(".swiper-wrapper").append(t)
+        }
+        var myswiper=new Swiper('.swiper-container',{
+            autoplay: false,
+            direction:'horizontal',
+            navigation:{
+                nextEl: '.bg-next',
+                prevEl: '.bg-pre',
+            },
+            loop: true,
+            
+        })
     }
-    var myswiper=new Swiper('.swiper-container',{
-        autoplay: false,
-        direction:'horizontal',
-		navigation:{
-			nextEl: '.bg-next',
-			prevEl: '.bg-pre',
-		},
-		loop: true,
-		
-	})
 })
 if (document.body.clientWidth <= 860 && !window.is_app) {
     window.onscroll = function() {
@@ -672,7 +679,7 @@ var pjaxInit = function() {
     add_upload_tips()
     click_to_view_image()
     original_emoji_click()
-    mashiro_global.font_control.ini()
+    // mashiro_global.font_control.ini()
     $('p').remove('.head-copyright')
     try {
         code_highlight_style()
@@ -846,9 +853,10 @@ function add_copyright() {
 }
 // 不用copyright 
 // add_copyright()
-$(function() {
-    inlojv_js_getqqinfo()
-})
+// 不知道干嘛的share？ 
+// $(function() {
+//     inlojv_js_getqqinfo()
+// })
 
 function inlojv_js_getqqinfo() {
     var is_get_by_qq = false
@@ -1059,7 +1067,7 @@ var home = location.href,
     s = $('#bgvideo')[0],
     Siren = {
         BSZ: function() {
-            $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
+            $.getScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
         },
         TOC: function() {
             if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
@@ -1097,7 +1105,7 @@ var home = location.href,
                         $('.toc').removeClass('toc-fixed')
                     }
                 }
-                $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+                $.getScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
             }
         },
         AB: function() {
@@ -1123,7 +1131,7 @@ var home = location.href,
         },
         MJ: function() {
             if (mashiro_option.mathjax == '1') {
-                $.getScript('//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', function() {
+                $.getScript('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', function() {
                     MathJax.Hub.Config({
                         tex2jax: {
                             inlineMath: [
@@ -1131,6 +1139,7 @@ var home = location.href,
                                 ['\\(', '\\)']
                             ]
                         }
+                        
                     })
                     var math = document.getElementsByClassName('entry-content')[0]
                     MathJax.Hub.Queue(['Typeset', MathJax.Hub, math])

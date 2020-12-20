@@ -1666,7 +1666,8 @@ a:active {
         height: 2.375rem !important;
         bottom: -0.999rem !important;
     }
-    .headertop.filter-dot::before {
+    .filter-dot::before {
+        z-index: 1;
         background-image: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/grid.png)
     }
 }
@@ -4797,7 +4798,8 @@ li.feature-2 {
     background-image: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/grid.png)
 }
 
-.headertop.filter-dot::before {
+.filter-dot::before {
+    z-index: 1;
     background-image: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/dot.gif)
 }
 
