@@ -563,7 +563,7 @@ $(document).ready(function() {
         $('.skin-menu #close-skinMenu').click(function() {
             closeSkinMenu()
         })
-        add_upload_tips()
+        //add_upload_tips()
     })
 
 $(document).ready(function() {
@@ -676,7 +676,7 @@ function timeSeriesReload(flag) {
 timeSeriesReload()
 
 var pjaxInit = function() {
-    add_upload_tips()
+    //add_upload_tips()
     click_to_view_image()
     original_emoji_click()
     // mashiro_global.font_control.ini()

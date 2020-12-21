@@ -3979,7 +3979,8 @@ span.sitename {
     white-space: nowrap;
     line-height: 25px;
     -webkit-transition: all .5s;
-    transition: all .5s
+    transition: all .5s;
+    white-space: normal;
 }
 
 .link-title {
