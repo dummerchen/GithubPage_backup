@@ -4,7 +4,7 @@ date: 2018-12-20 23:13:48
 keywords: 留言板
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165634.jpg
 ---
 {% raw %}
 <div class="entry-content">

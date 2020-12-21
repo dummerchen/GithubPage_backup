@@ -44,7 +44,6 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172326.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201102231714.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172229.jpg
@@ -64,14 +63,18 @@ bg:
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191259.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192651.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192521.png
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119193802.png
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119193902.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192304.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201220151214.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201220152038.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160850.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165256.png
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165100.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165012.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221164900.jpg
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass: filter-dot
+bgclass:  
 
 # startdash url, title, desc img
 startdash: 
