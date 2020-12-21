@@ -10,19 +10,19 @@ things:
   - group: 2019-xx-x
     desc:
     items:
-    - url: https://lehrmanncc.github.io/
+    - 
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-      name: 入学事件
+      name: 入学
       desc: fbl,sq,gjc,lyc成功在西电会师。
   - group: 2020-xx-x
     desc:
     items:
-    - url: https://lehrmanncc.github.io/
+    - 
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: flag
       desc: lyc:我要是写完了数据结构作业也会玩的😀
-    - url: 
-	  img:https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-	  name:啊,勃
-	  desc: gjc:a~~~bortion
+    - 
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: 啊,勃
+      desc: gjc：a~~~bortion
 ---

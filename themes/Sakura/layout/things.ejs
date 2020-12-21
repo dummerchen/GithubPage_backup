@@ -1,6 +1,6 @@
 <div class="pattern-center-blank">
 </div>
-<div class="pattern-center single-center <%- theme.bgclass %>">
+<div class="pattern-center single-center filter-dot">
   <div class="pattern-attachment-img">
     <img src="<%= page.photos %>" src="<%- theme.lazyloadImg %>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
@@ -27,13 +27,13 @@
           <ul class="link-items fontSmooth">
             <% (group.items||[]).forEach(function (item) { %>
               <li class="link-item">
-                <a class="link-item-inner effect-apollo" title="<%- item.desc %>" rel="friend">
+                <div class="link-item-inner effect-apollo" title="<%- item.desc %>" rel="friend">
                   <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="<%- item.img %>" src="<%- item.img %>">
                   <span class="sitename">
                   <%- item.name %></span>
                   <div class="linkdes">
                   <%- item.desc %></div>
-                </a>
+                  </div>
               </li>
             <% }) %>
           </ul>

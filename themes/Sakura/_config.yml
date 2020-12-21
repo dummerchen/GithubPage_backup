@@ -24,7 +24,7 @@ menus:
   # 清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
   #   图集: {path: /tags/图集/, fa: fa-photo }
   # } }
-  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  # 留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友链: { path: /links/, fa: fa-link faa-shake }
   contact: { path: /, fa: fa-heart faa-pulse ,submenus:{
     Gitee: { path: https://gitee.com/dummerchen, fa: iconfont icon-gitee2},
