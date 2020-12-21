@@ -2558,13 +2558,17 @@ i.iconfont.hotpost {
 }
 
 .site-footer {
-    padding: 2%;
     background: rgba(255, 255, 255, .8);
-    max-width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto
 }
-
+canvas:not(#ribbon-canvas), #web_bg {
+    margin-bottom: -0.5rem;
+    display: block;
+    width: 100%;
+    height: 160px
+}
 .site-info {
     text-align: center;
     font-size: 13px;
@@ -5695,9 +5699,6 @@ i.iconfont.down {
         display: none
     }
     
-    .site-footer {
-        padding: 30px
-    }
     
     .lower {
         display: none !important
@@ -6059,9 +6060,6 @@ i.iconfont.down {
         display: none
     }
     
-    .site-footer {
-        padding: 30px
-    }
     
     .we-title:before {
         display: none
