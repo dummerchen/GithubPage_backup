@@ -1,6 +1,6 @@
 ---
 layout: things
-title: 大事件薄
+title: 事件薄
 comments: true
 date: 2020-12-20 22:53:25
 keywords:
@@ -19,7 +19,10 @@ things:
     items:
     - url: https://lehrmanncc.github.io/
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-      name: ylc
-      desc: 我要是写完了数据结构作业也会玩的😀
-  
+      name: flag
+      desc: lyc:我要是写完了数据结构作业也会玩的😀
+    - url: 
+	  img:https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+	  name:啊,勃
+	  desc: gjc:a~~~bortion
 ---
