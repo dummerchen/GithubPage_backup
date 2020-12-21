@@ -1131,8 +1131,8 @@ var home = location.href,
         },
         MJ: function() {
             if (mashiro_option.mathjax == '1') {
-                $.getScript('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', function() {
-                // $.getScript('/js/MathJax2.7.4.min.js', function() {
+                console.log("mathjax重复加载")
+                $.getScript('https://cdn.jsdelivr.net/npm/mathjax@2.7.9/latest.js', function() {
                     MathJax.Hub.Config({
                         tex2jax: {
                             inlineMath: [

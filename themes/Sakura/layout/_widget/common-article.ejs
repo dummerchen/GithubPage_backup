@@ -132,10 +132,11 @@
 </div>
 
 <% if (post.mathjax) { %>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
-  <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/latest.js"></script> -->
   <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
   <script type="text/x-mathjax-config">
+    console.log("加载mathjax")
     MathJax.Hub.Config({
       tex2jax: {
         inlineMath: [
@@ -144,7 +145,7 @@
         ]
     }
     }); 
-    <!-- MathJax.Hub.Queue(['typeset',MathJax.Hub.math]) -->
+    
   </script>
   <!-- 给MathJax元素添加has-jax class -->
   <!-- <script type="text/x-mathjax-config">
