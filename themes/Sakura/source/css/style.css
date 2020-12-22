@@ -878,10 +878,7 @@ summary {
     display: block
 }
 
-audio,
-canvas,
-progress,
-video {
+audio,canvas,progress,video {
     display: inline-block;
     vertical-align: baseline
 }
@@ -1080,7 +1077,7 @@ textarea {
     line-height: 1.5
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,.post-list-thumb {
     font-family: 'Playball','Long Cang',cursive;
     clear: both
 }
@@ -1559,11 +1556,12 @@ a:active {
 
 .pattern-center header.single-header {
     padding: 0 10px;
-    margin-left: auto;
+    text-align: center;
+    /* margin-left: auto;
     margin-right: auto;
     text-align: left;
     top: auto;
-    bottom: 20px
+    bottom: 20px */
 }
 
 .single-center .single-header h1.entry-title {
@@ -2313,7 +2311,7 @@ i.iconfont.hotpost {
 .post-meta,
 .post-meta a {
     color: #888;
-    font-size: 12px
+    font-size: 16px
 }
 
 .comments-number {
@@ -2354,7 +2352,7 @@ i.iconfont.hotpost {
     padding-right: 30px;
     padding-left: 0;
     width: 40%;
-    margin: 20px 10px 0 10px
+    margin: 20px 10px 0 10px;
 }
 
 .float-content {
@@ -2374,7 +2372,7 @@ i.iconfont.hotpost {
 }
 
 .float-content i {
-    font-size: 25px;
+    font-size: 20px;
     color: #666
 }
 
@@ -2558,7 +2556,6 @@ i.iconfont.hotpost {
 }
 
 .site-footer {
-    background: rgba(255, 255, 255, .8);
     max-width: 100%;
     margin-left: auto;
     margin-right: auto
@@ -4835,7 +4832,7 @@ li.feature-2 {
 
 .headertop-down i {
     font-size: 28px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.63);
     -ms-transform: scale(1.5, 1);
     -webkit-transform: scale(1.5, 1);
     transform: scale(1.5, 1)
@@ -5777,7 +5774,7 @@ i.iconfont.down {
         transition-duration: .5s;
         position: relative;
         overflow: hidden;
-        z-index: 2
+        z-index: 2;
     }
     
     #main-container.open:before {
@@ -9103,6 +9100,7 @@ td.hljs-ln-numbers {
 }
 #page {
     min-height: calc(100vh - 150px);
+    
 }
 .entry-content * {
     box-sizing: border-box;
