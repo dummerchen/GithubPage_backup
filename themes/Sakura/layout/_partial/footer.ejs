@@ -1,16 +1,3 @@
-<footer id="colophon" class="site-footer" role="contentinfo">
-  <div class="site-info">
-    <div class="footertext">
-      <!-- <div class="img-preload">
-        <img src="https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
-        <img src="https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.6/img/other/disqus-preloader.svg">
-      </div> -->
-      <p style="color: #666666;">&copy <%= date(new Date(), 'YYYY') %></p>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
 <script type="text/javascript" src="/js/lib.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script type="text/javascript" src="/js/InsightSearch.js"></script>
@@ -71,5 +58,23 @@ $(document).ready(function() {
       }
     }
   }
+  fish();
+  function fish() {
+      return (
+        $("body").append(
+          '<script src="/js/fish.js"><//script>'
+        ),
+        this
+      );
+    }
 });
+
 </script>
+<footer id="colophon" class="site-footer" style="position: relative;" role="contentinfo">
+  <div class="footertext" style="position: absolute;text-align: center;padding: 1.2rem 1rem 1.4rem;inset: 0;">
+    <div class="copyright" style="color: #1f04049e;font-family: 'Playball';">&copy <%= date(new Date(), 'YYYY') %>
+      <i class="fa fa-meetup" aria-hidden="true" target="__blank" style="color: #823333ad;"></i>dummerfu
+    </div>
+  </div>
+  <div class="container" id="jsi-flying-fish-container"></div>
+</footer>

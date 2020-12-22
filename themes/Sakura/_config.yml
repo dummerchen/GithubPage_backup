@@ -72,10 +72,10 @@ bg:
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165100.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165012.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221164900.jpg
-
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160741.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160421.jpg
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass:  
-
+bgclass:
 # startdash url, title, desc img
 startdash: 
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/sakura.md.png}

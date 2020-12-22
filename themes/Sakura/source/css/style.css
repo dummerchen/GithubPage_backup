@@ -2101,6 +2101,7 @@ a:active {
     margin-right: auto;
     background-color: rgba(255, 255, 255, .8);
     box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
+    border-radius: 10px;
 }
 
 .post-list {
@@ -2566,17 +2567,17 @@ canvas:not(#ribbon-canvas), #web_bg {
     width: 100%;
     height: 160px
 }
-.site-info {
+.footer-wrap {
     text-align: center;
     font-size: 13px;
     color: #b9b9b9
 }
 
-.site-info a {
+.footer-wrap a {
     color: #b9b9b9
 }
 
-.site-info a:hover {
+.footer-wrap a:hover {
     color: orange
 }
 
@@ -2586,7 +2587,7 @@ canvas:not(#ribbon-canvas), #web_bg {
 
 .footertext .foo-logo {
     width: 30px;
-    height: 30px;
+    height: 300px;
     opacity: .3;
     margin: 0 auto;
     background-size: cover;
@@ -5895,7 +5896,7 @@ i.iconfont.down {
     }
     
     #mo-nav {
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.226);
         width: 0;
         max-width: 250px !important;
         height: 100%;
