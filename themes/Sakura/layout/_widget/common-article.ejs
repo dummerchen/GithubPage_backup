@@ -133,8 +133,6 @@
 
 <% if (post.mathjax) { %>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/latest.js"></script> -->
-  <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
   <script type="text/x-mathjax-config">
     console.log("加载mathjax")
     MathJax.Hub.Config({
@@ -145,15 +143,5 @@
         ]
     }
     }); 
-    
   </script>
-  <!-- 给MathJax元素添加has-jax class -->
-  <!-- <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-  </script> -->
 <% } %>
