@@ -1,10 +1,17 @@
 <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
 <link rel="stylesheet" type="text/css" href="/css/tocbot.css">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> -->
+<!-- 这样非首页也会加载post_top.js很拖时间，有时间再改 -->
 <script src="/js/post_top.js"></script>
-<div class="pattern-center-blank"></div>
-<!-- 感觉article页面filter-dot更好看 -->
-<div class="pattern-center single-center filter-dot">
+<div class="pattern-center-blank">
+</div>
+
+<div class="pattern-center single-center <%- theme.post_article_bgclass %>">  
+  <% if(!theme.is_use_random_post_bg){ %>
+    <div class="pattern-attachment-img"> 
+    <img src="<%= page.photos %>" src="<%- theme.lazyloadImg%>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    </div>
+  <%}%>
   <header class="pattern-header single-header">
     <h1 class="entry-title">
     <%- post.title %></h1>

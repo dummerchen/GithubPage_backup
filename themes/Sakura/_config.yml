@@ -42,7 +42,10 @@ menus:
 homePageSortType: -1
 # Home page article shown number)
 homeArticleShown: 10
-# 背景图片 更好的修改
+# 文章页面是否使用首页随机图
+# 否则使用文章的photos
+is_use_random_post_bg: 0
+# 首页背景图
 bg:
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201102231714.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg
@@ -75,6 +78,7 @@ bg:
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160421.jpg
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass:
+post_article_bgclass: #"filter-dot"
 # startdash url, title, desc img
 startdash: 
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/sakura.md.png}
