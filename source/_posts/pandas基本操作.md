@@ -150,6 +150,44 @@ read_html(io,match,flavor,header,index_col,skiprows,attrs,parse_dates)
 
 ## dataframe.merge
 
+
+
+# pandas 数据统计
+
+## Dataframe.info()函数
+
+[*Dataframe.info(verbose=None,buf=None,max_col=None,memory_usage=None,null_counts=None)*](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html?highlight=info)
+
+* verbose:是否返回全部信息
+* 是否输出到文件，默认输出到屏幕
+
+
+
+## dataframe.describe()函数
+
+~~管他的，用默认参数就完事了~~
+
+还有series.describe()，和这个类似
+
+## dataframe.value_counts()函数
+
+[*Dataframe.value_counts(subset=None,normalize=False,sort=True,ascending=False,dropna=True)*](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.value_counts.html?highlight=value_count)
+
+* subset: 需要计数的列
+* normalize：返回频数（False）还是比例（True）
+* sort：是否排序
+* ascending：是否降序排列（默认降序）
+* dropna:是否不统计na
+* 返回的是去重后对应的key和value
+
+series.value_counts()和这个类似不过没有了subset而已。
+
+但是奇怪的是用Dataframe会报错很神奇。
+
+
+
+
+
 --------
 
 # Reference
