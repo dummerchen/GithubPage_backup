@@ -566,37 +566,8 @@ $(document).ready(function() {
         //add_upload_tips()
     })
 
-$(document).ready(function() {
-    var localurl=window.location.href
-    // 判断首页加载
-    if(myurl.includes(localurl))
-    {
-        
-        var bgindex = Math.floor(Math.random() * bg.length)
-        $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
-        // $('.swiper-wrapper').append('<div class="swiper-slide"><div class="swiper-lazy-preloader swiper-lazy-preloader-white" style="z-index:-99999;"></div><div class="swiper-lazy swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div></div>')
-        for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
-        {
-            let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
-            // let t='<div class="swiper-slide"><div class="swiper-lazy-preloader swiper-lazy-preloader-white" style="z-index:-99999;"></div>   <div class="swiper-lazy swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;">???</div></div>'
-            $(".swiper-wrapper").append(t)
-        }
-        var myswiper=new Swiper('.swiper-container',{
-            autoplay: false,
-            //loadPrevNext: true,
-            lazyLoading: true,// 启动延时加载
-            lazyLoadingInPrevNext : true,      //延迟加载应用到最接近的slide的图片
-        　　lazyLoadingInPrevNextAmount : 4,   //加载下一个slide
-        　　lazyLoadingOnTransitionStart : true,
-            direction:'horizontal',
-            navigation:{
-                nextEl: '.bg-next',
-                prevEl: '.bg-pre',
-            },
-            loop: true,
-            
-        })
-    }
+$(document).on("pageshow",function() {
+    
 })
 if (document.body.clientWidth <= 860 && !window.is_app) {
     window.onscroll = function() {
@@ -719,7 +690,6 @@ var pjaxInit = function() {
     smileBoxToggle()
     timeSeriesReload()
     add_copyright()
-    console.log($('#myscript').text())
 }
 $(document).on('click', '.sm', function() {
     var msg = '您真的要设为私密吗？'
@@ -1151,7 +1121,41 @@ var home = location.href,
                     MathJax.Hub.Queue(['Typeset', MathJax.Hub, math])
                 })
             }
+            
         },
+        SWP: function(){
+            var localurl=window.location.href
+            // 判断首页加载
+            console.log("当前url",localurl)
+            if(myurl.includes(localurl))
+            {
+                console.log("加载swiper")
+                var bgindex = Math.floor(Math.random() * bg.length)
+                $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
+                // $('.swiper-wrapper').append('<div class="swiper-slide"><div class="swiper-lazy-preloader swiper-lazy-preloader-white" style="z-index:-99999;"></div><div class="swiper-lazy swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div></div>')
+                for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
+                {
+                    let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
+                    // let t='<div class="swiper-slide"><div class="swiper-lazy-preloader swiper-lazy-preloader-white" style="z-index:-99999;"></div>   <div class="swiper-lazy swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;">???</div></div>'
+                    $(".swiper-wrapper").append(t)
+                }
+                var myswiper=new Swiper('.swiper-container',{
+                    autoplay: false,
+                    //loadPrevNext: true,
+                    lazyLoading: true,// 启动延时加载
+                    lazyLoadingInPrevNext : true,      //延迟加载应用到最接近的slide的图片
+                　　lazyLoadingInPrevNextAmount : 4,   //加载下一个slide
+                　　lazyLoadingOnTransitionStart : true,
+                    direction:'horizontal',
+                    navigation:{
+                        nextEl: '.bg-next',
+                        prevEl: '.bg-pre',
+                    },
+                    loop: true,
+                    
+                })
+            }
+        }
         MN: function() {
             $('.iconflat').on('click', function() {
                 if ($('#main-container').hasClass('open')) {
@@ -1600,6 +1604,7 @@ $(function() {
             Siren.CE()
             Siren.VA()
             Siren.MJ()
+            Siren.SWP()
             Siren.AB()
             Siren.TOC()
             Siren.BSZ()
