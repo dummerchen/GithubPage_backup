@@ -778,9 +778,7 @@
     animation: sitetop 1s
 }
 
-.searchbox,
-.site-top .lower,
-.header-user-avatar {
+.searchbox,.site-top .lower,.header-user-avatar {
     animation: searchbox 1s
 }
 
@@ -1520,9 +1518,13 @@ a:active {
     background-position: center center;
     background-origin: border-box;
     width: 100%;
-    height: 400px;
+    height: 100vh;
 }
-
+@media(min-width:769px) {
+    .pattern-attachment-img img{
+        object-fit: fill !important;
+    }
+}
 .pattern-center header.pattern-header {
     position: absolute;
     top: 45%;
