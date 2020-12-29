@@ -1126,17 +1126,15 @@ var home = location.href,
         SWP: function(){
             var localurl=window.location.href
             // 判断首页加载
-            console.log("当前url",localurl)
             if(myurl.includes(localurl))
             {
                 console.log("加载swiper")
                 var bgindex = Math.floor(Math.random() * bg.length)
                 $('.swiper-wrapper').append('<div class="swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
-                // $('.swiper-wrapper').append('<div class="swiper-slide"><div class="swiper-lazy-preloader swiper-lazy-preloader-white" style="z-index:-99999;"></div><div class="swiper-lazy swiper-slide" style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div></div>')
                 for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
                 {
                     let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
-                    // let t='<div class="swiper-slide"><div class="swiper-lazy-preloader swiper-lazy-preloader-white" style="z-index:-99999;"></div>   <div class="swiper-lazy swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;">???</div></div>'
+                    
                     $(".swiper-wrapper").append(t)
                 }
                 var myswiper=new Swiper('.swiper-container',{
@@ -1155,7 +1153,7 @@ var home = location.href,
                     
                 })
             }
-        }
+        },
         MN: function() {
             $('.iconflat').on('click', function() {
                 if ($('#main-container').hasClass('open')) {
@@ -1185,14 +1183,6 @@ var home = location.href,
             })
             $('#banner_wave_1').addClass('banner_wave_hide')
             $('#banner_wave_2').addClass('banner_wave_hide')
-                // for (var i = 0; i < ap.length; i++) {
-                //     try {
-                //         ap[i].destroy()
-                //     } catch (e) {}
-                // }
-                // try {
-                //     hermitInit()
-                // } catch (e) {}
             s.play()
         },
         spause: function() {
@@ -1714,6 +1704,7 @@ String.prototype.render = function(context) {
 }
 
 $(document).ready(function() {
+    Siren.SWP()
     setTimeout(function() {
         isFirstLoad = true
         if (document.body.clientWidth > 860) {
