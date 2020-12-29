@@ -83,12 +83,6 @@ read_html(io,match,flavor,header,index_col,skiprows,attrs,parse_dates)
 * attrs：属性，比如 attrs = {'id': 'table'}~~不是很懂~~
 * parse_dates：解析日期
 
-
-
-
-
-> 在pandas读取文件的过程中，最常出现的问题，就是中文问题与格式问题，希望当你碰到的时候，可以完美的解决。
-
 # pandas查询数据
 
 ## pandas.loc
@@ -186,13 +180,54 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 
 
+# pandas 数据整理
+
+## concat
+
+[*pandas.contact(opt=[],axis=0,join=outer,ignore_index=False)*](https://pandas.pydata.org/docs/reference/api/pandas.concat.html?highlight=concat#pandas.concat)
+
+* opt：需要合并的series或dataframe
+* axis：合并的轴
+* join：合并的方式
+* ignore_index: 是否忽略index，如果忽略新的index将按0，1…编号
+
+~~感觉这一个万能，merge只能两个合并，这个可以多个合并~~
+
+## merge
+
+[*pandas.merge(left,right,how='inner', on=None, left_index=False, right_index=False, sort=False, validate=None)*](https://pandas.pydata.org/docs/reference/api/pandas.merge.html?highlight=merge#pandas.merge)
 
 
---------
+
+* left :dataframe
+* right: dataframe或者series （需要被merge的对象）
+* left_index: 新index用左边的
+* right_index: 新index用右边的
+* how: **left, right, outer, inner, cross**, 默认inner，
+    * left：按左边关键字合并
+    * right：按右边关键字合并
+    * outer：取并集关键字合并，没有的关键字用na替代
+    * inner：取交集关键字合并
+* sort：是否排序
+* validate：str，optional 对应关系
+
+还有些append什么的就算了。
+
+## groupby
+
+
+
+
+
+
+
+> 在pandas读取文件的过程中，最常出现的问题，就是中文问题与格式问题，希望当你碰到的时候，可以完美的解决。
+
+**最后附上[pyechart可视化官方文档](https://pyecharts.org/#/zh-cn/basic_charts)，配合pandas使用**
 
 # Reference
 
 
 
-[^1]: 本文看了[这个](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)有感而发
-[^2]:读取文件参数基本都参考了：https://www.cnblogs.com/happymeng/p/10481293.html
+[^1]: 本文因上次训练拉跨了，遂有感而发，主要参考[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)
+[^2]: 读取文件参数基本都参考了：https://www.cnblogs.com/happymeng/p/10481293.html
