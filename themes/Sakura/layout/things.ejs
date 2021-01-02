@@ -20,7 +20,7 @@
     <% if (page.things) { %>
       <div class="links">
         <% (page.things||[]).forEach(function (group, index) { %>
-          <h3 class="link-title"><span class="fake-title"><%- index + 1 %>. <%- group.group %></span></h3>
+          <h3 class="link-title"><span class="fake-title"> <%- group.group %></span></h3>
           <% if (group.desc) { %>
             <div class="link-description"><%- group.desc %></div>
           <% } %>
@@ -28,7 +28,7 @@
             <% (group.items||[]).forEach(function (item) { %>
               <li class="link-item">
                 <div class="link-item-inner effect-apollo" title="<%- item.desc %>" rel="friend">
-                  <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="<%- item.img %>" src="<%- item.img %>">
+                  <!-- <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="<%- item.img %>" src="<%- item.img %>"> -->
                   <span class="sitename">
                   <%- item.name %></span>
                   <div class="linkdes">

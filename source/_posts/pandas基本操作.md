@@ -187,7 +187,7 @@ series.value_counts()和这个类似不过没有了subset而已。
 [*pandas.contact(opt=[],axis=0,join=outer,ignore_index=False)*](https://pandas.pydata.org/docs/reference/api/pandas.concat.html?highlight=concat#pandas.concat)
 
 * opt：需要合并的series或dataframe
-* axis：合并的轴
+* axis：合并的轴，1为列，0按为行
 * join：合并的方式
 * ignore_index: 是否忽略index，如果忽略新的index将按0，1…编号
 
@@ -229,5 +229,5 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 
 
-[^1]: 本文因上次训练拉跨了，遂有感而发，主要参考[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)
-[^2]: 读取文件参数基本都参考了：https://www.cnblogs.com/happymeng/p/10481293.html
+[^1]:  本文因上次训练拉跨了，遂有感而发，主要参考[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)
+[^2]:  读取文件参数基本都参考了：https://www.cnblogs.com/happymeng/p/10481293.html
