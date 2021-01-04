@@ -2081,10 +2081,11 @@ a:active {
 }
 
 .site-content {
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 10px;
-    margin-left: auto;
+    margin-left: 125px;
     margin-right: auto;
+    padding: 0 4%;
     background-color: rgba(255, 255, 255, .8);
     box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
     border-radius: 10px;
@@ -2393,6 +2394,9 @@ i.iconfont.hotpost {
 }
 
 @media(max-width:768px) {
+    .site-content{
+        margin-left: auto;
+    }
     .float-content p {
         height: auto;
         display: block
@@ -5608,11 +5612,6 @@ i.iconfont.down {
     .top-feature-row {
         display: none
     }
-    
-    .site-content {
-        padding: 0 4%
-    }
-    
     .feature img {
         width: 52px;
         height: 52px
@@ -7798,20 +7797,28 @@ li>ol {
     overflow-y:auto
 }
 .toc>.toc-list {
+
     overflow:hidden;
-    position:relative
+    position:relative;
 }
 .toc>.toc-list li {
     list-style:none
 }
 .toc-list {
     margin:0;
-    padding-left:10px
+    padding-left:10px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 3px;
 }
 a.toc-link {
     color:currentColor;
-    height:100%
+    height:100%;
+    font-size: 14px;
 }
+a.toc-link:hover{
+    color: rgba(255, 166, 0);
+}
+
 .is-collapsible {
     max-height:1000px;
     overflow:hidden;
@@ -7825,7 +7832,8 @@ a.toc-link {
     top:0
 }
 .is-active-link {
-    font-weight:700
+    font-weight:700;
+    color:rgb(119, 182, 255) !important;
 }
 .toc-link::before {
     background-color:#EEE;
@@ -7838,7 +7846,7 @@ a.toc-link {
     width:2px
 }
 .is-active-link::before {
-    background-color:orange !important
+    background-color:rgb(119, 182, 255) !important
 }
 .flipx {
     -moz-transform:scaleX(-1);
@@ -8699,20 +8707,10 @@ code[class*="language-"], pre[class*="language-"] {
     sans-serif
 }
 .serif {
-    font-family:'Source Han Serif SC',
-    'Source Han Serif',
-    'source-han-serif-sc',
-    'PT Serif',
-    'SongTi SC',
-    'MicroSoft Yahei',
-    Georgia,
-    serif
+    font-family: "Open Sans", "Microsoft Jhenghei", "Microsoft Yahei", sans-serif;
+    font-weight: 400;
 }
-@media(min-width:1px) {
-    .serif {
-        font-family: 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
-    }
-}
+
 .moe-mashiro {
     font-family:'Moe-Mashiro',
     'Merriweather Sans',

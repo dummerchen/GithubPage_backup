@@ -1548,7 +1548,7 @@ var home = location.href,
                     if ($(window).height() > 950) {
                         $('.cd-top.cd-is-visible').css('top', '0')
                     } else {
-                        $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
+                        $('.cd-top.cd-is-visible').css('top', ($(window).height() - 1150) + 'px')
                     }
                 } else {
                     $('.changeSkin-gear').css('bottom', '-999px')

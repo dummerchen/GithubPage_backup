@@ -148,7 +148,7 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2020122
 
 # pandas 数据统计
 
-## Dataframe.info()函数
+## dataframe.info()函数
 
 [*Dataframe.info(verbose=None,buf=None,max_col=None,memory_usage=None,null_counts=None)*](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html?highlight=info)
 
@@ -195,9 +195,7 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 ## merge
 
-[*pandas.merge(left,right,how='inner', on=None, left_index=False, right_index=False, sort=False, validate=None)*](https://pandas.pydata.org/docs/reference/api/pandas.merge.html?highlight=merge#pandas.merge)
-
-
+[*pandas.merge(left,right,how='inner', on=None, left_index=False,right_index=False,sort=False, validate=None)*](https://pandas.pydata.org/docs/reference/api/pandas.merge.html?highlight=merge#pandas.merge)
 
 * left :dataframe
 * right: dataframe或者series （需要被merge的对象）
