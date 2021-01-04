@@ -5738,10 +5738,6 @@ i.iconfont.down {
         display: none
     }
     
-    .links ul li:hover .sitename {
-        color: rgb(12, 12, 224)
-    }
-    
     .links ul li:hover .linkdes {
         color: #949494;
         border-top: 1px dashed #ddd

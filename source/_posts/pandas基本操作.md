@@ -12,15 +12,17 @@ keywords:
 photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221162542.png
 ---
 
-# pandas 读取文件[^1]
-
-[官网链接](https://pandas.pydata.org/docs/)
+# pandas 读写文件[^1]
 
 ## read_csv
 
+
+
 读取**txt | tsv***等类似类型文件也可以用，sep设置为**空格 | \t** 就行了
 
-pd.read_csv(filepath_or_buffer,sep,header,dtype,engine,converters,skiprows,skipfooter,nrows,)[^2]
+当然pandas的series也可以写入或读取
+
+[*Pandas.read_csv(filepath_or_buffer,sep,header,dtype,engine,converters,skiprows,skipfooter,nrows)[^2]*](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html?highlight=csv#pandas.read_csv)
 
 * filepath:：读取的文件地址或url地址
 
@@ -42,9 +44,13 @@ pd.read_csv(filepath_or_buffer,sep,header,dtype,engine,converters,skiprows,skipf
 
 * nrows：从文件中只读取多少数据行，需要读取的行数（从文件头开始算起）
 
+
+
+对应的是Dataframe.to_csv()，参数都类似
+
 ## read_excel
 
-read_excel(io,sheet_name,sep,header,dtype,engine,converters,skiprows,skipfooter,nrows,)
+[*Pandas.read_excel(io,sheet_name,sep,header,dtype,engine,converters,skiprows,skipfooter,nrows)*](https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html)
 
 与read_csv参数基本相同，这里只介绍额外增加的参数
 
@@ -53,7 +59,7 @@ read_excel(io,sheet_name,sep,header,dtype,engine,converters,skiprows,skipfooter,
 
 ## read_json
 
-read_json(filepath_or_buffer,orient,header,type,dtype,convert_dates,keep_default_dates,numpy,encoding,lines)	
+[*Pandas.read_json(filepath_or_buffer,orient,header,type,dtype,convert_dates,keep_default_dates,numpy,encoding,lines)*](https://pandas.pydata.org/docs/reference/api/pandas.read_json.html)
 
 * orient：预期的json字符串格式，orient的设置有以下几个值：
     1. 'split' : dict like {index -> [index], columns -> [columns], data -> [values]}
@@ -73,7 +79,7 @@ read_json(filepath_or_buffer,orient,header,type,dtype,convert_dates,keep_default
 
 ## read_html
 
-read_html(io,match,flavor,header,index_col,skiprows,attrs,parse_dates)
+[*Pandas.read_html(io,match,flavor,header,index_col,skiprows,attrs,parse_dates)*](https://pandas.pydata.org/docs/reference/api/pandas.read_html.html)
 
 * io：接收网址、文件、字符串。网址不接受https，尝试去掉s后爬去
 *  match：正则表达式，返回与正则表达式匹配的表格
@@ -139,12 +145,6 @@ read_html(io,match,flavor,header,index_col,skiprows,attrs,parse_dates)
 * axis：axis默认为0 ，即默认删除行
 * index：index=labels等价于labels=labels，axis=0
 * inplace：是否替换原数据
-
-
-
-## dataframe.merge
-
-
 
 # pandas 数据统计
 
@@ -215,7 +215,15 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 ## groupby
 
+[*DataFrame.groupby(by=None, axis=0, level=None, as_index=True, sort=True, group_keys=True,observed=False, dropna=True)*](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html?highlight=groupby#pandas.DataFrame.groupby)
 
+* by:通过什么group 可以是function，list，dic…
+* axis: 按行还是按列group，（通常是行
+* sort:是否按key值排序，默认排序
+* dropna：是否丢弃na值，默认丢弃
+* 返回的是一个dataframe！！！
+
+当然series也有groupby，参数相同，只是返回的是一个series。
 
 
 
@@ -229,5 +237,5 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 
 
-[^1]:  本文因上次训练拉跨了，遂有感而发，主要参考[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)
-[^2]:  读取文件参数基本都参考了：https://www.cnblogs.com/happymeng/p/10481293.html
+[^1]:  本文因上次训练拉跨了，遂有感而发，pandas学习主要是看[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)，顺便附上[pandas官网链接](https://pandas.pydata.org/docs/)
+[^2]:  读取文件参数基本参考了：https://www.cnblogs.com/happymeng/p/10481293.html
