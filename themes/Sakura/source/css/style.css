@@ -774,10 +774,6 @@
     animation: header 1s
 }
 
-.site-branding {
-    animation: sitetop 1s
-}
-
 .searchbox,.site-top .lower,.header-user-avatar {
     animation: searchbox 1s
 }
@@ -1811,14 +1807,6 @@ a:active {
 .sabit {
     top: 0;
     z-index: 9999
-}
-
-.site-branding {
-    float: left;
-    position: relative;
-    height: 75px;
-    line-height: 75px;
-    margin-left: -6px
 }
 
 .site-title {
@@ -5712,10 +5700,13 @@ i.iconfont.down {
     }
     
     .site-branding {
+        position: relative;
+        line-height: 75px;
         float: right;
+        width: 50px;
         height: 50px;
-        line-height: 48px;
-        margin-right: 6px
+        margin-right: 6px;
+        animation: sitetop 1s;
     }
     
     .site-title img {
@@ -5860,7 +5851,7 @@ i.iconfont.down {
     }
     
     i.iconfont.js-toggle-search.iconsearch {
-        color: #fff;
+        color: #ffffffc2;
     }
     
     .openNav .icon:before {
