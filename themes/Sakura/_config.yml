@@ -36,8 +36,12 @@ menus:
     大事件薄: {path: /things/, fa: iconfont icon-sakura },
   } }
 
-
-
+# sitemap function
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+  
 # Home page sort type: -1: newer first，1: older first.
 homePageSortType: -1
 # Home page article shown number)
