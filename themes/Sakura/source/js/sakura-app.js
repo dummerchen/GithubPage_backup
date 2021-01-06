@@ -827,12 +827,6 @@ function add_copyright() {
         }
     }
 }
-// 不用copyright 
-// add_copyright()
-// 不知道干嘛的share？ 
-// $(function() {
-//     inlojv_js_getqqinfo()
-// })
 
 function inlojv_js_getqqinfo() {
     var is_get_by_qq = false

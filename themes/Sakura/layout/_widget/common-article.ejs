@@ -1,143 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
 <link rel="stylesheet" type="text/css" href="/css/tocbot.css">
-
-<!-- 这样非首页也会加载post_top.js很拖时间，有时间再改 -->
 <script src="/js/post_top.js"></script>
-<div class="pattern-center-blank">
-</div>
-
-<div class="pattern-center single-center <%- theme.post_article_bgclass %>">  
-  <% if(!theme.is_use_random_post_bg){ %>
-    <div class="pattern-attachment-img"> 
-    <img src="<%= page.photos %>" src="<%- theme.lazyloadImg%>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-    </div>
-  <%}%>
-  <header class="pattern-header single-header">
-    <h1 class="entry-title">
-    <%- post.title %></h1>
-    <p class="entry-census">
-      <span>
-        <a href="<%- post.authorLink%>"><%- post.author %></a>
-      </span>
-      <span class="bull">
-      ·</span>
-      <%= date(post.date, 'YYYY-M-D') %><span class="bull">
-      ·</span>
-    <span id="busuanzi_value_page_pv"></span>次阅读</p>
-  </header>
-  <div class="headertop-down faa-float animated" onclick="headertop_down()">
-    <span>
-      <i class="fa fa-chevron-down" aria-hidden="true">
-      </i>
-    </span>
-  </div>
-</div>
-
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        <% if (!post.photos[0]){ %>
-          <header class="entry-header">
-            <h1 class="entry-title"><%- post.title %></h1>
-            <p class="entry-census"><%- post.author %>&nbsp;·&nbsp;<%= date(post.date, 'YYYY-M-D') %>&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
-
-            <hr>
-          </header>
-        <% } %>
-        <div class="entry-content">
-          <%- post.content %>
-        </div>
-        <!-- .entry-content -->
-        <% if(theme.donate.enable){%>
-        <div class="single-reward">
-          <div class="reward-open">赏
-            <div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="<%- (theme.cdn || '') + theme.donate.alipay%>"></li>
-                <li class="wechat-code"><img src="<%- (theme.cdn || '') + theme.donate.wechat%>"></li>
-              </ul>
-            </div>
-          </div>
-          <%}else{%>
-            <p></p>
-              <%}%>
-        </div>
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        <% if (post.prev){ %>
-          <% if (post.next) { %>
-            <div class="post-nepre half previous">
-          <% } else { %>
-            <div class="post-nepre full previous">
-          <% } %>
-            <a href="<%- url_for(post.prev.path) %>" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.prev.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.prev.photos[0]%>">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                <%= post.prev.title%></h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        <% } %>
-        <% if (post.next){ %>
-          <% if (post.prev) { %>
-            <div class="post-nepre half next">
-          <% } else { %>
-            <div class="post-nepre full next">
-          <% } %>
-            <a href="<%- url_for(post.next.path) %>" rel="next">
-              <div class="background">
-                <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.next.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                <%= post.next.title%></h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        <% } %>
-      </section>
-      <%- partial('_partial/comment') %>
-      <!-- <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="<%- post.author %>" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="<%- post.authorLink%>" itemprop="url" rel="author"><%- post.author %></a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i><%- post.authorAbout%></p>
-      </section> -->
-    </main><!-- #main -->
-  </div><!-- #primary -->
-</div>
-
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
 <script type="text/x-mathjax-config">
   console.log("加载mathjax")
@@ -149,4 +12,198 @@
       ]
   }
   }); 
+</script>
+<!-- 这样非首页也会加载post_top.js很拖时间，有时间再改 -->
+
+<script>
+  var localurl=window.location.href
+  var a=document.getElementById('my_local_url')
+  if(a!=null)
+  {
+    a.setAttribute('href',localurl)
+    a.innerHTML=localurl
+  }
+</script>
+<div class="pattern-center-blank">
+</div>
+
+<div class="pattern-center single-center <%- theme.post_article_bgclass %>">
+  <% if(!theme.is_use_random_post_bg){ %>
+    <div class="pattern-attachment-img">
+      <img src="<%= page.photos %>" src="<%- theme.lazyloadImg%>" data-src="<%= page.photos %>" class="lazyload"
+        onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    </div>
+    <%}%>
+      <header class="pattern-header single-header">
+        <h1 class="entry-title">
+          <%- post.title %>
+        </h1>
+        <p class="entry-census">
+          <span>
+            <a href="<%- post.authorLink%>">
+              <%- post.author %>
+            </a>
+          </span>
+          <span class="bull">
+            ·</span>
+          <%= date(post.date, 'YYYY-M-D' ) %><span class="bull">
+              ·</span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+        </p>
+      </header>
+      <div class="headertop-down faa-float animated" onclick="headertop_down()">
+        <span>
+          <i class="fa fa-chevron-down" aria-hidden="true">
+          </i>
+        </span>
+      </div>
+</div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1"
+        class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        <% if (!post.photos[0]){ %>
+          <header class="entry-header">
+            <h1 class="entry-title">
+              <%- post.title %>
+            </h1>
+            <p class="entry-census">
+              <%- post.author %>&nbsp;·&nbsp;<%= date(post.date, 'YYYY-M-D' ) %>&nbsp;·&nbsp;<span
+                    id="busuanzi_value_page_pv"></span>次阅读
+            </p>
+            </p>
+
+            <hr>
+          </header>
+          <% } %>
+            <div class="entry-content">
+              <%- post.content %>
+            </div>
+            <!-- .entry-content -->
+            <% if(theme.donate.enable){%>
+              <div class="single-reward">
+                <div class="reward-open">赏
+                  <div class="reward-main">
+                    <ul class="reward-row">
+                      <li class="alipay-code"><img src="<%- (theme.cdn || '') + theme.donate.alipay%>"></li>
+                      <li class="wechat-code"><img src="<%- (theme.cdn || '') + theme.donate.wechat%>"></li>
+                    </ul>
+                  </div>
+                </div>
+                <%}else{%>
+                  <p></p>
+                  <%}%>
+              </div>
+              <div style="text-align:center; width: 100%" class="social-share share-mobile"
+                data-disabled="diandian, tencent"></div>
+              <footer class="post-footer">
+                <div class="post-lincenses">
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow">
+                    <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                    知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
+                  </a>
+                </div>
+                <div class="post-tags">
+                </div>
+                <div class="post-share">
+                  <div class="social-share sharehidden share-component"></div>
+                  <i class="iconfont show-share icon-forward"></i>
+                </div>
+              </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc"></div>
+
+
+      <!-- author-profile -->
+      <div class="essaySuffix-box">
+        <div class="essaySuffix-box-left"><img
+            src="https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201018134428.jpg" alt="">
+        </div>
+        <div class="essaySuffix-box-right" style="margin: 20px;"">
+          <span class="essaySuffix-right-title">本文作者</span>：
+          <strong>
+            <span style="font-size: 12px;">
+              <a href="https://<%- post.authorLink %>" target="_blank" one-link-mark="yes">Sakura_Momoko</a>
+            </span>
+          </strong>
+          <br>
+          <span style="font-weight: bold; white-space:nowrap;">本文链接</span>：
+          <a id="my_local_url" target="_blank" one-link-mark="yes"></a>
+          
+          <br>
+          <span class="essaySuffix-right-title">版权声明</span>
+          ：本博客所有文章除特别声明外，均采用 
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" alt="BY-NC-SA" title="BY-NC-SA" target="_blank" one-link-mark="yes">BY-NC-SA</a> 
+          许可协议。转载请注明出处！
+        </div>
+      </div>
+
+      <section class="post-squares nextprev">
+        <% if (post.prev){ %>
+          <% if (post.next) { %>
+            <div class="post-nepre half previous">
+              <% } else { %>
+                <div class="post-nepre full previous">
+                  <% } %>
+                    <a href="<%- url_for(post.prev.path) %>" rel="prev">
+                      <div class="background">
+                        <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.prev.photos[0]%>"
+                          style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                          onerror="imgError(this,3)" src="<%- post.prev.photos[0]%>">
+                      </div>
+                      <span class="label">
+                        Previous Post</span>
+                      <div class="info">
+                        <h3>
+                          <%= post.prev.title%>
+                        </h3>
+                        <hr>
+                      </div>
+                    </a>
+                </div>
+                <% } %>
+                  <% if (post.next){ %>
+                    <% if (post.prev) { %>
+                      <div class="post-nepre half next">
+                        <% } else { %>
+                          <div class="post-nepre full next">
+                            <% } %>
+                              <a href="<%- url_for(post.next.path) %>" rel="next">
+                                <div class="background">
+                                  <img class="lazyload" src="<%- theme.lazyloadImg%>"
+                                    data-src="<%- post.next.photos[0]%>"
+                                    style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                                    onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
+                                </div>
+                                <span class="label">
+                                  Next Post</span>
+                                <div class="info">
+                                  <h3>
+                                    <%= post.next.title%>
+                                  </h3>
+                                  <hr>
+                                </div>
+                              </a>
+                          </div>
+                          <% } %>
+      </section>
+      <%- partial('_partial/comment') %>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+<script>
+  var localurl=window.location.href
+  var a=document.getElementById('my_local_url')
+  if(a!=null)
+  {
+    console.log(a)
+    a.setAttribute('href',localurl)
+    a.innerHTML=localurl
+  }
 </script>

@@ -118,7 +118,13 @@ enable: true # 是否开启图片懒加载
 onlypost: false # 是否只对文章的图片做懒加载 
 loadingImg: medias/loading.gif
 
-# 百度定时提交
+# permalink: :year/:month/:day/:title/
+permalink: p/:abbrlink.html  # p 是自定义的前缀
+abbrlink:
+    alg: crc16   #算法： crc16(default) and crc32
+    rep: dec     #进制： dec(default) and hex
+
+    # 百度定时提交
 # baidu_url_submit:
 #   count: 1000 ## 提交最新的一个链接
 #   host: alili.tech ## 在百度站长平台中注册的域名

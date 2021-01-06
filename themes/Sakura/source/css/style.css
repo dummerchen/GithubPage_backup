@@ -2092,6 +2092,15 @@ a:active {
     box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
     border-radius: 10px;
 }
+.valine-content {
+    max-width: 900px;
+    padding: 0 10px;
+    margin-right: auto;
+    padding: 0 4%;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
+    border-radius: 10px;
+}
 
 .post-list {
     margin: 0 0 8% 0;
@@ -2842,7 +2851,7 @@ h1.page-title.mb- {
     background-size: contain;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    cursor: url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/nomal.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/normal.cur), auto;
     opacity: 1
 }
 
@@ -3215,76 +3224,6 @@ h1.page-title.mb- {
 
 .post-squares.post-squares-featured {
     height: 250px
-}
-
-.author-profile {
-    padding: 30px 12.78%;
-    text-align: center
-}
-
-.author-profile .info {
-    overflow: hidden;
-    text-align: center
-}
-
-.author-profile .profile {
-    display: inline-block;
-    width: 70px;
-    height: 70px
-}
-
-.author-profile .profile img {
-    max-width: 100%;
-    border-radius: 100%;
-    padding: 3px;
-    border: 1px solid #ddd
-}
-
-.author-profile hr {
-    width: 50%;
-    height: 0;
-    margin: 0
-}
-
-.author-profile .meta {
-    display: block;
-    text-align: center
-}
-
-.author-profile .meta h3 {
-    margin: 10px 0 0;
-    text-transform: none
-}
-
-.author-profile .meta h3 a {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1px;
-    color: #ababab
-}
-
-.author-profile .meta .title {
-    display: none
-}
-
-.author-profile p {
-    font-size: 13px;
-    line-height: 30px;
-    margin: 15px 0 0;
-    color: #7d8588;
-    letter-spacing: 0;
-    display: inline-block;
-    padding: 10px 20px;
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef
-}
-
-.author-profile i {
-    color: #65c186;
-    float: none;
-    margin-right: 10px;
-    font-size: 16px
 }
 
 .mashiro-profile {
@@ -5681,12 +5620,7 @@ i.iconfont.down {
         text-align: center;
         float: none;
         font-size: 12px
-    }
-    
-    .author-profile {
-        display: none
-    }
-    
+    }    
     
     .lower {
         display: none !important
@@ -6679,7 +6613,7 @@ i.iconfont.down {
     border: 0;
     color: #fff;
     line-height: 1;
-    cursor: url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/nomal.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/normal.cur), auto;
     font-size: 14px;
     font-weight: 500;
     padding: 7px 15px;
@@ -6818,7 +6752,7 @@ input.botui-actions-text-input::-moz-focus-inner {
     padding: 0
 }
 button.botui-actions-buttons-button {
-    cursor: url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/nomal.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/normal.cur), auto;
     -webkit-appearance: button
 }
 .botui-app-container {
@@ -8051,7 +7985,7 @@ a.toc-link:hover{
 .emotion-item,
 .emoji-item,
 .tieba-container span {
-    cursor:url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/nomal.cur),
+    cursor:url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/normal.cur),
     auto
 }
 .alignright {
@@ -9111,10 +9045,6 @@ td.hljs-ln-numbers {
     width: 200px;
     height: auto;
     z-index: 98;
-    background-color: rgba(255,
-    255,
-    255,
-    0);
     transform: translateX(0);
     right: calc((100% - 950px - 250px) / 2);
     top:10px;
@@ -9124,5 +9054,31 @@ td.hljs-ln-numbers {
 }
 .toc-fixed {
     position: fixed !important;
-    top: 85px;
+    top: 60px;
+}
+
+.essaySuffix-box {
+    font-family: Microsoft YaHei, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;
+    font-size: 14px;
+    background: #f8f9fb !important;
+    padding: 17px;
+    border: 1px solid #edeef2 !important;
+    border-radius: 3px;
+    color: #414857;
+    text-indent: 0;
+}
+.essaySuffix-box-left {
+    width: 15%;
+    float: left;
+}
+.essaySuffix-right-title {
+    font-weight: 700;
+    white-space: nowrap;
+}
+.essaySuffix-box-left img {
+    width: 80%;
+    max-height: 80%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0!important;
 }
