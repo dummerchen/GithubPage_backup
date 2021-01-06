@@ -3,13 +3,15 @@ title: pandas基本操作
 mathjax: true
 date: 2020.12.20
 author: dummerchen
-avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
+avatar: 'https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg'
 authorLink: dummerfu.tk
 categories: 技术
 comments: true
 tags: python
-keywords: 
-photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221162542.png
+photos: >-
+  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221162542.png
+abbrlink: 40218
+keywords:
 ---
 
 # pandas 读写文件[^1]

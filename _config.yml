@@ -15,8 +15,12 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://dummerchen.github.io
 root: /
-permalink: :year/:month/:day/:title/
-permalink_defaults:
+
+permalink: p/:abbrlink.html  # p 是自定义的前缀
+abbrlink:
+    alg: crc16   #算法： crc16(default) and crc32
+    rep: dec     #进制： dec(default) and hex
+
 
 # Directory
 source_dir: source
@@ -119,10 +123,6 @@ onlypost: false # 是否只对文章的图片做懒加载
 loadingImg: medias/loading.gif
 
 # permalink: :year/:month/:day/:title/
-permalink: p/:abbrlink.html  # p 是自定义的前缀
-abbrlink:
-    alg: crc16   #算法： crc16(default) and crc32
-    rep: dec     #进制： dec(default) and hex
 
     # 百度定时提交
 # baidu_url_submit:
