@@ -7640,15 +7640,8 @@ li>ol {
     padding-top:10px;
     padding-bottom:10px
 }
-.toc {
-    position:-webkit-sticky;
-    position:sticky;
-    top:100px
-}
 
-.toc {
-    overflow-y:auto
-}
+
 .toc>.toc-list {
     text-shadow: 0 0 black;
     overflow:hidden;
@@ -8966,6 +8959,7 @@ td.hljs-ln-numbers {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.808) !important;
     border-radius: 3px;
+    max-height: 70vh;
 }
 .toc-fixed {
     position: fixed !important;

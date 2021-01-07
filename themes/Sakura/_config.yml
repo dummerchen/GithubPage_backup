@@ -140,7 +140,7 @@ valine:
   appKey: QIjahFDUKODgy2LVaXXK1ho2
   enableQQ: true
   pageSize: 10
-  placeholder: '📌昵称可以填写QQ号来自动补全QQ信息啦~\n🚀评论和回复支持M↓~'
+  placeholder: '📌头像可以填写QQ邮箱来自动补全啦~\n🚀评论和回复支持M↓~'
 # v_avatar: monsterid 
 
 widgetpack:
