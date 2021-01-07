@@ -11,9 +11,13 @@
                 el: '#vcomments',
                 appId: "<%= theme.v_appId %>",
                 appKey: "<%= theme.v_appKey %>",
+                enableQQ: "<%= theme.v_enableQQ %>",
                 path: window.location.pathname,
-                placeholder: "你是我一生只会遇见一次的惊喜 ..."
+                placeholder: "<%= theme.v_placeholder %>",
+                enjoyCDN: "<%= theme.v_enjoyCDN %>",
+                enjoyMaps: "<%- theme.v_enjoyMaps %>",
               })
+              console.log('commment',"<%- theme.v_enjoyMaps %>"[0])
           }
         </script>
         <% } %>
