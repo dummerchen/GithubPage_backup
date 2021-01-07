@@ -1,7 +1,8 @@
 <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
 <link rel="stylesheet" type="text/css" href="/css/tocbot.css">
 <script src="/js/post_top.js"></script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
 <script type="text/x-mathjax-config">
   console.log("加载mathjax")
   MathJax.Hub.Config({
@@ -16,13 +17,12 @@
 <!-- 这样非首页也会加载post_top.js很拖时间，有时间再改 -->
 
 <script>
-  var localurl=window.location.href.split('#')[0]
+  var localurl = window.location.href.split('#')[0]
   console.log(localurl)
-  var a=document.getElementById('my_local_url')
-  if(a!=null)
-  {
-    a.setAttribute('href',localurl)
-    a.innerHTML=localurl
+  var a = document.getElementById('my_local_url')
+  if (a != null) {
+    a.setAttribute('href', localurl)
+    a.innerHTML = localurl
   }
 </script>
 <div class="pattern-center-blank">
@@ -113,7 +113,7 @@
                   <div class="social-share sharehidden share-component"></div>
                   <i class="iconfont show-share icon-forward"></i>
                 </div>
-              </footer><!-- .entry-footer -->
+              </footer>
       </article>
       <!-- #post-## -->
       <div class="toc"></div>
@@ -125,7 +125,7 @@
             src="https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201018134428.jpg" alt="">
         </div>
         <div class="essaySuffix-box-right" style="margin: 20px;"">
-          <span class="essaySuffix-right-title">本文作者</span>：
+          <span class=" essaySuffix-right-title">本文作者</span>：
           <strong>
             <span style="font-size: 12px;">
               <a href="https://<%- post.authorLink %>" target="_blank" one-link-mark="yes">Sakura_Momoko</a>
@@ -134,14 +134,22 @@
           <br>
           <span style="font-weight: bold; white-space:nowrap;">本文链接</span>：
           <a id="my_local_url" target="_blank" one-link-mark="yes"></a>
-          
+
           <br>
           <span class="essaySuffix-right-title">版权声明</span>
-          ：本博客所有文章除特别声明外，均采用 
-          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" alt="BY-NC-SA" title="BY-NC-SA" target="_blank" one-link-mark="yes">BY-NC-SA</a> 
+          ：本博客所有文章除特别声明外，均采用
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" alt="BY-NC-SA" title="BY-NC-SA" target="_blank"
+            one-link-mark="yes">BY-NC-SA</a>
           许可协议。转载请注明出处！
         </div>
       </div>
+
+      <%if (theme.widgetpack.enable) { %>
+        <div id='wpac-rating' style="position: relative;width: 100%;margin: 35px auto;text-align: center;z-index: 999;padding: 20px 0;border-bottom: 1px dashed #ddd;border-top: 1px dashed #ddd;margin-top: 30px;">
+          <%- partial('_partial/widgetpack') %> </strong>
+        </div>
+        <% } %>
+
 
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
@@ -198,12 +206,11 @@
 </div>
 
 <script>
-  var localurl=window.location.href.split('#')[0]
+  var localurl = window.location.href.split('#')[0]
   console.log(localurl)
-  var a=document.getElementById('my_local_url')
-  if(a!=null)
-  {
-    a.setAttribute('href',localurl)
-    a.innerHTML=localurl
+  var a = document.getElementById('my_local_url')
+  if (a != null) {
+    a.setAttribute('href', localurl)
+    a.innerHTML = localurl
   }
 </script>

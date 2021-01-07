@@ -142,3 +142,33 @@ valine:
   pageSize: 10
   placeholder: '📌昵称可以填写QQ号来自动补全QQ信息啦~\n🚀评论和回复支持M↓~'
 # v_avatar: monsterid 
+
+widgetpack:
+  enable: true
+  id: 28857
+  color: fc6423
+
+# hexo-neat
+# md博文压缩
+neat_enable: true
+# 压缩html（ejs，swig等也属于html格式片段）
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+    - '**/*.min.css'
+    - 'jquery.fancybox.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true #打印日志
+  output:
+  compress:
+  exclude: #排除文件
+    - '*.min.js'
+    - '**/*.min.js'
+    - 'jquery.fancybox.min.js'
