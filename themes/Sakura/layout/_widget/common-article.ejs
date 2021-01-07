@@ -16,7 +16,8 @@
 <!-- 这样非首页也会加载post_top.js很拖时间，有时间再改 -->
 
 <script>
-  var localurl=window.location.href
+  var localurl=window.location.href.split('#')[0]
+  console.log(localurl)
   var a=document.getElementById('my_local_url')
   if(a!=null)
   {
@@ -198,11 +199,11 @@
 </div>
 
 <script>
-  var localurl=window.location.href
+  var localurl=window.location.href.split('#')[0]
+  console.log(localurl)
   var a=document.getElementById('my_local_url')
   if(a!=null)
   {
-    console.log(a)
     a.setAttribute('href',localurl)
     a.innerHTML=localurl
   }

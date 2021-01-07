@@ -69,15 +69,13 @@
     mashiro_option.site_name = "<%- theme.prefixName%><%- theme.siteName%>";
     mashiro_option.author_name = "<%- theme.siteName%>";
     mashiro_option.site_url = "<%- theme.url%>";
-    mashiro_option.v_appId = "<%= theme.v_appId %>";
-    mashiro_option.v_appKey = "<%= theme.v_appKey %>";
+    mashiro_option.v_appId = "<%= theme.valine.appId %>";
+    mashiro_option.v_appKey = "<%= theme.valine.appKey %>";
 
-    dummerfu_option.v_enableQQ="<%= theme.v_enableQQ %>";
-    dummerfu_option.v_placeholder="<%= theme.v_placeholder %>";
-    dummerfu_option.v_pageSize="<%= theme.v_pageSize %>"
-    dummerfu_option.v_path="<%= theme.v_path %>";
-    dummerfu_option.v_enjoyCDN="<%= theme.v_enjoyCDN %>"
-    dummerfu_option.v_enjoyMaps="<%- theme.v_enjoyMaps %>"
+    dummerfu_option.v_enableQQ="<%= theme.valine.enableQQ %>";
+    dummerfu_option.v_placeholder="<%= theme.valine.placeholder %>";
+    dummerfu_option.v_pageSize="<%= theme.valine.pageSize %>"
+    dummerfu_option.v_path="<%= theme.valine.path %>";
 
     mashiro_option.mathjax = "<%= theme.mathjax %>";
     mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/";

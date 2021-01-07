@@ -134,10 +134,11 @@ aplayer:
   mutex: true
 
 # Valine
-valine: true
-v_appId: qXq4yrRs0Td8eIpiWXos75dh-gzGzoHsz
-v_appKey: QIjahFDUKODgy2LVaXXK1ho2
-v_enableQQ: true
-v_pageSize: 10
-v_placeholder: '📌昵称可以填写QQ号来自动补全QQ信息啦~\n🚀评论和回复支持M↓~"'
+valine:
+  enable: true
+  appId: qXq4yrRs0Td8eIpiWXos75dh-gzGzoHsz
+  appKey: QIjahFDUKODgy2LVaXXK1ho2
+  enableQQ: true
+  pageSize: 10
+  placeholder: '📌昵称可以填写QQ号来自动补全QQ信息啦~\n🚀评论和回复支持M↓~'
 # v_avatar: monsterid 

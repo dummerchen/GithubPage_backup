@@ -1097,12 +1097,27 @@ var home = location.href,
                     enabelQQ: dummerfu_option.v_enableQQ,
                     path: window.location.pathname,
                     placeholder: dummerfu_option.v_placeholder,
-                    enjoyCDN: dummerfu_option.v_enjoyCDN,
-                    enjoyMaps: dummerfu_option.v_enjoyMaps,
 
                 })
+                //邮箱审核机制
+                document.body.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('vsubmit')) {
+                        const email = document.querySelector('input[type=email]');
+                        const nick = document.querySelector('input[name=nick]');
+                        const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+                        if (!email.value || !nick.value || !reg.test(email.value)) {
+                            const str = `<div class="valert text-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
+                            const vmark = document.querySelector('.vmark');
+                            vmark.innerHTML = str;
+                            vmark.style.display = 'block';
+                            setTimeout(function() {
+                                vmark.style.display = 'none';
+                                vmark.innerHTML = '';
+                            }, 2500);
+                        }
+                    }
+                });
             }
-            console.log(valine.enjoyMaps)
         },
         MJ: function() {
             if (mashiro_option.mathjax == '1') {
