@@ -1090,27 +1090,15 @@ dfn,cite,em,i {
 blockquote {
     margin: 0;
     padding: 10px 30px;
-    position: relative
-}
-
-blockquote:before {
-    content: "\f10d" !important;
-    font-size: 1rem;
-    position: absolute;
-    top: -5px;
-    left: 12px;
-    color: orange;
-    font-family: FontAwesome
-}
-
-blockquote:after {
-    content: '\f10e' !important;
-    font-size: 1rem;
-    position: absolute;
-    bottom: -5px;
-    right: -5px;
-    color: orange;
-    font-family: FontAwesome
+    background: none;
+    border-left: 3px solid #9bafe2b8;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: #555;
+    position: relative;
 }
 
 blockquote p {
@@ -1148,22 +1136,17 @@ kbd {
     font-family: 'Source Code Pro', monospace, Helvetica, Tahoma, Arial, STXihei, "STHeiti Light", "Microsoft YaHei", sans-serif
 }
 
-code,
-kbd,
-tt,
-var {
+code,kbd,tt,var {
     font-size: 15px;
     font-size: .9375rem
 }
 
-abbr,
-acronym {
+abbr,acronym {
     border-bottom: 1px dotted #666;
     cursor: help
 }
 
-mark,
-ins {
+mark,ins {
     background: #fff9c0;
     text-decoration: none
 }
@@ -1180,8 +1163,7 @@ html {
     box-sizing: border-box
 }
 
-*:before,
-*:after {
+*:before,*:after {
     box-sizing: inherit
 }
 
@@ -1191,15 +1173,11 @@ body {
     cursor: url(https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.9/img/cursor/normal.cur), auto
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+q:before,q:after {
     content: ""
 }
 
-blockquote,
-q {
+blockquote,q {
     quotes: "" ""
 }
 
@@ -1210,11 +1188,9 @@ hr {
     margin-bottom: 1.5em
 }
 
-ul,
-ol {
+ul,ol {
     margin: 0 0 1.5em 3em
 }
-
 ul {
     list-style: disc
 }
@@ -1223,8 +1199,7 @@ ol {
     list-style: decimal
 }
 
-li>ul,
-li>ol {
+li>ul,li>ol {
     margin-bottom: 0;
     margin-left: 1.5em
 }
@@ -1247,10 +1222,7 @@ table {
     width: 100%
 }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button,input[type="button"],input[type="reset"],input[type="submit"] {
     border: 1px solid;
     border-color: #ccc #ccc #bbb;
     border-radius: 3px;
@@ -1263,42 +1235,7 @@ input[type="submit"] {
     padding: .6em 1em .4em
 }
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-    /*border-color:#ccc #bbb #aaa;*/
-    /*box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 15px 17px rgba(255,255,255,.8),inset 0 -5px 12px rgba(0,0,0,.02)*/
-}
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-    /*border-color:#aaa #bbb #bbb;*/
-    /*box-shadow:inset 0 -1px 0 rgba(255,255,255,.5),inset 0 2px 5px rgba(0,0,0,.15)*/
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
+input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea {
     color: #666;
     border: 1px solid #ccc;
     border-radius: 3px
@@ -1878,25 +1815,6 @@ a:active {
     pointer-events: none;
 }
 
-/* @media(max-width:1200px) {
-    .site-top .lower {
-        left: 280px
-    }
-    .site-top .lower-cantiner {
-        left: 0
-    }
-    .site-top .lower nav.hide {
-        display: none !important
-    }
-    #show-nav.mobile-fit {
-        opacity: 1;
-        pointer-events: auto;
-        margin-top: 20px;
-    }
-    .toc {
-        display: none;
-    }
-} */
 
 .site-top .lower nav {
     position: relative;
@@ -7734,18 +7652,17 @@ li>ol {
     overflow-y:auto
 }
 .toc>.toc-list {
-
+    text-shadow: 0 0 black;
     overflow:hidden;
     position:relative;
 }
 .toc>.toc-list li {
-    list-style:none
+    list-style:none;
+    margin: 3px;
 }
 .toc-list {
     margin:0;
     padding-left:10px;
-    background-color: rgba(255, 255, 255, 0.808);
-    border-radius: 3px;
 }
 a.toc-link {
     color:currentColor;
@@ -9049,8 +8966,8 @@ td.hljs-ln-numbers {
     right: calc((100% - 950px - 250px) / 2);
     top:10px;
     position: absolute;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.808) !important;
+    border-radius: 3px;
 }
 .toc-fixed {
     position: fixed !important;
@@ -9061,6 +8978,7 @@ td.hljs-ln-numbers {
     font-family: Microsoft YaHei, 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;
     font-size: 14px;
     background: #f8f9fb !important;
+    margin-top: 50px;
     padding: 17px;
     border: 1px solid #edeef2 !important;
     border-radius: 3px;
