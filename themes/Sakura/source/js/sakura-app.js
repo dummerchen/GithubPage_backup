@@ -482,62 +482,29 @@ $(document).ready(function() {
             $('.skin-menu ' + tagid).click(function() {
                 mashiro_global.variables.skinSecter = true
                 mashiro_global.variables.isNight = false
-                $('#night-mode-cover').css('visibility', 'hidden')
-                $('body').css('background-image', 'url(' + url + ')')
-                $('.blank').css('background-color', 'rgba(255,255,255,1)')
-                $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
-                $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
-                $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
-                $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
+                // $('#night-mode-cover').css('visibility', 'hidden')
+                $('.bg-canvas').css('background', 'url(' + url + ') center center / cover no-repeat')
+                // $('.blank').css('background-color', 'rgba(255,255,255,1)')
+                // $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
+                // $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
+                // $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
+                // $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
                 closeSkinMenu()
                 setCookie('bgImgSetting', url, 30)
             })
         }
-
-        function changeBGnoTrans(tagid, url) {
-            $('.skin-menu ' + tagid).click(function() {
-                mashiro_global.variables.skinSecter = true
-                mashiro_global.variables.isNight = true
-                $('#night-mode-cover').css('visibility', 'hidden')
-                $('body').css('background-image', 'url(' + url + ')')
-                $('.blank').css('background-color', 'rgba(255,255,255,1)')
-                $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
-                $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
-                $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
-                $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
-                closeSkinMenu()
-                setCookie('bgImgSetting', url, 30)
-            })
-        }
-        changeBG('#sakura-bg', 'https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/themebg/sakura.png')
-        changeBG('#gribs-bg', 'https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/themebg/plaid.jpg')
-        changeBG('#pixiv-bg', 'https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/themebg/star.png')
-        changeBG('#KAdots-bg', 'https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/themebg/point.png')
-        changeBG('#totem-bg', 'https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/themebg/little-monster.png')
-        changeBGnoTrans('#bing-bg', 'https://api.shino.cc/bing/')
+        changeBG('#sakura-bg', 'https://yingserver.cn/open/acgimg/acgurl.php')
         $('.skin-menu #white-bg').click(function() {
             mashiro_global.variables.skinSecter = false
             mashiro_global.variables.isNight = false
-            $('#night-mode-cover').css('visibility', 'hidden')
-            $('body').css('background-image', 'none')
-            $('.blank').css('background-color', 'rgba(255,255,255,.0)')
-            $('.pattern-center-sakura').removeClass('pattern-center-sakura').addClass('pattern-center')
-            $('.headertop-bar-sakura').removeClass('headertop-bar-sakura').addClass('headertop-bar')
-            $('#banner_wave_1').removeClass('banner_wave_hide_fit_skin')
-            $('#banner_wave_2').removeClass('banner_wave_hide_fit_skin')
+            $('.bg-canvas').css('background', 'url(https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160708.jpg) center center / cover no-repeat')
             closeSkinMenu()
             setCookie('bgImgSetting', '', 30)
         })
         $('.skin-menu #dark-bg').click(function() {
             mashiro_global.variables.skinSecter = true
             mashiro_global.variables.isNight = true
-            $('body').css('background-image', 'url(https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/other/starry_sky.png)')
-            $('.blank').css('background-color', 'rgba(255,255,255,.8)')
-            $('#night-mode-cover').css('visibility', 'visible')
-            $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
-            $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
-            $('#banner_wave_1').addClass('banner_wave_hide_fit_skin')
-            $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
+            $('.bg-canvas').css('background', 'url(https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/other/starry_sky.png) center center / cover no-repeat')
             closeSkinMenu()
         })
 
