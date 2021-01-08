@@ -33,6 +33,7 @@ menus:
   } }
   其他: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     关于我: {path: /about/, fa: fa-meetup}, 
+    说说: {path: /shuoshuo/, fa: fa commenting-o},
     大事件薄: {path: /things/, fa: iconfont icon-sakura },
   } }
 
@@ -136,8 +137,8 @@ aplayer:
 # Valine
 valine:
   enable: true
-  appId: qXq4yrRs0Td8eIpiWXos75dh-gzGzoHsz
-  appKey: QIjahFDUKODgy2LVaXXK1ho2
+  appId: Ipwy3hYofmpzH8YM1HdBoKnd-MdYXbMMI
+  appKey: i7gXoRAlGyvp8NNEWntzV6KB
   enableQQ: true
   pageSize: 10
   placeholder: '📌头像可以填写QQ邮箱来自动补全啦~\n🚀评论和回复支持M↓~'
