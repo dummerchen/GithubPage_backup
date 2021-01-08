@@ -52,7 +52,6 @@ homeArticleShown: 10
 is_use_random_post_bg: 0
 # 首页背景图
 bg:
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201102231714.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172229.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115205545.jpg
@@ -60,14 +59,10 @@ bg:
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125638.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103130311.png
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121121.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121005.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121655.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121654.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210146.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210118.jpg
   - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210440.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121173038.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191328.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191259.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192651.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192521.png
@@ -76,7 +71,6 @@ bg:
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201220152038.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160850.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165256.png
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165100.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165012.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221164900.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160741.jpg
