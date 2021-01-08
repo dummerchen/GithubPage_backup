@@ -2,7 +2,7 @@
 title: pandas基本操作
 mathjax: true
 date: 2020.12.20
-author: dummerchen
+author: dummerfu
 avatar: 'https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg'
 authorLink: dummerfu.tk
 categories: 技术
