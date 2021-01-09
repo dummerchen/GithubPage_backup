@@ -1227,7 +1227,6 @@ button,input[type="button"],input[type="reset"],input[type="submit"] {
     border-color: #ccc #ccc #bbb;
     border-radius: 3px;
     background: #e6e6e6;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 15px 17px rgba(255, 255, 255, .5), inset 0 -5px 12px rgba(0, 0, 0, .05);
     color: rgba(0, 0, 0, .8);
     font-size: 12px;
     font-size: .75rem;
@@ -2010,16 +2009,6 @@ a:active {
     box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
     border-radius: 10px;
 }
-.valine-content {
-    max-width: 900px;
-    padding: 0 10px;
-    margin-right: auto;
-    padding: 0 4%;
-    background-color: rgba(255, 255, 255, .8);
-    box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
-    border-radius: 10px;
-}
-
 .post-list {
     margin: 0 0 8% 0;
     position: relative
@@ -9010,4 +8999,19 @@ td.hljs-ln-numbers {
 .at_button {
     background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px !important;
     color: white !important;
+}
+
+/* twikoo */
+
+.tk-action-icon[data-v-8d454e16] svg, .tk-action-link[data-v-8d454e16] {
+    fill: #ff2d55!important;
+    color: #ff2d55!important;
+}
+
+.tk-icon svg {
+    fill: silver!important;
+}
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover {
+    background-color: #ff7286!important;
+    border-color: #ff7286!important;
 }

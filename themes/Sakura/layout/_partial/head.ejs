@@ -69,14 +69,13 @@
     mashiro_option.site_name = "<%- theme.prefixName%><%- theme.siteName%>";
     mashiro_option.author_name = "<%- theme.siteName%>";
     mashiro_option.site_url = "<%- theme.url%>";
-    mashiro_option.v_appId = "<%= theme.valine.appId %>";
-    mashiro_option.v_appKey = "<%= theme.valine.appKey %>";
-
-    dummerfu_option.v_enableQQ="<%= theme.valine.enableQQ %>";
-    dummerfu_option.v_placeholder="<%= theme.valine.placeholder %>";
-    dummerfu_option.v_pageSize="<%= theme.valine.pageSize %>"
-    dummerfu_option.v_path="<%= theme.valine.path %>";
-
+    
+    dummerfu_option.t_envId="<%= theme.twikoo.envId %>"
+    dummerfu_option.t_enable="<%= theme.twikoo.enable %>"
+    dummerfu_option.t_placeholder="<%= theme.twikoo.placeholder %>";
+    dummerfu_option.t_pageSize="<%= theme.twikoo.pageSize %>"
+    dummerfu_option.t_path="<%= theme.twikoo.path %>";
+    
     mashiro_option.mathjax = "<%= theme.mathjax %>";
     mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/";
     mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";

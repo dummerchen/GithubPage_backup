@@ -1054,37 +1054,77 @@ var home = location.href,
                 })
             }
         },
-        VA: function() {
+        TO: function() {
             let url=window.location.pathname
             if(url!='/shuoshuo/'&&url!='/')
             {
-                if (!valine) {
-                var valine = new Valine()
-                valine.init({
-                    el: '#vcomments',
-                    appId: mashiro_option.v_appId,
-                    appKey: mashiro_option.v_appKey,
-                    enabelQQ: dummerfu_option.v_enableQQ,
-                    path: window.location.pathname,
-                    placeholder: dummerfu_option.v_placeholder,
-
-                })
+                if (!mashiro_option.t_enable) {
+                    console.log('加载 twikoo')
+                    twikoo.init({
+                        envId: dummerfu_option.t_envId,
+                        // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+                        // path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+                    })
                 }
             }
         },
         AT: function(){
             if(window.location.pathname=='/shuoshuo/')
             {
-                
-                var artitalk = new Artitalk()
-                artitalk.init({
-                    el: '#vcomments',
-                    appId: mashiro_option.v_appId,
-                    appKey: mashiro_option.v_appKey,
-                    enabelQQ: dummerfu_option.v_enableQQ,
-                    path: window.location.pathname,
-                    placeholder: dummerfu_option.v_placeholder,
-
+                new Artitalk({
+                    appId: "Ipwy3hYofmpzH8YM1HdBoKnd-MdYXbMMI", 
+                    appKey: "i7gXoRAlGyvp8NNEWntzV6KB",
+                    atEmoji:{
+                      "2233_2": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_卖萌].png",
+                      "2233_3": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_吃惊].png",
+                      "2233_4": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_吐魂].png",
+                      "2233_5": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_喝水].png",
+                      "2233_6": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_困惑].png",
+                      "2233_7": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_大哭].png",
+                      "2233_8": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_大笑].png",
+                      "2233_9": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_委屈].png",
+                      "2233_10": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_怒].png",
+                      "2233_11": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_无言].png",
+                      "2233_12": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_汗].png",
+                      "2233_13": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_疑问].png",
+                      "2233_14": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_第一].png",
+                      "2233_15": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_耶].png",
+                      "2233_16": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_郁闷].png",
+                      
+                      // hotkey 
+                      "hotkey1": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/1.jpg",
+                      "hotkey2": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/10.jpg",
+                      "hotkey3": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/11.jpg",
+                      "hotkey4": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/12.jpg",
+                      "hotkey5": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/13.jpg",
+                      "hotkey6": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/14.jpg",
+                      "hotkey7": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/15.jpg",
+                      "hotkey8": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/16.jpg",
+                      "hotkey9": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/17.jpg",
+                      "hotkey10": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/18.jpg",
+                      "hotkey11": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/19.jpg",
+                      "hotkey12": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/2.jpg",
+                      "hotkey13": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/20.jpg",
+                      "hotkey14": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/21.jpg",
+                      "hotkey15": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/22.jpg",
+                      "hotkey16": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/23.jpg",
+                      "hotkey17": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/24.jpg",
+                      "hotkey18": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/25.jpg",
+                      "hotkey19": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/26.jpg",
+                      "hotkey20": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/27.jpg",
+                      "hotkey21": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/28.jpg",
+                      "hotkey22": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/29.jpg",
+                      "hotkey23": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/3.jpg",
+                      "hotkey24": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/30.jpg",
+                      "hotkey25": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/31.jpg",
+                      "hotkey26": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/32.jpg",
+                      "hotkey27": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/4.jpg",
+                      "hotkey28": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/5.jpg",
+                      "hotkey29": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/6.jpg",
+                      "hotkey30": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/7.jpg",
+                      "hotkey31": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/8.jpg",
+                      "hotkey32": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/9.jpg",
+                    }
                 })
             }
         },
@@ -1575,7 +1615,7 @@ $(function() {
             Siren.AH()
             Siren.PE()
             Siren.CE()
-            Siren.VA()
+            Siren.TO()
             Siren.AT()
             Siren.MJ()
             Siren.SWP()

@@ -43,3 +43,13 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 其他操作可参考：
 
 [Artitalk说说心情发布页面（个性定制）](https://blog.csdn.net/cungudafa/article/details/106224223)~~这个里面部署是老版本的建议看美化部分就行了~~
+
+
+
+
+
+然后发现valine安全性不高，我选择twikoo😂~~喂喂，还不到一个小时吧~~
+
+
+
+可以参考[hexo-sakura部署twikoo]()

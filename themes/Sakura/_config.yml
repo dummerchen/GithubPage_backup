@@ -33,8 +33,8 @@ menus:
   } }
   其他: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     关于我: {path: /about/, fa: fa-meetup}, 
-    说说: {path: /shuoshuo/, fa: fa commenting-o},
-    大事件薄: {path: /things/, fa: iconfont icon-sakura },
+    说说: {path: /shuoshuo/, fa: fa-commenting-o fa-commenting},
+    # 大事件薄: {path: /things/, fa: iconfont icon-sakura },
   } }
 
 # sitemap function
@@ -130,13 +130,18 @@ aplayer:
 
 # Valine
 valine:
-  enable: true
+  enable: false
   appId: Ipwy3hYofmpzH8YM1HdBoKnd-MdYXbMMI
   appKey: i7gXoRAlGyvp8NNEWntzV6KB
   enableQQ: true
   pageSize: 10
   placeholder: '📌头像可以填写QQ邮箱来自动补全啦~\n🚀评论和回复支持M↓~'
 # v_avatar: monsterid 
+
+# Twikoo
+twikoo:
+  enable: true
+  envId: twikoo-8g53l3ue41b208dc
 
 widgetpack:
   enable: true
