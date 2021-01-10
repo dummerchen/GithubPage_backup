@@ -51,7 +51,7 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 
 
 
-可以参考[hexo-sakura部署twikoo]()
+可以参考[hexo-sakura部署twikoo](https://dummerfu.top/p/64378.html)
 
 
 
