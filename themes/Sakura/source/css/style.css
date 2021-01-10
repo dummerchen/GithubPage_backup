@@ -9015,3 +9015,12 @@ td.hljs-ln-numbers {
     background-color: #ff7286!important;
     border-color: #ff7286!important;
 }
+.tk-content img, .tk-preview-container img {
+    max-width: 300px;
+    max-height: 50px !important;
+    vertical-align: middle;
+}
+/* 表情图标放右边 */
+.tk-row-actions-start[data-v-619b4c52] {
+    flex: 0 !important; 
+}

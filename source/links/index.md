@@ -30,5 +30,9 @@ links:
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: ジャスミン
       desc:   
+    - url: https://noionion.top/
+      img: https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/head.jpg
+      desc: 用这生命中的每一秒，给自己一个不后悔的未来
+      name: 贰猹的小窝
 ---
 
