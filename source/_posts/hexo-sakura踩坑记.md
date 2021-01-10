@@ -1,7 +1,6 @@
 ---
 title: hexo-sakura踩坑记
 author: dummerfu
-avatar: 'https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg'
 authorLink: dummerfu.tk
 categories: 随笔
 comments: true
@@ -57,3 +56,70 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 
 
 [^ 1]: [比如这个博主的](https://cungudafa.gitee.io/)
+
+
+
+## 页首滑动swiper
+
+
+
+~~个人无聊的魔改~~
+
+[swiper官网](https://www.swiper.com.cn/)
+
+基本上也是跟着来就行了，具体可以用js实现多图索引随机头图这些效果，不过官网似乎有现成的api？~~我没仔细研究）~~
+
+### lazyload
+
+个人觉得这个比较坑
+
+**swiper的lazyload和普通的imglazyload不一样，具体样式也可以看官网**
+
+不过坑点来了：
+
+#### 坑点1
+
+```javascript
+// 网上大多数initswiper是这样的
+var myswiper=new Swiper('.swiper-container',{
+    autoplay: false,                
+    lazyLoadingInPrevNext: true,
+    lazyLoadingInPrevNextAmount:1,
+    lazyLoading: true,
+    // 　　lazyLoadingOnTransitionStart : true,
+    direction:'horizontal',
+    navigation:{
+        nextEl: '.bg-next',
+        prevEl: '.bg-pre',
+    },
+    loop: true,
+                    
+})
+// 但是lazyload应该这样定义
+var myswiper=new Swiper('.swiper-container',{
+    autoplay: false,
+    // 不同点！！！                
+    lazy:{
+        lazyLoadingInPrevNext: true,
+        lazyLoadingInPrevNextAmount:1,
+        lazyLoading: true,
+    },
+    // 　　lazyLoadingOnTransitionStart : true,
+    direction:'horizontal',
+    navigation:{
+        nextEl: '.bg-next',
+        prevEl: '.bg-pre',
+    },
+    loop: true,
+                    
+})
+```
+
+不然你会发现怎么样有不会加载出图片的
+
+#### 坑点2
+
+如果图片还没加载出来
+
+别忘记设置图片的height属性，**因为默认是0**
+

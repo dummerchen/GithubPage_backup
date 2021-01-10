@@ -1153,20 +1153,20 @@ var home = location.href,
             {
                 console.log("加载swiper")
                 var bgindex = Math.floor(Math.random() * bg.length)
-                $('.swiper-wrapper').append('<div class="swiper-slide swiper-lazy" data-background="path/to/picture-3.jpg style="background: url(\''+ bg[bgindex] +'\') center center / cover no-repeat;overflow:hidden;"></div>')
+                $('.swiper-wrapper').append('<div class="swiper-slide swiper-lazy" data-background="'+ bg[bgindex] +'"><div class="swiper-lazy-preloader"></div></div>')
                 for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
                 {
-                    let t='<div class="swiper-slide" style="background: url(\''+ bg[i] +'\') center center / cover no-repeat;overflow:hidden;"></div>'
-                    
+                    let t='<div class="swiper-slide swiper-lazy" data-background="'+ bg[i] +'"><div class="swiper-lazy-preloader"></div></div>'
                     $(".swiper-wrapper").append(t)
                 }
                 var myswiper=new Swiper('.swiper-container',{
                     autoplay: false,
-                    //loadPrevNext: true,
-                    lazyLoading: true,// 启动延时加载
-                    lazyLoadingInPrevNext : true,      //延迟加载应用到最接近的slide的图片
-                　　lazyLoadingInPrevNextAmount : 2,   //加载下一个slide
-                　　lazyLoadingOnTransitionStart : true,
+                    lazy:{
+                        lazyLoadingInPrevNext: true,
+                        lazyLoadingInPrevNextAmount:1,
+                        lazyLoading: true,
+                    },
+                // 　　lazyLoadingOnTransitionStart : true,
                     direction:'horizontal',
                     navigation:{
                         nextEl: '.bg-next',

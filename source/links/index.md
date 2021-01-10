@@ -34,5 +34,29 @@ links:
       img: https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/head.jpg
       desc: 用这生命中的每一秒，给自己一个不后悔的未来
       name: 贰猹的小窝
+  - group: 单方面仰慕的巨佬们
+    desc: 
+    items:
+    - url: https://www.cnblogs.com/et3-tsy/
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: et3_tsy
+      desc: 
+    - url: https://www.cnblogs.com/leachim/
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: Leachim
+      desc: 
+    - url: https://www.cnblogs.com/cdcq/
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: cdcq
+      desc: 
+    - url: https://rqdmap.top/
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: rqd
+      desc: 
+    - url: https://xdbirdie.github.io/
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: Rain Chen
+      desc: 
+    
 ---
 

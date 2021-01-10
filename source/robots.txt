@@ -2,13 +2,14 @@ User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
-Allow: /tags/ 
-Allow: /resources/ 
-Disallow: /vendors/
+Allow: /links/ 
+Allow: /sources/
+Allow: /about/
+Allow: /shuoshuo/
+Allow: /p/ 
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
-Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: https://dummerfu.top/sitemap.xml

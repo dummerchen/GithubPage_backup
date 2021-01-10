@@ -9024,3 +9024,12 @@ td.hljs-ln-numbers {
 .tk-row-actions-start[data-v-619b4c52] {
     flex: 0 !important; 
 }
+
+/* swiper 背景样式 */
+
+.swiper-slide{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
