@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://dummerchen.github.io
+url: https://dummerfu.top
 root: /
 
 permalink: p/:abbrlink.html  # p 是自定义的前缀
@@ -133,3 +133,9 @@ loadingImg: medias/loading.gif
 #   xz_appid: 'xxxxxx' ## 你的熊掌号 appid
 #   xz_token: 'xxxxxx' ## 你的熊掌号 token
 #   xz_count: 10 ## 从所有的提交的数据当中选取最新的10条,该数量跟你的熊掌号而定
+
+# sitemap function
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml

@@ -7,7 +7,7 @@ categories: 随笔
 comments: true
 abbrlink: 52131
 date: 2021-01-08 22:51:58
-tags: hexo,
+tags: hexo-sakura,
 description: 主题美化踩坑记
 photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105115956.jpg
 ---
@@ -16,7 +16,7 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 
 ## 关于主题
 
-[用的是Sakura](https://github.com/honjun/hexo-theme-sakura)但是建议clone其他人已经美化好的，而不是honjun的~~似乎有些未完成功能，而且之间白嫖美化好的不香吗~~，
+[用的是Sakura](https://github.com/honjun/hexo-theme-sakura)但是建议clone其他人已经美化好的[^1]，而不是honjun的~~似乎有些未完成功能，而且之间白嫖美化好的不香吗~~，
 
 ~~本人已经自己魔改了许多，也碰到许多坑，故在此记录~~
 
@@ -53,3 +53,7 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 
 
 可以参考[hexo-sakura部署twikoo]()
+
+
+
+[^ 1]: [比如这个博主的](https://cungudafa.gitee.io/)
