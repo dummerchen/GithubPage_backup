@@ -6,7 +6,7 @@ categories: 随笔
 comments: true
 abbrlink: 52131
 date: 2021-01-08 22:51:58
-tags: hexo-sakura,
+tags: 主题美化
 description: 主题美化踩坑记
 photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105115956.jpg
 ---

@@ -5,7 +5,7 @@ authorLink: dummerfu.tk
 categories: 随笔
 comments: true
 abbrlink: 64378
-tags: 'hexo评论,'
+tags: 主题美化
 description: twikoo--国产评论之光
 photos: >-
   https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114702.jpg

@@ -11,30 +11,30 @@ links:
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
     items:
     - url: https://lehrmanncc.github.io/
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      img: https://gitee.com/Lehrmann/figure/raw/master/image/20201116122755.jpg
       name: lehrmann
       desc: 
     - url: https://www.cnblogs.com/QSun77/
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      img: https://pic.cnblogs.com/face/2218745/20201120212430.png
       name: Qsun
       desc: 
     - url: https://www.cnblogs.com/214txdy/
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      img: https://i.loli.net/2020/11/26/rQuqkmH5eWSxj7D.png
       name: のNice
       desc: 
     - url: https://blog.csdn.net/qq_45753808
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      img: https://profile.csdnimg.cn/3/F/8/3_qq_45753808
       name: Flyzz
       desc: 
     - url: https://www.cnblogs.com/jaszzz/
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      img: https://images.cnblogs.com/cnblogs_com/jaszzz/1686865/o_200530030710Screenshot_20200412_102749.jpg
       name: ジャスミン
       desc:   
     - url: https://noionion.top/
       img: https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/head.jpg
       desc: 用这生命中的每一秒，给自己一个不后悔的未来
       name: 贰猹的小窝
-  - group: 单方面仰慕的巨佬们
+  - group: 仰慕的巨佬们
     desc: 
     items:
     - url: https://www.cnblogs.com/et3-tsy/

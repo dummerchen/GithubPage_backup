@@ -1163,7 +1163,7 @@ var home = location.href,
                     autoplay: false,
                     lazy:{
                         lazyLoadingInPrevNext: true,
-                        lazyLoadingInPrevNextAmount:1,
+                        lazyLoadingInPrevNextAmount:2,
                         lazyLoading: true,
                     },
                 // 　　lazyLoadingOnTransitionStart : true,

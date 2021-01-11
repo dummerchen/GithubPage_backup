@@ -47,14 +47,24 @@ insight:
 生活:
     zh: 生活
     img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.6/img/banner/writing.jpg
-
-#tag
-悦读:
-    img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.6/img/banner/reading.jpg
-
 随笔:
     zh: 随笔
     img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160849.jpg
+
+#tag
 转载:
-    zh: 转载
     img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160518.png
+
+悦读:
+    img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.6/img/banner/reading.jpg
+
+python:
+    img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114659.jpg
+论文:
+    img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114701.jpg
+
+杂项:
+    img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114703.jpg
+
+主题美化:
+    img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160315.jpg
