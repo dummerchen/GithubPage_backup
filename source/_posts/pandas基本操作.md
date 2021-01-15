@@ -94,15 +94,103 @@ keywords:
 
 ## pandas.loc
 
-~~这个功能实在是太强大了，几乎完全不需要其他东西了~~
+~~无敌好吧，我只能说无敌~~
 
-可以接受整数，字符串，bool的传参，注意先行后列就行了
+dataframe.iloc和loc相似，不过只能接受整数的传参。而loc可以接受整数，字符串，bool的传参（注意先行后列就行了）
 
-下面两种写法相同
+缺点就是必须按照顺序索引（比如muti index 必须先level 1再索引level 2）
 
-## pd.iloc
+[dataframe.loc](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html#pandas.DataFrame.loc)
 
-和loc相似，不过只能接受整数的传参
+初始表格
+
+```python
+
+tuples = [
+   ('cobra', 'mark i'), ('cobra', 'mark ii'),
+   ('sidewinder', 'mark i'), ('sidewinder', 'mark ii'),
+   ('viper', 'mark ii'), ('viper', 'mark iii')
+]
+index = pd.MultiIndex.from_tuples(tuples)
+values = [[12, 2], [0, 4], [10, 20],
+        [1, 4], [7, 1], [16, 36]]
+df = pd.DataFrame(values, columns=['max_speed', 'shield'], index=index)
+df
+```
+
+![image-20210114195313389](https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20210114195313.png)
+
+### 数据提取
+
+
+
+```python
+# 返回dataframe
+df.loc[['viper'],:]
+
+# 返回series
+df.loc['viper',:]
+
+# 间隔取(这样只能返回dataframe
+# 不加[]会报错
+df.loc[['cobra','viper'],:]
+```
+
+
+
+```python
+# 连续取值(只能返回dataframe)
+# 行切片则是前闭后闭，列切片也是前闭后闭
+df.loc['cobra':'sidewinder','max_speed':'temp']
+
+# 只有单列查询才会返回series否则其他的全是dataframe
+# series
+df.loc['cobra':'viper','shield']
+# dataframe
+df.loc['cobra':'sidewinder',['shield']]
+df.loc[['cobra','viper'],'max_speed':'shield']
+```
+
+![image-20210114200044927](https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20210114200045.png)
+
+### bool类型传参
+
+dataframe.loc[bool]和dataframe[bool]不一样！！！
+
+~~dataframe.loc[bool]是遍历行，dataframe[bool]是遍历所有元素，但是当index是muti index时不能用index~~
+
+```python
+# 列的bool值要带入新的loc的行部分
+df.loc[df.loc[:,'shield']>30,:]
+# 等效
+df[df.shield>30]
+
+
+# 行的bool值要带入新的loc的列部分
+df.loc[('cobra','mark ii')]>3
+
+
+df.loc[:,df.loc[('cobra','mark ii')]>3]
+
+```
+
+![image-20210114201447424](https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20210114201447.png)
+
+### 设置values
+
+```python
+df.loc[['viper', 'sidewinder'], ['shield']] = 50
+```
+
+## dataframe.xs()函数
+
+[pandas.DataFrame.xs(key,axis=0,level=None,drop_level=True)](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.xs.html) [^4]
+
+* key: 行index或列的name
+* axis: index或columns
+* level: 指定行的level等级
+
+
 
 
 
@@ -130,7 +218,7 @@ keywords:
 * axis：axis=0丢掉包含nan值的行，axis=1则为丢掉列
 * how：决定是是所有行或列包含nan丢弃(all)还是只有一个就丢弃(any)
 
-### pandas.isnull()
+### dataframe.isnull()
 
 [pandas.isnull(obj)](https://pandas.pydata.org/docs/reference/api/pandas.isnull.html?highlight=isnull#pandas.isnull)
 
@@ -146,6 +234,31 @@ keywords:
 * axis：axis默认为0 ，即默认删除行
 * index：index=labels等价于labels=labels，axis=0
 * inplace：是否替换原数据
+
+
+
+
+
+## dataframe.reset_index()
+
+[dataframe.reset_index(level=None,drop=False,inplace=False,col_level=0,col_fill='')](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.reset_index.html?highlight=reset_index#pandas.DataFrame.reset_index)
+
+* level:从index 移除的level index，默认全部移除index重新标号
+* inplace：是否替换原数据
+* 如果列是muti columns 则选择插入到第几个level
+* col_fill:选择列插入时其他列的命名，默认repeat
+
+## dataframe.rename()
+
+[dataframe.rename(mapper=None,index=None,columns=None,axis=None,copy=True,inplace=False,level=None,errors='ignore')](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html?highlight=rename#pandas.DataFrame.rename)
+
+* mapper:函数或字典
+* index：如果axis=0 则mapper作用与index
+* columns：axis=1 mapper作用与columns
+* axis:指定坐标轴
+* inplace：是否替换原数据
+
+该函数也能用在series上
 
 # pandas 数据统计
 
@@ -226,15 +339,16 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 
 
-
-
 > 在pandas读取文件的过程中，最常出现的问题，就是中文问题与格式问题，希望当你碰到的时候，可以完美的解决。
 
-**最后附上[pyechart可视化官方文档](https://pyecharts.org/#/zh-cn/basic_charts)，配合pandas使用**
+**最后附上[pyechart可视化官方文档](https://pyecharts.org/#/zh-cn/basic_charts)，配合pandas使用**[^3^]
 
 # Reference
 
 
 
-[^1]:  本文因上次训练拉跨了，遂有感而发，pandas学习主要是看[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)，顺便附上[pandas官网链接](https://pandas.pydata.org/docs/)
+[^1]:  本文因上次训练拉跨了，遂有感而发，pandas基础学习主要是看[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)，顺便附上[pandas官网链接](https://pandas.pydata.org/docs/)
 [^2]:  读取文件参数基本参考了：https://www.cnblogs.com/happymeng/p/10481293.html
+[^ 3]: 上次训练又拉跨了，pyechart也该总结一下了…/(ㄒoㄒ)/~~
+
+[^ 4]: [索引部分参考](https://mlln.cn/2019/01/22/pandas%E7%BB%83%E4%B9%A0-%E5%A4%9A%E5%B1%82%E7%B4%A2%E5%BC%95%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%90%84%E7%A7%8D%E6%93%8D%E4%BD%9C(multiindex)%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/#menu)

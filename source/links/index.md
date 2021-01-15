@@ -10,7 +10,7 @@ links:
   - group: 小伙伴们
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
     items:
-    - url: https://lehrmanncc.github.io/
+    - url: https://lehrmanncc.me/
       img: https://gitee.com/Lehrmann/figure/raw/master/image/20201116122755.jpg
       name: lehrmann
       desc: 
