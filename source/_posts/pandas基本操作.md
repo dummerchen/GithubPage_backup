@@ -349,6 +349,7 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 [^1]:  本文因上次训练拉跨了，遂有感而发，pandas基础学习主要是看[这个视频](https://www.bilibili.com/video/BV1UJ411A7Fs?p=14)，顺便附上[pandas官网链接](https://pandas.pydata.org/docs/)
 [^2]:  读取文件参数基本参考了：https://www.cnblogs.com/happymeng/p/10481293.html
+
 [^ 3]: 上次训练又拉跨了，pyechart也该总结一下了…/(ㄒoㄒ)/~~
 
-[^ 4]: [索引部分参考](https://mlln.cn/2019/01/22/pandas%E7%BB%83%E4%B9%A0-%E5%A4%9A%E5%B1%82%E7%B4%A2%E5%BC%95%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%90%84%E7%A7%8D%E6%93%8D%E4%BD%9C(multiindex)%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/#menu)
+[^ 4]: [索引部分参考](https://mlln.cn/)

@@ -7,10 +7,6 @@ Allow: /sources/
 Allow: /about/
 Allow: /shuoshuo/
 Allow: /p/ 
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /fancybox/
 
 Sitemap: https://dummerfu.top/sitemap.xml
 Sitemap: https://dummerfu.top/baidusitemap.xml
