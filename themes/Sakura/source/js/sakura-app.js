@@ -256,7 +256,7 @@ function code_highlight_style() {
             'design': 'by dummerfu'
         }
         var ele_name = $('pre:eq(' + i + ')')[0].children[0].className
-        var lang = ele_name.substr(0, ele_name.indexOf(' ')).replace('language-', '')
+        var lang = ele_name.replace('language-lang-', '')
         if (lang.toLowerCase() == 'hljs') var lang = 'text'
         if (lang.toLowerCase() == 'js') var lang = 'javascript'
         if (lang.toLowerCase() == 'md') var lang = 'markdown'
@@ -289,7 +289,7 @@ function code_highlight_style() {
 }
 try {
     code_highlight_style()
-} catch (e) {}
+} catch (e) {console.log(e)}
 
 function copy_code_block() {
     $('pre code').each(function(i, block) {
@@ -627,14 +627,12 @@ var pjaxInit = function() {
     $('p').remove('.head-copyright')
     try {
         code_highlight_style()
-    } catch (e) {};
+    } catch (e) {console.log("???",e)};
     try {
         inlojv_js_getqqinfo()
     } catch (e) {};
     lazyload()
-        // if ($("div").hasClass("popcontainer")) {
-        //     loadBotui();
-        // }
+
     try {
         reload_show_date_time()
     } catch (e) {}
