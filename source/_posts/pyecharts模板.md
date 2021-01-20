@@ -483,3 +483,7 @@ Page.save_resize_html("render.html", cfg_dict=cfg_dict, dest="my_new_charts.html
 
 对于不需要初始就显示完美图的可以使用Page.DraggablePageLayout手动调整位置，更为方便。
 
+
+
+
+

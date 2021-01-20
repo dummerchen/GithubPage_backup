@@ -1,10 +1,10 @@
 ---
 title: about
-date: 2018-12-12 22:14:36
+date: 2020-11-11 22:14:36
 keywords: 关于
 description: 
-comments: false
-photos: https://cdn.jsdelivr.net/gh/dummerchen/cdn@1.4/img/banner/about.jpg
+comments: true  
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210120201805.jpg
 ---
 {% raw %}
 <!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->

@@ -1,12 +1,8 @@
 User-agent: *
-Allow: /
-Allow: /archives/
-Allow: /categories/
-Allow: /links/ 
-Allow: /sources/
-Allow: /about/
-Allow: /shuoshuo/
-Allow: /p/ 
+Disallow: 
+
+User-agent: Googlebot
+Disallow:
 
 Sitemap: https://dummerfu.top/sitemap.xml
 Sitemap: https://dummerfu.top/baidusitemap.xml

@@ -2317,14 +2317,13 @@ i.iconfont.hotpost {
     }
     .float-content p {
         height: auto;
-        display: block
+        display: block;
+        display: none;
     }
     .post-bottom {
         display: none
     }
-    .post-thumb,
-    .post-content-wrap,
-    .float-content {
+    .post-thumb,.post-content-wrap,.float-content {
         width: 100%;
         left: 0
     }
@@ -2352,7 +2351,7 @@ i.iconfont.hotpost {
     .float-content {
         box-shadow: none;
         padding: 0;
-        margin: 0
+        margin: 0;
     }
     .post-bottom {
         text-align: right

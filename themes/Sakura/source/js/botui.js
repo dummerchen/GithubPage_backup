@@ -1431,6 +1431,11 @@
         e.Vue.directive("botui-markdown", function(e, t) { "false" != t.value && (e.innerHTML = i(e.textContent)) }), e.Vue.directive("botui-scroll", { inserted: function(e) { m.scrollTop = m.scrollHeight } }), e.Vue.directive("focus", { inserted: function(e) { e.focus() } }), e.Vue.directive("botui-container", { inserted: function(e) { m = e } }), f = new e.Vue({ components: { "bot-ui": w } }).$mount("#" + t); var y = f.$children[0]; return h.message = { add: function(e) { return a(u(e)) }, bot: function(e) { return e = u(e), a(e) }, human: function(e) { return e = u(e), e.human = !0, a(e) }, get: function(e) { return Promise.resolve(y.messages[e]) }, remove: function(e) { return y.messages.splice(e, 1), Promise.resolve() }, update: function(e, t) { var n = y.messages[e]; return n.content = t.content, n.visible = !t.loading, n.loading = !!t.loading, Promise.resolve(t.content) }, removeAll: function() { return y.messages.splice(0, y.messages.length), Promise.resolve() } }, h.action = { show: l, hide: function() { return y.action.show = !1, Promise.resolve() }, text: function(e) { return d(e), y.action.text = e.action, l(e) }, button: function(e) { return d(e), e.type = "button", y.action.button.buttons = e.action, l(e) } }, g.fontawesome && r("https://use.fontawesome.com/ea731dcb6f.js"), g.debug && (h._botApp = f), h } });
 
 function bot_ui_ini() {
+    t=$('<div class="pattern-attachment-img lazyload"></div>')
+    $(".pattern-center").append(t)
+    var s='https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210120201805.jpg'
+    $(".pattern-attachment-img").css("background-img", 'url(./about.jpg)')    
+    
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
