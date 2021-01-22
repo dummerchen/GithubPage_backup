@@ -279,13 +279,6 @@ function code_highlight_style() {
         $('pre').toggleClass('code-block-fullscreen')
         $('html').toggleClass('code-block-fullscreen-html-scroll')
     })
-    // $('code').on('click', function(e) {
-    //     if (e.target !== this) return
-    //     $('pre').toggleClass('code-block-fullscreen')
-    //     $('html').toggleClass('code-block-fullscreen-html-scroll')
-    // })
-    // 不加载行号
-    //hljs.initLineNumbersOnLoad()
 }
 try {
     code_highlight_style()
@@ -1128,13 +1121,14 @@ var home = location.href,
         },
         MJ: function() {
             if (mashiro_option.mathjax == '1') {
+                
                 console.log("mathjax重复加载")
-                $.getScript('https://cdn.jsdelivr.net/npm/mathjax@2.7.9/latest.js', function() {
+                $.getScript('//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', function() {
                     MathJax.Hub.Config({
                         tex2jax: {
                             inlineMath: [
                                 ['$', '$'],
-                                ['\\(', '\\)']
+                                ['\(', '\)']
                             ]
                         }
                     })
