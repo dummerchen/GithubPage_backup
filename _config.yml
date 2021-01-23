@@ -46,18 +46,12 @@ post_asset_folder: false
 relative_link: false
 future: true
 
+# 关掉hexo自带的highlight
 highlight: 
   enable: false
   line_number: false
   auto_detect: false
-  tab_replace:
-
-# 加了必须开,但是本质还是直接修改highlight css，不加这个会代码块渲染错误很神奇
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess 
-  theme: 'tomorrow'
-  line_number: false    # default false 
-  custom_css: '\themes\css\prism-vsc-dark-plus.css'
+  tab_replace: 4
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')

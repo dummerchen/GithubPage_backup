@@ -15,7 +15,7 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 
 ## 关于主题
 
-[用的是Sakura](https://github.com/honjun/hexo-theme-sakura)但是建议clone其他人已经美化好的[^1]，而不是honjun的~~似乎有些未完成功能，而且之间白嫖美化好的不香吗~~，
+[用的是Sakura](https://github.com/honjun/hexo-theme-sakura)但是建议clone其他人已经美化好的[^1]，而不是honjun的~~似乎有些未完成功能，而且直接白嫖美化好的不香吗~~，
 
 ~~本人已经自己魔改了许多，也碰到许多坑，故在此记录~~
 
@@ -123,3 +123,8 @@ var myswiper=new Swiper('.swiper-container',{
 
 别忘记设置图片的height属性，**因为默认是0**
 
+## 代码高亮
+
+首先如果你的代码高亮不了十分正常~~maybe？~~因为我初始化就是这样的
+
+你需要在根目录的__config下面把highlight 全部改为false，因为这里的highlight是hexo的highlight而不是highlightjs的，之后就按照网上的配置就行了。

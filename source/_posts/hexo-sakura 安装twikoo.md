@@ -7,16 +7,9 @@ comments: true
 abbrlink: 64378
 tags: 主题美化
 description: twikoo--国产评论之光
-photos: >-
-  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114702.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114702.jpg
 date: 2021-01-08 22:51:58
 ---
-
-​	吐槽一下这个主题，似乎我clone下来的是honjun大佬修改php途中的半成品，~~不知现在改完没~~ 许多函数会重复调用，虽然无关紧要，但是强迫症控制台看的不舒服…前端小白不敢乱动😂。
-
-​																				正文开始
-
------
 
 # why twikoo ？
 
@@ -75,38 +68,25 @@ mashiro_option.t_envID = "<%= theme.twikoo.envId %>";
 
 ### comment.ejs
 
-在article标签下粘贴下面内容，你可以选择完全不用valine，把关于valine的删了也行~~我就删了~~
+这里的valine本来是honjun改php的残留，可以顺便删了
 
-```html
-<% if (theme.twikoo.enable && post.comments) { %>
-          <div id="twikoo" class="twikoo"></div>
-          <script>
-            console.log("comment 加载 twikoo")
-            window.onload = function(){
-              twikoo.init({
-                envId: "<%= theme.twikoo.envId %>",
-                // el: '#tcomment',
-                // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
-                // path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
-              })
-            }
-          </script>
-      <% } %>
-```
+## Sakura-app.js
 
-![image-20210109234044007](https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20210109234044.png)
+创建函数TO()
+
+![image-20210124001506768](C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210124001506768.png)
 
 这里有个坑，el如过有的话会加载失败，把官网瞄点id是tcomment改成twikoo就行了，~~神奇的bug~~
 
-最后在footer加上twikoo的cdn就行了我是引用的本地，你换成这个就行了，位置在script那一块就行了
+然后在pjax渲染里面增加相应的函数初始化就行了
 
-```html
-<script src="https://cdn.jsdelivr.net/npm/twikoo@0.6.0/dist/twikoo.all.min.js"></script>
-```
+![image-20210124001830767](https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20210124001830.png)
+
+因为每个页面都可能要渲染所以**要加两个**
+
+最后在footer加上twikoo的cdn就行了我是引用的本地，你换成 https://cdn.jsdelivr.net/npm/twikoo@0.6.0/dist/twikoo.all.min.js 就行了，位置在script那一块
 
 ![image-20210109234454286](https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20210109234454.png)
-
-
 
 
 

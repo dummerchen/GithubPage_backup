@@ -1050,7 +1050,7 @@ var home = location.href,
             if(url!='/shuoshuo/'&&url!='/')
             {
                 if (!mashiro_option.t_enable) {
-                    console.log('加载 twikoo')
+                    var t=$('.post-item').append('<div id="twikoo" class="twikoo"></div>')
                     twikoo.init({
                         envId: dummerfu_option.t_envId,
                         // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
@@ -1594,6 +1594,7 @@ $(function() {
     Siren.MN()
     Siren.IA()
     Siren.LV()
+    Siren.TO()
     if (window.is_app) injectStyles('#nprogress .bar { display: none; }')
     if (Poi.pjax) {
         $(document).pjax('a[target!=_top]', '#page', {
