@@ -15,9 +15,11 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 
 ## 关于主题
 
-[用的是Sakura](https://github.com/honjun/hexo-theme-sakura)但是建议clone其他人已经美化好的[^1]，而不是honjun的~~似乎有些未完成功能，而且直接白嫖美化好的不香吗~~，
 
-~~本人已经自己魔改了许多，也碰到许多坑，故在此记录~~
+
+<div class='tip success'><p>建议clone其他人已经美化好的(直接白嫖美化好的不香吗</p></div>
+
+~~本人[用的是Sakura主题](https://github.com/honjun/hexo-theme-sakura)并且已经自己魔改了许多，也碰到许多坑，故在此记录~~
 
 ## 说说板块|artitalk
 
@@ -55,7 +57,7 @@ photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/2021010
 
 
 
-[^ 1]: [比如这个博主的](https://cungudafa.gitee.io/)
+[^ 1 ]: [比如这个博主的](https://cungudafa.gitee.io/)
 
 
 

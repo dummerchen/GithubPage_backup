@@ -9043,15 +9043,15 @@ td.hljs-ln-numbers {
 .tag-cloud {
     text-align: center;
     margin-top: 20px;
-  }
-  .tag-cloud-title {
+}
+.tag-cloud-title {
     font-size: 1.8rem;
     text-align: center;
-  }
-  .tag-cloud-tags {
+}
+.tag-cloud-tags {
     text-align: center;
-  }
-  .tag-cloud a {
+}
+.tag-cloud a {
     display: inline-block;
     margin: 0 0.4rem;
     text-decoration: none;
@@ -9067,12 +9067,12 @@ td.hljs-ln-numbers {
     -o-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
-  }
-  .tag-cloud a:hover {
+}
+.tag-cloud a:hover {
     color: #ff7242 !important;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-  }
+}

@@ -256,11 +256,17 @@ function code_highlight_style() {
             'design': 'by dummerfu'
         }
         var ele_name = $('pre:eq(' + i + ')')[0].children[0].className
-        var lang = ele_name.replace('language-lang-', '')
-        if (lang.toLowerCase() == 'hljs') var lang = 'text'
-        if (lang.toLowerCase() == 'js') var lang = 'javascript'
-        if (lang.toLowerCase() == 'md') var lang = 'markdown'
-        if (lang.toLowerCase() == 'py') var lang = 'python'
+        ele_name=ele_name.replace('language','').replace('lang','')
+        console.log(ele_name)
+        var pattern=/-\w+/i
+        var lang=pattern.exec(ele_name)[0]
+        lang=lang.replace('-','')
+        // var lang = ele_name.exec('lang-*', '').replace('hljs','').replace('alasso','')
+        console.log(lang)
+        if (lang.toLowerCase() == '') var lang = 'text'
+        if (lang.toLowerCase() == 'javascript') var lang = 'javascript'
+        if (lang.toLowerCase() == 'markdown') var lang = 'markdown'
+        if (lang.toLowerCase() == 'python') var lang = 'python'
         $('pre:eq(' + i + ')').addClass('highlight-wrap')
         for (var t in attributes) {
             $('pre:eq(' + i + ')').attr(t, attributes[t])
@@ -1121,14 +1127,12 @@ var home = location.href,
         },
         MJ: function() {
             if (mashiro_option.mathjax == '1') {
-                
-                console.log("mathjax重复加载")
                 $.getScript('//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', function() {
                     MathJax.Hub.Config({
                         tex2jax: {
                             inlineMath: [
                                 ['$', '$'],
-                                ['\(', '\)']
+                                ['\\(', '\\)']
                             ]
                         }
                     })
@@ -1595,6 +1599,7 @@ $(function() {
     Siren.IA()
     Siren.LV()
     Siren.TO()
+    Siren.MJ()
     if (window.is_app) injectStyles('#nprogress .bar { display: none; }')
     if (Poi.pjax) {
         $(document).pjax('a[target!=_top]', '#page', {

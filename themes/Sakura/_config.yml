@@ -71,7 +71,7 @@ bg:
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160741.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160421.jpg
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass:
+bgclass: 
 post_article_bgclass: #"filter-dot"
 # startdash url, title, desc img
 startdash: 
@@ -79,7 +79,8 @@ startdash:
   - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/bilibili.jpg}
   - {url: /, title: dummerchen的万事屋, desc: 技术服务, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/startdash/wangshiwu.jpg}
 # 自己增加的是否使用startdash
-usestartdash: enable:false
+usestartdash: 
+  enable:false
 
 
 # your site build time or founded date

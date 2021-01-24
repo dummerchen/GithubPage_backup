@@ -74,7 +74,7 @@ mashiro_option.t_envID = "<%= theme.twikoo.envId %>";
 
 创建函数TO()
 
-![image-20210124001506768](C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210124001506768.png)
+![image-20210124001506768](https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20210124171111.png)
 
 这里有个坑，el如过有的话会加载失败，把官网瞄点id是tcomment改成twikoo就行了，~~神奇的bug~~
 
