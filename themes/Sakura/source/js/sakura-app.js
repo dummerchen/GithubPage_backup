@@ -257,11 +257,9 @@ function code_highlight_style() {
         }
         var ele_name = $('pre:eq(' + i + ')')[0].children[0].className
         ele_name=ele_name.replace('language','').replace('lang','')
-        console.log(ele_name)
         var pattern=/-\w+/i
         var lang=pattern.exec(ele_name)[0]
         lang=lang.replace('-','')
-        // var lang = ele_name.exec('lang-*', '').replace('hljs','').replace('alasso','')
         console.log(lang)
         if (lang.toLowerCase() == '') var lang = 'text'
         if (lang.toLowerCase() == 'javascript') var lang = 'javascript'
@@ -1147,7 +1145,6 @@ var home = location.href,
             // 判断首页加载
             if(myurl.includes(localurl))
             {
-                console.log("加载swiper")
                 var bgindex = Math.floor(Math.random() * bg.length)
                 $('.swiper-wrapper').append('<div class="swiper-slide swiper-lazy" data-background="'+ bg[bgindex] +'"><div class="swiper-lazy-preloader"></div></div>')
                 for(var i=(bgindex+1)%(bg.length);i!=bgindex;i=(i+1)%bg.length)
@@ -1600,6 +1597,7 @@ $(function() {
     Siren.LV()
     Siren.TO()
     Siren.MJ()
+    Siren.AT()
     if (window.is_app) injectStyles('#nprogress .bar { display: none; }')
     if (Poi.pjax) {
         $(document).pjax('a[target!=_top]', '#page', {
