@@ -260,7 +260,7 @@ function code_highlight_style() {
         var pattern=/-\w+/i
         var lang=pattern.exec(ele_name)[0]
         lang=lang.replace('-','')
-        console.log(lang)
+
         if (lang.toLowerCase() == '') var lang = 'text'
         if (lang.toLowerCase() == 'javascript') var lang = 'javascript'
         if (lang.toLowerCase() == 'markdown') var lang = 'markdown'
@@ -1618,12 +1618,13 @@ $(function() {
             Siren.AB()
             Siren.TOC()
             Siren.BSZ()
+            
             if (mashiro_option.NProgressON) NProgress.done()
             mashiro_global.ini.pjax()
             $('#loading').fadeOut(500)
-            if (Poi.codelamp == 'open') {
-                self.Prism.highlightAll(event)
-            };
+            // if (Poi.codelamp == 'open') {
+            //     self.Prism.highlightAll(event)
+            // };
             if ($('.ds-thread').length > 0) {
                 if (typeof DUOSHUO !== 'undefined') {
                     DUOSHUO.EmbedThread('.ds-thread')

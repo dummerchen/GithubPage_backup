@@ -15,7 +15,7 @@ links:
       name: lehrmann
       desc: 
     - url: https://www.cnblogs.com/QSun77/
-      img: https://pic.cnblogs.com/face/2218745/20201120212430.png
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: Qsun
       desc: 
     - url: https://www.cnblogs.com/214txdy/
@@ -23,7 +23,7 @@ links:
       name: のNice
       desc: 
     - url: https://blog.csdn.net/qq_45753808
-      img: https://profile.csdnimg.cn/3/F/8/3_qq_45753808
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: Flyzz
       desc: 
     - url: https://www.cnblogs.com/jaszzz/
@@ -52,11 +52,11 @@ links:
     - url: https://rqdmap.top/
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: rqd
-      desc: 
+      desc: https://rqdmap.top/
     - url: https://xdbirdie.github.io/
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: Rain Chen
-      desc: 
+      desc: https://xdbirdie.github.io/
     
 ---
 
