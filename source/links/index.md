@@ -34,7 +34,7 @@ links:
       img: https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/head.jpg
       desc: 用这生命中的每一秒，给自己一个不后悔的未来
       name: 贰猹的小窝
-  - group: 仰慕的巨佬们
+  - group: 巨佬们
     desc: 
     items:
     - url: https://www.cnblogs.com/et3-tsy/

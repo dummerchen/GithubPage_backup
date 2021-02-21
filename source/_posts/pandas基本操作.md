@@ -192,7 +192,10 @@ df.loc[['viper', 'sidewinder'], ['shield']] = 50
 
 
 
+## iter遍历
 
+* 遍历整行:Dataframe.iterrows():
+* 遍历全部列:Dataframe.iteritems():
 
 # pandas增删改查
 
@@ -298,7 +301,7 @@ series.value_counts()和这个类似不过没有了subset而已。
 
 ## concat
 
-[*pandas.contact(opt=[],axis=0,join=outer,ignore_index=False)*](https://pandas.pydata.org/docs/reference/api/pandas.concat.html?highlight=concat#pandas.concat)
+[*pandas.concat(objs=[],axis=0,join=outer,ignore_index=False)*](https://pandas.pydata.org/docs/reference/api/pandas.concat.html?highlight=concat#pandas.concat)
 
 * opt：需要合并的series或dataframe
 * axis：合并的轴，1为列，0按为行

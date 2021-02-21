@@ -257,89 +257,58 @@ radar=(
 如果x是数字，要指定type_=value(默认是category)
 
 ```python
-from pyecharts.commons.utils import JsCode
-
-background_color_js = (
-    "new echarts.graphic.LinearGradient(0, 0, 0, 1, "
-    "[{offset: 0, color: '#c86589'}, {offset: 1, color: '#06a7ff'}], false)"
-)
-area_color_js = (
-    "new echarts.graphic.LinearGradient(0, 0, 0, 1, "
-    "[{offset: 0, color: '#eb64fb'}, {offset: 1, color: '#3fbbff0d'}], false)"
-)
+y=[6.106,6.037,5.934,5.967,5.955,6.024,6.031,5.825,5.740,5.700]
+year=['1920','1930','1940','1950','1960','1970','1980','1990','2000','2010']
 line=(
-        ct.Line(init_opts=opts.InitOpts(bg_color=JsCode(background_color_js)))
-        .add_xaxis(xaxis_data=x_first_half)
-        .add_yaxis(
-            series_name="pass_count",
-            y_axis=y_first_half,
+    ct.Line(init_opts=opts.InitOpts(bg_color='white'))
+    .add_xaxis(xaxis_data=year)
+    .add_yaxis(
+            series_name=i,
+            y_axis=y,
             # 连线是否平滑
-            is_smooth=True,
+            is_smooth=False,
             # 是否显示点
             is_symbol_show=True,
             # 点的形状样式
             symbol="circle",
             # 大小
             symbol_size=10,
-            # 线的样式
-            linestyle_opts=opts.LineStyleOpts(color="#fff"),
+            
             # 点上方标签的样式
-            label_opts=opts.LabelOpts(is_show=False, position="top", color="white"),
+            label_opts=opts.LabelOpts(is_show=True,font_size=13,position="top", color="#2F4858"),
             # 点的风格样式
-            itemstyle_opts=opts.ItemStyleOpts(
-                color="#fff", 
-                # 点数量多就不用border了
-                # border_color="#fff", border_width=3
-            ),
+            
             # 放上去是否显示坐标
             tooltip_opts=opts.TooltipOpts(is_show=True),
-            # 区域颜色样式
-            areastyle_opts=opts.AreaStyleOpts(color=JsCode(area_color_js), opacity=0.7),
-        )
-        .set_global_opts(
+    )
+    .set_global_opts(
             title_opts=opts.TitleOpts(
-                title="count ",
+                title="1920-2020 music score trend ",
                 pos_top="5%",
                 pos_left="center",
-                title_textstyle_opts=opts.TextStyleOpts(color="#fff", font_size=16),
+                title_textstyle_opts=opts.TextStyleOpts(font_size=16,color='#2F4858'),
             ),
             xaxis_opts=opts.AxisOpts(
-                # x轴默认是类别（string），如果是value一定要保证是python int型+有序
-                type_="value",
-                # 类别之间的间隔
-                boundary_gap=False,
-                axislabel_opts=opts.LabelOpts(margin=30, color="#ffffff63"),
+                boundary_gap=True,
                 axisline_opts=opts.AxisLineOpts(is_show=False),
-                axistick_opts=opts.AxisTickOpts(
-                    is_show=True,
-                    length=25,
-                    linestyle_opts=opts.LineStyleOpts(color="#ffffff1f"),
-                ),
+                # axistick_opts=opts.AxisTickOpts(
+                #     is_show=True,
+                #     length=25,
+                # ),
                 splitline_opts=opts.SplitLineOpts(
-                    is_show=True, linestyle_opts=opts.LineStyleOpts(color="#ffffff1f")
+                    is_show=True
                 ),
             ),
             yaxis_opts=opts.AxisOpts(
                 type_="value",
                 position="left",
-   
-                axislabel_opts=opts.LabelOpts(margin=20, color="#ffffff63"),
-                axisline_opts=opts.AxisLineOpts(
-                    linestyle_opts=opts.LineStyleOpts(width=2, color="#fff")
-                ),
-                axistick_opts=opts.AxisTickOpts(
-                    is_show=True,
-                    length=15,
-                    linestyle_opts=opts.LineStyleOpts(color="#ffffff1f"),
-                ),
-                splitline_opts=opts.SplitLineOpts(
-                    is_show=True, linestyle_opts=opts.LineStyleOpts(color="#ffffff1f")
-                ),
+                max_=6.2,
+                min_=5.5,
             ),
-            # 上方是否显示legend
+            toolbox_opts=opts.ToolboxOpts(is_show=True),
             legend_opts=opts.LegendOpts(is_show=False),
         )
-    )
+)
 line.render_notebook()
 ```
 
@@ -350,88 +319,46 @@ line.render_notebook()
 和line差不多，就少了几个配置项（linestyle,areastyle..)
 
 ```python
-background_color_js = (
-    "new echarts.graphic.LinearGradient(0, 0, 0, 1, "
-    "[{offset: 0, color: '#c86589'}, {offset: 1, color: '#06a7ff'}], false)"
-)
-area_color_js = (
-    "new echarts.graphic.LinearGradient(0, 0, 0, 1, "
-    "[{offset: 0, color: '#eb64fb'}, {offset: 1, color: '#3fbbff0d'}], false)"
-)
 scatter=(
-        ct.Scatter(init_opts=opts.InitOpts(bg_color=JsCode(background_color_js)))
-        .add_xaxis(xaxis_data=x_first_half)
+         ct.Scatter(init_opts=opts.InitOpts(bg_color='white' ,theme=ThemeType.LIGHT))
+        .add_xaxis(
+            xaxis_data=pinf_list[:3500],
+        )
+        
         .add_yaxis(
-            series_name="pass_count",
-            y_axis=y_first_half,
-            # 连线是否平滑,scatter 无
-            # is_smooth=True,
-            # 是否显示点 scatter 无
-            # is_symbol_show=True,
-            # 点的形状样式
-            symbol="circle",
-            # 大小
+            series_name="",
+            y_axis=artist_list[:3500],
             symbol_size=10,
-            # 线的样式 scatter 无
-            # linestyle_opts=opts.LineStyleOpts(color="#fff"),
-            # 点上方标签的样式
-            label_opts=opts.LabelOpts(is_show=False, position="top", color="white"),
-            # 点的风格样式
-            itemstyle_opts=opts.ItemStyleOpts(
-                color="#fff", 
-                # 点数量多就不用border了
-                # border_color="#fff", border_width=3
-            ),
-            # 放上去是否显示坐标
+            label_opts=opts.LabelOpts(is_show=False),
             tooltip_opts=opts.TooltipOpts(is_show=True),
-            # 区域颜色样式 scatter 无
-            # areastyle_opts=opts.AreaStyleOpts(color=JsCode(area_color_js), opacity=0.7),
+            markline_opts=opts.MarkLineOpts(
+                data=[
+                    opts.MarkLineItem(x=0.5,symbol=['None','None'])],
+                linestyle_opts=opts.LineStyleOpts(width=2,type_='dashed',color='#2F4858'),
+                ),
+                
         )
         .set_global_opts(
             title_opts=opts.TitleOpts(
-                title="Pass Count of First Half",
-                pos_top="5%",
+                title="Influencer and Genre affect",
                 pos_left="center",
-                title_textstyle_opts=opts.TextStyleOpts(color="#fff", font_size=16),
+                title_textstyle_opts=opts.TextStyleOpts(color="#ED6087", font_size=16),
             ),
             xaxis_opts=opts.AxisOpts(
-                # x轴默认是类别（string），如果是value一定要保证是python int型+有序
-                type_="value",
-                # 类别之间的间隔
+                type_="value", splitline_opts=opts.SplitLineOpts(is_show=True),
                 boundary_gap=False,
-                axislabel_opts=opts.LabelOpts(margin=30, color="#ffffff63"),
-                axisline_opts=opts.AxisLineOpts(is_show=False),
-                axistick_opts=opts.AxisTickOpts(
-                    is_show=True,
-                    length=25,
-                    linestyle_opts=opts.LineStyleOpts(color="#ffffff1f"),
-                ),
-                splitline_opts=opts.SplitLineOpts(
-                    is_show=True, linestyle_opts=opts.LineStyleOpts(color="#ffffff1f")
-                ),
             ),
             yaxis_opts=opts.AxisOpts(
                 type_="value",
                 position="left",
-   
-                axislabel_opts=opts.LabelOpts(margin=20, color="#ffffff63"),
-                axisline_opts=opts.AxisLineOpts(
-                    linestyle_opts=opts.LineStyleOpts(width=2, color="#fff")
-                ),
-                axistick_opts=opts.AxisTickOpts(
-                    is_show=True,
-                    length=15,
-                    linestyle_opts=opts.LineStyleOpts(color="#ffffff1f"),
-                ),
-                splitline_opts=opts.SplitLineOpts(
-                    is_show=True, linestyle_opts=opts.LineStyleOpts(color="#ffffff1f")
-                ),
+                axislabel_opts=opts.LabelOpts(is_show=False),
+                axistick_opts=opts.AxisTickOpts(is_show=False),
+                splitline_opts=opts.SplitLineOpts(is_show=False),
             ),
-            # 上方是否显示legend
+            toolbox_opts=opts.ToolboxOpts(is_show=True),
             legend_opts=opts.LegendOpts(is_show=False),
         )
-    )
-scatter.render_notebook()
+)
 ```
 
 # Bar

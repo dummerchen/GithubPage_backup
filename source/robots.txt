@@ -1,8 +1,8 @@
 User-agent: *
-Disallow: 
+Allow: /
 
 User-agent: Googlebot
-Disallow:
+Allow: /
 
 Sitemap: https://dummerfu.top/sitemap.xml
 Sitemap: https://dummerfu.top/baidusitemap.xml
