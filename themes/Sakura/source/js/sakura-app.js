@@ -246,6 +246,7 @@ mashiro_global.font_control = new function() {
 // mashiro_global.font_control.ini()
 
 function code_highlight_style() {
+    hljs.initHighlightingOnLoad()
     function gen_top_bar(i) {
         var attributes = {
             'autocomplete': 'off',
@@ -256,6 +257,7 @@ function code_highlight_style() {
             'design': 'by dummerfu'
         }
         var ele_name = $('pre:eq(' + i + ')')[0].children[0].className
+        
         ele_name=ele_name.replace('language','').replace('lang','')
         var pattern=/-\w+/i
         var lang=pattern.exec(ele_name)[0]
@@ -269,8 +271,11 @@ function code_highlight_style() {
         for (var t in attributes) {
             $('pre:eq(' + i + ')').attr(t, attributes[t])
         }
+        console.log($('pre:eq(' + i + ') code').addClass('lang-python'))
+        
         $('pre:eq(' + i + ') code').attr('data-rel', lang.toUpperCase())
     }
+
     $('pre code').each(function(i, block) {
         hljs.highlightBlock(block)
     })
