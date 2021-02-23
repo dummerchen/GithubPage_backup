@@ -3,7 +3,7 @@ prefixName:
 siteName: dummerfu
 # favicon and site master avatar
 favicon: /images/favicon.ico
-avatar: https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201018134428.jpg
+avatar: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210224002318.jpg
 url: https://dummerchen.github.io
 description:  
 cdn: #https://cdn.jsdelivr.net/gh/dummerchen/cdn@master
@@ -47,17 +47,17 @@ homeArticleShown: 10
 is_use_random_post_bg: 0
 # 首页背景图
 bg:
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172229.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115205545.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125659.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125638.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103130311.png
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121121.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121655.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121654.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210146.jpg
-  - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210440.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115205545.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125659.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125638.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103130311.png
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121121.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121655.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121654.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210146.jpg
+  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210440.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191259.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192651.jpg
   - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192521.png
@@ -90,8 +90,8 @@ siteBuildingTime: 11/22/2020
 social:
   github: {url: http://github.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/github.png}
   zhihu: {url: https://www.zhihu.com/people/yi-cuo-zai-cuo-54, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/zhihu.png}
-  gitee: {url: https://gitee.com/dummerchen, img: https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201122224713.png}
-  cnblog: {url: https://www.cnblogs.com/cherrypill/, img: https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201122224714.png}
+  gitee: {url: https://gitee.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210224005245.png}
+  cnblog: {url: https://www.cnblogs.com/cherrypill/, img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210224002319.png}
 
 #social  url, img 移动端配置
 # 目录栏头像下面的contact 个人感觉多此一举
