@@ -47,7 +47,7 @@ relative_link: false
 future: true
 
 # 关掉hexo自带的highlight
-highlight: 
+highlight:
   enable: false
   line_number: false
   auto_detect: false

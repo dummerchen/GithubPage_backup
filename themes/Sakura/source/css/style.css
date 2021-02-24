@@ -5675,14 +5675,14 @@ i.iconfont.down {
         position: absolute;
         width: 30px;
         height: 3px;
-        background: linear-gradient(to right,#bc50e7,#e7e412d5,#bc50e7);  
+        background-image: linear-gradient(to right, #6c40e1, #385fe9, #0073e8, #0083e0, #0090d3, #1495d3, #239ad2, #309fd2, #42a0e0, #5ba0eb, #779ff4, #959cf9);        
         top: 24px;
         left: 10px
     }
     
     .openNav .icon:before, .openNav .icon:after {
         transition-duration: .5s;
-        background: linear-gradient(to right,#bc50e7,#e7e412d5,#bc50e7);  
+        background-image: linear-gradient(to right, #6c40e1, #385fe9, #0073e8, #0083e0, #0090d3, #1495d3, #239ad2, #309fd2, #42a0e0, #5ba0eb, #779ff4, #959cf9);        
         position: absolute;
         content: "";
         width: 30px;
@@ -7616,10 +7616,7 @@ li>ol {
     z-index:98;
     width:200px;
     height:100%;
-    background-color:rgba(255,
-    255,
-    255,
-    0);
+    background-color:rgba(255,255,255,0);
     transform:translateX(0);
     right:calc((100% - 950px - 250px)/2);
     position:absolute !important;
@@ -7627,59 +7624,6 @@ li>ol {
     position:absolute;
     padding-top:10px;
     padding-bottom:10px
-}
-
-
-.toc>.toc-list {
-    text-shadow: 0 0 black;
-    overflow:hidden;
-    position:relative;
-}
-.toc>.toc-list li {
-    list-style:none;
-    margin: 3px;
-}
-.toc-list {
-    margin:0;
-    padding-left:10px;
-}
-a.toc-link {
-    color:currentColor;
-    height:100%;
-    font-size: 14px;
-}
-a.toc-link:hover{
-    color: rgba(255, 166, 0);
-}
-
-.is-collapsible {
-    max-height:1000px;
-    overflow:hidden;
-    transition:all 300ms ease-in-out
-}
-.is-collapsed {
-    max-height:0
-}
-.is-position-fixed {
-    position:fixed !important;
-    top:0
-}
-.is-active-link {
-    font-weight:700;
-    color:rgb(119, 182, 255) !important;
-}
-.toc-link::before {
-    background-color:#EEE;
-    content:' ';
-    display:inline-block;
-    height:inherit;
-    left:0;
-    margin-top:-1px;
-    position:absolute;
-    width:2px
-}
-.is-active-link::before {
-    background-color:rgb(119, 182, 255) !important
 }
 .flipx {
     -moz-transform:scaleX(-1);
@@ -8937,22 +8881,6 @@ td.hljs-ln-numbers {
     padding-right: 2px;
     z-index: 2;
     font-size: 16px;
-}
-.toc {
-    width: 200px;
-    height: auto;
-    z-index: 98;
-    transform: translateX(0);
-    right: calc((100% - 950px - 250px) / 2);
-    top:10px;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.808) !important;
-    border-radius: 3px;
-    max-height: 70vh;
-}
-.toc-fixed {
-    position: fixed !important;
-    top: 60px;
 }
 
 .essaySuffix-box {

@@ -246,7 +246,7 @@ mashiro_global.font_control = new function() {
 // mashiro_global.font_control.ini()
 
 function code_highlight_style() {
-    hljs.initHighlightingOnLoad()
+    // hljs.initHighlightingOnLoad()
     function gen_top_bar(i) {
         var attributes = {
             'autocomplete': 'off',
@@ -267,13 +267,19 @@ function code_highlight_style() {
         if (lang.toLowerCase() == 'javascript') var lang = 'javascript'
         if (lang.toLowerCase() == 'markdown') var lang = 'markdown'
         if (lang.toLowerCase() == 'python') var lang = 'python'
+
+
         $('pre:eq(' + i + ')').addClass('highlight-wrap')
         for (var t in attributes) {
             $('pre:eq(' + i + ')').attr(t, attributes[t])
         }
-        console.log($('pre:eq(' + i + ') code').addClass('lang-python'))
-        
         $('pre:eq(' + i + ') code').attr('data-rel', lang.toUpperCase())
+
+        // $('pre:eq(' + i + ') code').removeClass('  language-python')
+        // $('pre:eq(' + i + ') code').removeClass('hljs')
+        // $('pre:eq(' + i + ') code').removeClass(' hljs ')
+        // $('pre:eq(' + i + ') code').addClass('lang-python')
+        // $('pre:eq(' + i + ') code').addClass('highlight-wrap1')
     }
 
     $('pre code').each(function(i, block) {
@@ -1010,38 +1016,26 @@ var home = location.href,
             if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
                 if ($(".pattern-center").length > 0) { //有图的情况
                     tocbot.init({
-                        // Where to render the table of contents.
                         tocSelector: '.toc', // 放置目录的容器
-                        // Where to grab the headings to build the table of contents.
                         contentSelector: '.entry-content', // 正文内容所在
-                        // Which headings to grab inside of the contentSelector element.
-                        scrollSmooth: true,
-                        headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-                        headingsOffset: -400,
-                        scrollSmoothOffset: -85
+                        headingSelector: 'h1, h2, h3', // 需要索引的标题级别
                     });
                 } else {
                     tocbot.init({
-                        // Where to render the table of contents.
                         tocSelector: '.toc', // 放置目录的容器
-                        // Where to grab the headings to build the table of contents.
                         contentSelector: '.entry-content', // 正文内容所在
-                        // Which headings to grab inside of the contentSelector element.
-                        scrollSmooth: true,
-                        headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-                        headingsOffset: -85,
-                        scrollSmoothOffset: -85
+                        headingSelector: 'h1, h2, h3', // 需要索引的标题级别
                     });
                 }
-                var offsetTop = $('.toc').offset().top - 135
-                window.onscroll = function() {
-                    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-                    if (scrollTop >= offsetTop) {
-                        $('.toc').addClass('toc-fixed')
-                    } else {
-                        $('.toc').removeClass('toc-fixed')
-                    }
-                }
+                // var offsetTop = $('.toc').offset().top - 135
+                // window.onscroll = function() {
+                //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+                //     if (scrollTop >= offsetTop) {
+                //         $('.toc').addClass('toc-fixed')
+                //     } else {
+                //         $('.toc').removeClass('toc-fixed')
+                //     }
+                // }
                 $.getScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
             }
         },
@@ -1602,6 +1596,7 @@ $(function() {
     Siren.LV()
     Siren.TO()
     Siren.MJ()
+    Siren.TOC()
     Siren.AT()
     if (window.is_app) injectStyles('#nprogress .bar { display: none; }')
     if (Poi.pjax) {
