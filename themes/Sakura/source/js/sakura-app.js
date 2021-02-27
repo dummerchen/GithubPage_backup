@@ -258,10 +258,8 @@ function code_highlight_style() {
         }
         var ele_name = $('pre:eq(' + i + ')')[0].children[0].className
         
-        ele_name=ele_name.replace('language','').replace('lang','')
-        var pattern=/-\w+/i
-        var lang=pattern.exec(ele_name)[0]
-        lang=lang.replace('-','')
+        lang=ele_name.replace(' ','').replace('hljs','').replace('lang-','')
+        console.log(lang)
 
         if (lang.toLowerCase() == '') var lang = 'text'
         if (lang.toLowerCase() == 'javascript') var lang = 'javascript'
@@ -275,29 +273,26 @@ function code_highlight_style() {
         }
         $('pre:eq(' + i + ') code').attr('data-rel', lang.toUpperCase())
 
-        // $('pre:eq(' + i + ') code').removeClass('  language-python')
-        // $('pre:eq(' + i + ') code').removeClass('hljs')
-        // $('pre:eq(' + i + ') code').removeClass(' hljs ')
-        // $('pre:eq(' + i + ') code').addClass('lang-python')
-        // $('pre:eq(' + i + ') code').addClass('highlight-wrap1')
     }
 
     $('pre code').each(function(i, block) {
         hljs.highlightBlock(block)
     })
+
     for (var i = 0; i < $('article pre').length; i++) {
         gen_top_bar(i)
     }
     // 增加点击代码也全屏显示
     $('pre code').on('click', function(e) {
-        if (e.target !== this) return
+        if (e.target !== this) 
+            return 
         $('pre').toggleClass('code-block-fullscreen')
+        // 隐藏页面滚动条，显示出代码滚动条
         $('html').toggleClass('code-block-fullscreen-html-scroll')
+        $('.cd-top').css('display','none')
     })
 }
-try {
-    code_highlight_style()
-} catch (e) {console.log(e)}
+
 
 function copy_code_block() {
     $('pre code').each(function(i, block) {
@@ -1009,11 +1004,13 @@ mashiro_global.ini.normalize()
 var home = location.href,
     s = $('#bgvideo')[0],
     Siren = {
+        CODEHIGLIGHT: function(){code_highlight_style()},
         BSZ: function() {
             $.getScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
         },
         TOC: function() {
             if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
+                $('.toc').css('display',"none")
                 if ($(".pattern-center").length > 0) { //有图的情况
                     tocbot.init({
                         tocSelector: '.toc', // 放置目录的容器
@@ -1027,15 +1024,20 @@ var home = location.href,
                         headingSelector: 'h1, h2, h3', // 需要索引的标题级别
                     });
                 }
-                // var offsetTop = $('.toc').offset().top - 135
-                // window.onscroll = function() {
-                //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-                //     if (scrollTop >= offsetTop) {
-                //         $('.toc').addClass('toc-fixed')
-                //     } else {
-                //         $('.toc').removeClass('toc-fixed')
-                //     }
-                // }
+                var vis_height=800
+                window.addEventListener('scroll', function(){
+                    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+                    if (scrollTop >= vis_height) 
+                    {
+                        $('.toc').css('display','')
+                        $('.toc').addClass('toc-fixed')
+                    } 
+                    else 
+                    {
+                        $('.toc').removeClass('toc-fixed')
+                        $('.toc').css('display','none')
+                    }
+                })
                 $.getScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
             }
         },
@@ -1052,7 +1054,7 @@ var home = location.href,
             let url=window.location.pathname
             if(url!='/shuoshuo/'&&url!='/')
             {
-                if (!mashiro_option.t_enable) {
+                if (dummerfu_option.t_enable=="true") {
                     var t=$('.post-item').append('<div id="twikoo" class="twikoo"></div>')
                     twikoo.init({
                         envId: dummerfu_option.t_envId,
@@ -1598,6 +1600,7 @@ $(function() {
     Siren.MJ()
     Siren.TOC()
     Siren.AT()
+    Siren.CODEHIGLIGHT()
     if (window.is_app) injectStyles('#nprogress .bar { display: none; }')
     if (Poi.pjax) {
         $(document).pjax('a[target!=_top]', '#page', {
@@ -1618,7 +1621,7 @@ $(function() {
             Siren.AB()
             Siren.TOC()
             Siren.BSZ()
-            
+            Siren.CODEHIGLIGHT()
             if (mashiro_option.NProgressON) NProgress.done()
             mashiro_global.ini.pjax()
             $('#loading').fadeOut(500)
