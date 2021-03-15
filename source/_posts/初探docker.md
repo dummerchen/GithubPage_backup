@@ -6,7 +6,7 @@ authorLink: dummerfu.tk
 categories: 转载
 comments: true
 tags: docker
-description: '转载于http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html'
+description: 
 photos: >-
   https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210125234821.jpg
 abbrlink: 21866
