@@ -289,7 +289,6 @@ function code_highlight_style() {
         $('pre').toggleClass('code-block-fullscreen')
         // 隐藏页面滚动条，显示出代码滚动条
         $('html').toggleClass('code-block-fullscreen-html-scroll')
-        $('.cd-top').css('display','none')
     })
 }
 

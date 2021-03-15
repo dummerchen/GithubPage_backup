@@ -1599,7 +1599,6 @@ a:active {
     position: relative;
     top: 0;
     left: 0;
-    width: 800px;
     overflow: hidden;
     margin: 0 auto
 }
@@ -2305,6 +2304,9 @@ i.iconfont.hotpost {
 }
 
 @media(max-width:768px) {
+    .toc{
+        display: none !important;
+    }
     .site-content{
         margin-left: auto;
     }

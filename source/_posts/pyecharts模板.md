@@ -363,6 +363,29 @@ scatter=(
 
 # Bar
 
+# Heatmap
+
+```python
+heatmap =(
+    ct.HeatMap()
+    .add_xaxis(
+        x_axis,
+        # splitline_opts=opts.SplitLineOpts(is_show=True)
+    )
+    .add_yaxis(
+        "热力图直角坐标系",
+        x_axis,
+        data,
+    )
+    .set_global_opts(
+        title_opts=opts.TitleOpts(title="HeatMap-基本示例"),
+        visualmap_opts=opts.VisualMapOpts(is_show=True,min_=0,max_=1,range_color=['white','grey']),
+    )
+)
+```
+
+
+
 # 页面布局
 
 ## Page
