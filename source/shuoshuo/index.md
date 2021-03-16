@@ -2,7 +2,7 @@
 layout: shuoshuo
 title: 说说
 comments: false
-photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210120201807.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/banner/shuoshuo.jpg
 ---
 
 

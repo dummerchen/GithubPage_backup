@@ -8,7 +8,7 @@ comments: true
 tags: docker
 description: 
 photos: >-
-  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210125234821.jpg
+  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210316225540.jpg
 abbrlink: 21866
 ---
 

@@ -3,7 +3,7 @@ prefixName:
 siteName: dummerfu
 # favicon and site master avatar
 favicon: /images/favicon.ico
-avatar: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210224002318.jpg
+avatar: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/custom/avatar.jpg
 url: https://dummerchen.github.io
 description:  
 cdn: #https://cdn.jsdelivr.net/gh/dummerchen/cdn@master
@@ -47,29 +47,17 @@ homeArticleShown: 10
 is_use_random_post_bg: 0
 # 首页背景图
 bg:
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201121172229.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115205545.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125659.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103125638.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201103130311.png
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121121.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121655.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201107121654.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210146.jpg
-  # - https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201115210440.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119191259.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192651.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192521.png
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119193902.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201119192304.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201220152038.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160850.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165256.png
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221165012.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221164900.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160741.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160421.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/1.png
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/2.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/3.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/4.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/5.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/6.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/7.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/8.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/9.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/10.jpg
+  - 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 
 post_article_bgclass: #"filter-dot"
@@ -88,10 +76,10 @@ siteBuildingTime: 11/22/2020
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/github.png}
-  zhihu: {url: https://www.zhihu.com/people/yi-cuo-zai-cuo-54, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/zhihu.png}
-  gitee: {url: https://gitee.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210224005245.png}
-  cnblog: {url: https://www.cnblogs.com/cherrypill/, img: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210224002319.png}
+  github: {url: http://github.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/github.png}
+  zhihu: {url: https://www.zhihu.com/people/yi-cuo-zai-cuo-54, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/zhihu.png}
+  gitee: {url: https://gitee.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/gitee.png}
+  cnblog: {url: https://www.cnblogs.com/cherrypill/, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/cnblogs.png}
 
 #social  url, img 移动端配置
 # 目录栏头像下面的contact 个人感觉多此一举

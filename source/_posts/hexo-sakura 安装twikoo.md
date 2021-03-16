@@ -7,7 +7,7 @@ comments: true
 abbrlink: 64378
 tags: 主题美化
 description: twikoo--国产评论之光
-photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114702.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210317004934.jpg
 date: 2021-01-08 22:51:58
 ---
 

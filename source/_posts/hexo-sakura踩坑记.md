@@ -8,7 +8,7 @@ abbrlink: 52131
 date: 2021-01-08 22:51:58
 tags: 主题美化
 description: 主题美化踩坑记
-photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105115956.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210317005836.jpg
 ---
 
 # hexo-sakura 踩坑记
