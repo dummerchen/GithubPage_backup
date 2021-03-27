@@ -3,7 +3,7 @@ prefixName:
 siteName: dummerfu
 # favicon and site master avatar
 favicon: /images/favicon.ico
-avatar: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/custom/avatar.jpg
+avatar: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/custom/avatar.jpg
 url: https://dummerchen.github.io
 description:  
 cdn: #https://cdn.jsdelivr.net/gh/dummerchen/cdn@master
@@ -47,17 +47,17 @@ homeArticleShown: 10
 is_use_random_post_bg: 0
 # 首页背景图
 bg:
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/1.png
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/2.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/3.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/4.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/5.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/6.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/7.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/8.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/9.jpg
-  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/cover/10.jpg
-  - 
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/1.png
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/2.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/3.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/4.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/5.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/6.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/7.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/8.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/9.jpg
+  - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/10.png
+ 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 
 post_article_bgclass: #"filter-dot"
@@ -76,10 +76,10 @@ siteBuildingTime: 11/22/2020
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/github.png}
-  zhihu: {url: https://www.zhihu.com/people/yi-cuo-zai-cuo-54, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/zhihu.png}
-  gitee: {url: https://gitee.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/gitee.png}
-  cnblog: {url: https://www.cnblogs.com/cherrypill/, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/social/cnblogs.png}
+  github: {url: http://github.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/github.png}
+  zhihu: {url: https://www.zhihu.com/people/yi-cuo-zai-cuo-54, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/zhihu.png}
+  gitee: {url: https://gitee.com/dummerchen, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/gitee.png}
+  cnblog: {url: https://www.cnblogs.com/cherrypill/, img: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/social/cnblogs.png}
 
 #social  url, img 移动端配置
 # 目录栏头像下面的contact 个人感觉多此一举

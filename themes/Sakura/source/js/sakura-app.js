@@ -284,8 +284,8 @@ function code_highlight_style() {
     }
     // 增加点击代码也全屏显示
     $('pre code').on('click', function(e) {
-        if (e.target !== this) 
-            return 
+        // if (e.target !== this) 
+        //     return 
         $('pre').toggleClass('code-block-fullscreen')
         // 隐藏页面滚动条，显示出代码滚动条
         $('html').toggleClass('code-block-fullscreen-html-scroll')

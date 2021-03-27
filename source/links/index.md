@@ -5,7 +5,7 @@ date: 2018-12-19 23:11:06
 keywords: 友链
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.0/img/banner/links.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.1/img/banner/links.jpg
 links:
   - group: 小伙伴们
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
