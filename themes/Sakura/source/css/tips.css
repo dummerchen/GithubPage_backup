@@ -102,14 +102,21 @@ div.tabs div.tip{
 background-color: #eff8f0;
 border-left-color: #5cb85c;
 }
-.tip.success h2,
-.tip.success h3,
-.tip.success h4,
-.tip.success h5,
-.tip.success h6 {
+.tip.success h2,.tip.success h3,.tip.success h4,.tip.success h5,.tip.success h6 {
     color: #5cb85c;
 }
 .tip.success:not(.no-icon)::before {
+    content: "\e611";
+    color: #5cb85c;
+}
+.tip.accept {
+background-color: #eff8f0;
+border-left-color: #5cb85c;
+}
+.tip.accept h2,.tip.accept h3,.tip.accept h4,.tip.accept h5,.tip.accept h6 {
+    color: #5cb85c;
+}
+.tip.accept:not(.no-icon)::before {
     content: "\e611";
     color: #5cb85c;
 }
@@ -204,6 +211,16 @@ div.tip.success::before,div.tip.done::before {
     color: #3dc550;
     content: "\e60c";
 }
+
+div.tip.accept,div.tip.done {
+    background: #ebf9ed;
+    border-color: #3dc550;
+}
+div.tip.accept::before,div.tip.done::before {
+    color: #3dc550;
+    content: "\e60c";
+}
+
 div.tip.warning {
     background: #fff8e9;
     border-color: #ffbd2b;
