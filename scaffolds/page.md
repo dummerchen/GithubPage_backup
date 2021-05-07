@@ -1,8 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-mathjax: true
+author: dummerfu
+authorLink: dummerfu.tk
+categories: 
+comments: true
+tags: 
 description: 
-comments: false
 photos: 
 ---
