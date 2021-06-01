@@ -7,7 +7,7 @@ abbrlink: 64572
 categories: 技术
 tags: python
 photos: >-
-  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20210105114659.jpg
+  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210601202753.jpg
 date: 2021-06-01 00:00:00
 description:
 ---
