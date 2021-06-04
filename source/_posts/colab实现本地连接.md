@@ -18,13 +18,21 @@ description:
 
 ​	虽说colab可以挂载谷歌云，但是机器学习方面的数据集传输一直都是个麻烦事，更别说fq传网盘上了~~你上传速度快？那可以右上角了~~
 
-​	再退一步，虽然可以共享文件，但是本地还是不能同步修改也算一个痛点，那么干脆直接将colab直接挂载在本地算了。然而看网上的奇淫技巧估计都是老博客了，也没有谈到这方面，所以干脆自己记录分享一下。
+​	再退一步，虽然可以共享文件，但是本地还是不能同步修改也算一个痛点，那么干脆直接将colab直接挂载在本地算了。然而看网上的奇淫技巧估计都是老博客了，也没有谈到这方面，所以干脆自己记录一下。
+
+​	ps: 似乎挂载本地就不能用colab的GPU了（虽然更改笔记本设置gpu还是会提示你重新连接，但是速度似乎是和本地一样快？）
+
+​	
 
 ## 安装依赖
 
+<div class='tip bug'>本实例都是在window环境下运行，未尝试linux</div>
+
+
+
 不多解释~~都学到用colab了别和我说还不会pip安装依赖~~
 
-```shell
+```bash
 #　安装 安装jupyter
 pip install notebook
 
@@ -52,7 +60,7 @@ jupyter notebook \
 
 先进入配置的jupyter_notebook_config.py文件 **后面简称config文件**
 
-```shell
+```bash
 # 生成配置文件（有就不用生成了）
 
 jupyter notebook --generate-config
@@ -102,7 +110,7 @@ c.NotebookApp.port = 8888
 
 不过这样运行的时候命令行里面不会显示token具体值
 
-```shell
+```bash
 # 只会像这样显示
 http://localhost:8888/?token=...
 ```
@@ -123,7 +131,7 @@ c.NotebookApp.token = '你的token'
 
 每次打开一个new tab很烦人~~我又不用jupyter写代码~~
 
-```shell
+```bash
 # config里面修改
 # 关闭自动打开browser
 c.NotebookApp.open_browser = False
@@ -143,7 +151,7 @@ c.NotebookApp.webbrowser_open_new = 2
 
 每次命令行不能关闭好麻烦啊 ~~不会杀进程的小白慎用~~
 
-```shell
+```bash
 # 在上述命令的最后加一个 & ，则该命令产生的进程在后台运行，不会影响当前终端的使用（我们在只有一个bash的环境下）。
 # ctrl c之后还在运行，但是关掉窗口就会停止
 jupyter notebook &

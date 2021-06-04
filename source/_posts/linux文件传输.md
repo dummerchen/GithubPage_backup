@@ -32,7 +32,7 @@ keywords:
 
 
 
-```python
+```bash
 # 简单使用:
 # 关闭终端或ctrl C就会停止服务
 python http.server 端口号
@@ -44,6 +44,8 @@ python -m http.server 8000 &
 # 在命令的开头加一个nohup，忽略所有的挂断信号，如果当前bash关闭，则当前进程会挂载到init进程下，成为其子进程，这样即使退出当前bash，其8000端口也可以使用。
 nohup python -m http.server 8000 &
 ```
+
+
 
 <div tips="warning">python2 要将http.server 修改为 SimpleHTTPServer</div>
 
@@ -57,7 +59,7 @@ nohup python -m http.server 8000 &
 
 查看端口是否开放
 
-```shell
+```bash
 # 查看端口是否占用，无返回则未被占用
 netstat -ano |findstr "端口号"
 # 若占用找到PID，查看谁占用
@@ -77,7 +79,7 @@ taskkill /f /t /im python.exe
 
 
 
-```shell
+```bash
 # 查看ip
 ifconfig -a
 # 查看端口

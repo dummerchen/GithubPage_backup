@@ -6,7 +6,7 @@ categories: 随笔
 comments: true
 abbrlink: 3028
 tags: python
-description: Yolo网络学习
+description: Yolo网络学习,zzy主笔 ヾ(≧▽≦*)o
 photos: >-
   https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210507235145.jpg
 date: 2021-06-01 00:00:00
