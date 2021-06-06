@@ -9,7 +9,7 @@ tags: python
 photos: >-
   https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210601202753.jpg
 date: 2021-06-01 00:00:00
-description:
+description: jupyter的奇淫技巧
 ---
 
 
@@ -21,8 +21,6 @@ description:
 ​	再退一步，虽然可以共享文件，但是本地还是不能同步修改也算一个痛点，那么干脆直接将colab直接挂载在本地算了。然而看网上的奇淫技巧估计都是老博客了，也没有谈到这方面，所以干脆自己记录一下。
 
 ​	ps: 似乎挂载本地就不能用colab的GPU了（虽然更改笔记本设置gpu还是会提示你重新连接，但是速度似乎是和本地一样快？）
-
-​	
 
 ## 安装依赖
 

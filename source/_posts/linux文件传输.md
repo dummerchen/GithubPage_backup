@@ -83,7 +83,7 @@ taskkill /f /t /im python.exe
 # 查看ip
 ifconfig -a
 # 查看端口
-netstat -anp
+netstat -nlt
 # 查看进程
 ps -ef
 # 杀死进程(-9强制杀死)
@@ -100,11 +100,36 @@ pkill firefox
 
 
 
-浏览器中输入：你的ip:9393就可以访问了，类似下面的样子，建议将文件夹打包这样就可以直接下载文件夹
+浏览器中输入：你的ip:9393就可以访问了，类似下面的样子，但是这样只能可以直接下载压缩文件
 
 ![image-20210527122842821](https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210527122842.png)
 
 缺点就是只能同一个局域网访问，但是也可以做端口映射达到公网访问的效果（不建议办公网络使用
 
 ~~反正家庭网络也没什么值得攻击的，只要不设置80，3389，443这种端口映射就行~~
+
+## 使用wget下载文件
+
+为什么用wget呢？~~[因为wget什么都能下](https://www.cnblogs.com/sx66/p/11887022.html)~~ 就省去打包压缩这一步了
+
+今天我才发现window也可以使用wget [download is here!](https://sourceforge.net/projects/gnuwin32/)
+
+因为可能会文件名字乱码出现invaid argument奇怪bug，所以建议文件夹不要用中文命名
+
+```bash
+wget -c -r -np -nH -nc -k url
+
+# 参数可以wget -h查看
+# 常用参数如下
+# 注意 -O 只能在下载单个文件的时候才能起到重命名的作用
+# -O newname 将文档写入newname
+# -c 断电续传
+# -r 递归下载
+# -t 设置重试次数
+# -np noparent
+# -nH 不要创建主目录。
+# -nc 不下载已经下载的文件
+# -k 修复相对链接为绝对链接
+
+```
 
