@@ -42,6 +42,7 @@ python http.server 端口号
 python -m http.server 8000 &
 
 # 在命令的开头加一个nohup，忽略所有的挂断信号，如果当前bash关闭，则当前进程会挂载到init进程下，成为其子进程，这样即使退出当前bash，其8000端口也可以使用。
+# windows 下无法这样，无论是start还是nohup都不行
 nohup python -m http.server 8000 &
 ```
 
