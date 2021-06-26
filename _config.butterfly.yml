@@ -10,10 +10,10 @@ menu:
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  # 分类: /categories/ || fas fa-folder-open
   留言: /comment/ || fa fa-comments
   友链: /links/ || fas fa-link
-  说说: /shuoshuo/
+  说说: /shuoshuo/ 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
 
@@ -141,7 +141,7 @@ cover:
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: /img/friend_404.gif
+  flink: https://cdn.jsdelivr.net/gh/dummerchen/cdn/img/other/default_avatar.jpg
   post_page: /img/404.jpg
 
 # A simple 404 page
@@ -238,7 +238,7 @@ anchor: false
 noticeOutdate:
   enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 30 # When will it be shown
   position: top # position: top/bottom
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
@@ -270,7 +270,8 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
-  use: Twikoo
+  use: 
+    - Twikoo
   # - Valine
   # - Disqus
   text: true # Display the comment name next to the button
@@ -684,7 +685,7 @@ aside:
   card_clock:
     enable: false
   card_shuo:
-    enable: false #侧栏说说
+    enable: true  #侧栏说说,现在被改到新的页面里面
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -824,11 +825,11 @@ artitalk:
   appId: Ipwy3hYofmpzH8YM1HdBoKnd-MdYXbMMI
   appKey: i7gXoRAlGyvp8NNEWntzV6KB
   option:
-    serverURL: https://Ipwy3hYo.api.lncldglobal.com #此处将********替换为自己的appID的前八位
-    lang: zh
-    pageSize: 1
-    color1: '#49b1f5'
-    color2: '#00c4b6'
+    # serverURL: https://Ipwy3hYo.api.lncldglobal.com #此处将********替换为自己的appID的前八位
+    # lang: zh
+    # pageSize: 10
+    # color1: '#FFD972'
+    # color2: '#00c4b6'
     atEmoji: {
       'Mafumafu1':'https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749454.png',
       'Mafumafu2':'https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749455.png',
@@ -896,7 +897,7 @@ pangu:
 lazyload:
   enable: true
   post: /img/loading.gif
-
+  # post: /img/friend_404.gif
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------

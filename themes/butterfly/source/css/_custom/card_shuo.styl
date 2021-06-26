@@ -1,37 +1,51 @@
 if hexo-config('aside.card_shuo.enable')
+  .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
+      background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px !important;
+      color: white !important;
+  }
+  .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+      border-right-color:  rgba(255, 165, 150, 0.5) !important;
+  }
+  .cbp_tmtimeline>li .cbp_tmlabel {
+      background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px !important;
+      color: white !important;
+  }
+  .cbp_tmtimeline>li .cbp_tmlabel:after {
+      border-right-color:  rgba(0, 228, 255, 0.35) !important;
+  }
+  .at_button {
+      background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px !important;
+      color: white !important;
+  }
   .cbp_tmlabel
     &:after
       border-right-color transparent !important
 
-  #artitalk_main
-    .cbp_tmtimeline
-      & > li
-        .cbp_tmlabel
-          display inline-block!important
-          margin 0 0 30px 0px !important
-          &:after
-            border-right-color transparent !important
+  //   .cbp_tmtimeline
+  //     & > li
+  //       .cbp_tmlabel
+  //         display inline-block!important
+  //         margin 0 0 30px 0px !important
+  //         &:after
+  //           border-right-color transparent !important
 
-  .artitalk_avatar
-    width 40px
-    height 40px
+  // .artitalk_avatar
+  //   width 40px
+  //   height 40px
 
-  span
-    &.shuoshuo_author_img
-      display none
+  // span
+  //   &.shuoshuo_author_img
+  //     display none
 
-  .power
-    display none
-    padding 10px!important
-    text-align left!important
+  // .power
+  //   display none
+  //   padding 10px!important
+  //   text-align left!important
 
   #switchUser,
   #pubShuo,
   #pubComment,
   #uploadSource
-    padding-right 10px!important
-  #uploadSource
-    .icon
       width 1.2em!important
       height 1.2em!important
       vertical-align 0!important
