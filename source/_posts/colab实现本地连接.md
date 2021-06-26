@@ -6,8 +6,7 @@ comments: true
 abbrlink: 64572
 categories: 技术
 tags: python
-photos: >-
-  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210601202753.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210601202753.jpg
 date: 2021-06-01 00:00:00
 description: jupyter的奇淫技巧
 ---

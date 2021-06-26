@@ -6,10 +6,12 @@ keywords: 友链
 description: 
 comments: true
 photos: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.1/img/banner/links.jpg
+type: "links"
+
 links:
-  - group: 小伙伴们
-    desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
-    items:
+  - class_name: 小伙伴们
+    class_desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
+    link_list:
     - url: https://lehrmanncc.me/
       img: https://gitee.com/Lehrmann/figure/raw/master/image/20201116122755.jpg
       name: lehrmann
@@ -60,3 +62,4 @@ links:
     
 ---
 
+<div id='myfriend'></div>
