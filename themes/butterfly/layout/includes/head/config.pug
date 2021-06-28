@@ -79,7 +79,9 @@
       plugin: config.highlight.enable ? 'highlighjs' : 'prismjs',
       highlightCopy: theme.highlight_copy,
       highlightLang: theme.highlight_lang,
-      highlightHeightLimit: theme.highlight_height_limit
+      //- 改废了，忘了备份
+      //- highlightHeightLimit: unit(theme.highlight_height_limit,px)
+      highlightHeightLimit: "70vh"
     })
   }
 

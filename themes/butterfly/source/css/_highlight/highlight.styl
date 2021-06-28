@@ -107,7 +107,8 @@ blockquote
     min-height: 1.2rem
     height: 2.15em
     background: var(--hltools-bg)
-    color: var(--hltools-color)
+    // color: var(--hltools-color)
+    color: rgb(255 255 255)
     font-size: $code-font-size
 
     &.closed + table
@@ -190,7 +191,8 @@ blockquote
             right: 1.8rem
 
         .code-lang
-          left: 3.8rem !important
+          // left: 3.8rem !important
+          left: 45%
 
   if hexo-config('highlight_height_limit')
     .code-expand-btn
@@ -215,7 +217,7 @@ blockquote
         & ~ table,
         & ~ pre
           overflow: hidden
-          height: unit(hexo-config('highlight_height_limit'), px)
+          height: hexo-config('highlight_height_limit')
 
 @keyframes code-expand-key
   0%

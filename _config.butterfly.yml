@@ -19,18 +19,18 @@ hide_sidebar_menu_child: false
 
 # Code Blocks (代碼相關)
 # --------------------------------------
-
+highlight: true
 highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
+highlight_height_limit: 70 # unit: px
 code_word_wrap: false
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
-  enable: true
+  enable: false
   copyright:
     enable: false
     limit_count: 50
@@ -161,7 +161,7 @@ post_meta:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
-    tags: true # true or false 文章頁是否顯示標籤
+    tags: false # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
 
 # wordcount (字數統計)
@@ -190,7 +190,7 @@ toc:
   style_simple: false
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -228,7 +228,7 @@ photofigcaption: false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -504,23 +504,23 @@ yandex_site_verification:
 
 theme_color:
   enable: true
-  main: "#49B1F5"
+  main: "#807dd4"
   paginator: "#00c4b6"
-  button_hover: "#FF7242"
-  text_selection: "#00c4b6"
+  button_hover: "#ff7242c2"
+  text_selection: "#1c1c1c8c"
   link_color: "#99a9bf"
   meta_color: "#858585"
   hr_color: "#A4D8FA"
   code_foreground: "#F47466"
   code_background: "rgba(27, 31, 35, .05)"
-  toc_color: "#00c4b6"
-  blockquote_padding_color: "#49b1f5"
-  blockquote_background_color: "#49b1f5"
+  toc_color: "#807dd4"
+  blockquote_padding_color: "#807dd4"
+  blockquote_background_color: "#807dd4"
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
 # The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
-index_site_info_top:
+index_site_info_top: 50%
 # The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
 index_top_img_height:
 
@@ -625,8 +625,8 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font: 
-  font_link:
-  font-family: 
+  font_link: 
+  font-family:   
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -855,7 +855,55 @@ artitalk:
       'Mafumafu22':'https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749475.png',
       'Mafumafu23':'https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749476.png',
       'Mafumafu24':'https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749477.png',
-      }
+      '2233_2': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_卖萌].png',
+      '2233_3': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_吃惊].png',
+      '2233_4': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_吐魂].png',
+      '2233_5': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_喝水].png',
+      '2233_6': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_困惑].png',
+      '2233_7': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_大哭].png',
+      '2233_8': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_大笑].png',
+      '2233_9': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_委屈].png',
+      '2233_10': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_怒].png',
+      '2233_11': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_无言].png',
+      '2233_12': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_汗].png',
+      '2233_13': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_疑问].png',
+      '2233_14': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_第一].png',
+      '2233_15': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_耶].png',
+      '2233_16': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/[2233娘_郁闷].png',
+    
+      'hotkey1': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/1.jpg',
+      'hotkey2': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/10.jpg',
+      'hotkey3': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/11.jpg',
+      'hotkey4': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/12.jpg',
+      'hotkey5': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/13.jpg',
+      'hotkey6': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/14.jpg',
+      'hotkey7': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/15.jpg',
+      'hotkey8': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/16.jpg',
+      'hotkey9': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/17.jpg',
+      'hotkey10': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/18.jpg',
+      'hotkey11': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/19.jpg',
+      'hotkey12': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/2.jpg',
+      'hotkey13': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/20.jpg',
+      'hotkey14': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/21.jpg',
+      'hotkey15': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/22.jpg',
+      'hotkey16': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/23.jpg',
+      'hotkey17': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/24.jpg',
+      'hotkey18': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/25.jpg',
+      'hotkey19': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/26.jpg',
+      'hotkey20': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/27.jpg',
+      'hotkey21': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/28.jpg',
+      'hotkey22': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/29.jpg',
+      'hotkey23': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/3.jpg',
+      'hotkey24': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/30.jpg',
+      'hotkey25': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/31.jpg',
+      'hotkey26': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/32.jpg',
+      'hotkey27': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/4.jpg',
+      'hotkey28': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/5.jpg',
+      'hotkey29': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/6.jpg',
+      'hotkey30': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/7.jpg',
+      'hotkey31': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/8.jpg',
+      'hotkey32': 'https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo-v1@master/img/BQB/9.jpg',
+    }
 
 
 # Pjax [Beta]

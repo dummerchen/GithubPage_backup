@@ -46,12 +46,22 @@ post_asset_folder: false
 relative_link: false
 future: true
 
-# 关掉hexo自带的highlight
+# Sakura要关掉hexo自带的highlight
+# highlight:
+#   enable: true
+#   line_number: false
+#   auto_detect: false
+#   tab_replace: 4
+
+# butterfly highlight配置
 highlight:
-  enable: false
+  enable: true
   line_number: false
-  auto_detect: false
-  tab_replace: 4
+  auto_detect: true
+  tab_replace: ''
+  wrap: true
+  hljs: false
+  theme:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
