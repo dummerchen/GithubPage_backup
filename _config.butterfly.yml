@@ -13,7 +13,7 @@ menu:
   # 分类: /categories/ || fas fa-folder-open
   留言: /comment/ || fa fa-comments
   友链: /links/ || fas fa-link
-  说说: /shuoshuo/ || icon-message
+  说说: /shuoshuo/ || fas fa-bullhorn
   # icon-entypocomment
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -50,7 +50,7 @@ social:
 # search (搜索)
 # --------------------------------------
 
-# Algolia search
+# Algolia search 会很慢
 algolia_search:
   enable: false
   hits:
@@ -58,7 +58,11 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
+  path: search.xml
+  field: post
+  format: html
+  limit: 1000
 
 # Math (數學)
 # --------------------------------------
@@ -485,7 +489,7 @@ google_adsense:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification:
+google_site_verification: ul2nhVj6HNaI1d3xtFc7_eYD8Shq0bCu53fkA7a_7Bc
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -493,7 +497,7 @@ bing_site_verification:
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site/
-baidu_site_verification:
+baidu_site_verification: code-584WEbZyly
 
 # 360 Webmaster tools verification setting
 # see http://zhanzhang.so.com/
@@ -530,7 +534,7 @@ theme_color:
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
 # The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
-index_site_info_top: 50%
+index_site_info_top: 40%
 # The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
 index_top_img_height:
 
@@ -764,7 +768,7 @@ change_font_size: false
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 简
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -1117,9 +1121,9 @@ categoryBar:
   column: odd # 显示列数,odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   descr:
-    - maybe 算技术？
-    - 不知道改怎么分类
-    - 大佬文章
+    - maybe 技术？
+    - 分类困难
+    - orz
     - 反正没人看
   cover:
     - url('https://gitee.com/dummerchen/MY_IMAGE_BED/raw/master/20201101194638.jpg')
