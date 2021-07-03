@@ -7,8 +7,7 @@ categories: 转载
 comments: true
 tags: docker
 description: 
-photos: >-
-  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210316225540.jpg
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210316225540.jpg
 abbrlink: 21866
 ---
 

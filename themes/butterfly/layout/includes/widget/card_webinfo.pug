@@ -6,7 +6,8 @@ if theme.aside.card_webinfo.enable
     .webinfo
       if theme.aside.card_webinfo.post_count
         .webinfo-item
-          .item-name= _p('aside.card_webinfo.article_name') + " :"
+          //- .item-name= _p('aside.card_webinfo.article_name') + " :"
+          .item-name= _p('文章') + " :"
           .item-count= site.posts.length
       if theme.runtimeshow.enable
         .webinfo-item
@@ -14,18 +15,22 @@ if theme.aside.card_webinfo.enable
           .item-count#runtimeshow(data-publishDate=date_xml(theme.runtimeshow.publish_date))
       if theme.wordcount.enable && theme.wordcount.total_wordcount
         .webinfo-item
-          .item-name=_p('aside.card_webinfo.site_wordcount') + " :"
+          //- .item-name=_p('aside.card_webinfo.site_wordcount') + " :"
+          .item-name=_p('网站总字数') + " :"
           .item-count=totalcount(site)
       if theme.busuanzi.site_uv 
         .webinfo-item
-          .item-name= _p('aside.card_webinfo.site_uv_name') + " :"
+          //- .item-name= _p('aside.card_webinfo.site_uv_name') + " :"
+          .item-name= _p('网站访问量') + " :"
           .item-count#busuanzi_value_site_uv
       if theme.busuanzi.site_pv
         .webinfo-item
-          .item-name= _p('aside.card_webinfo.site_pv_name') + " :"
+          //- .item-name= _p('aside.card_webinfo.site_pv_name') + " :"
+          .item-name= _p('网站总访问量') + " :"
           .item-count#busuanzi_value_site_pv
       if theme.aside.card_webinfo.last_push_date
         .webinfo-item
-          .item-name= _p('aside.card_webinfo.last_push_date.name') + " :"
+          //- .item-name= _p('aside.card_webinfo.last_push_date.name') + " :"
+          .item-name= _p('上次提交时间') + " :"
           .item-count#last-push-date(data-lastPushDate=date_xml(Date.now()))
 

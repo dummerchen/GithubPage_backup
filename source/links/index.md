@@ -8,6 +8,7 @@ comments: true
 photos: https://cdn.jsdelivr.net/gh/dummerchen/cdn@2.1/img/banner/links.jpg
 type: 'link'
 
+
 # links:
 #   - class_name: 小伙伴们
 #     class_desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
@@ -61,3 +62,13 @@ type: 'link'
 #       desc: https://xdbirdie.github.io/
     
 ---
+
+## 欢迎交换友链 ꉂ(ˊᗜˋ)
+### 友链格式如下
+
+``` yml
+    name: dummerfu
+    link: https://dummerfu.top/
+    avatar: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/custom/avatar.jpg
+    descr: 一个兴趣使然的programmer
+```

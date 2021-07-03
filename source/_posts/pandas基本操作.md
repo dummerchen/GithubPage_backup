@@ -7,8 +7,7 @@ authorLink: dummerfu.tk
 categories: 技术
 comments: true
 tags: python
-photos: >-
-  https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210317005208.png
+photos: https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed02@image_bed_001/img/20210317005208.png
 abbrlink: 40218
 keywords:
 ---

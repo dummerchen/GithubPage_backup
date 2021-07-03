@@ -1,74 +1,67 @@
 - class_name: 小伙伴们
-  class_descr: 欢迎交换友链 ꉂ(ˊᗜˋ)
+  class_descr: 
   link_list:
     - link: https://lehrmanncc.me/
       avatar: https://gitee.com/Lehrmann/figure/raw/master/image/20201116122755.jpg
       name: lehrmann
       descr: 
+      beizhu: 李玉辰
     - link: https://www.cnblogs.com/QSun77/
-      avatar:  
+      avatar: https://pic.cnblogs.com/avatar/2218745/20201120212430.png
       name: Qsun
-      descr: wu
-    - link: https://www.cnblogs.com/214txdy/
-      avatar: https://i.loli.net/2020/11/26/rQuqkmH5eWSxj7D.png
-      name: のNice
       descr: 
-    - link: https://blog.csdn.net/qq_45753808
-      avatar:  
-      name: Flyzz
-      descr: 
-    - link: https://www.cnblogs.com/jaszzz/
-      avatar: https://images.cnblogs.com/cnblogs_com/jaszzz/1686865/o_200530030710Screenshot_20200412_102749.jpg
-      name: ジャスミン
-      descr:   
+      beizhu: 孙琦
     - link: https://noionion.top/
-      avatar: https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/head.jpg
+      avatar: http://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
       descr: 用这生命中的每一秒，给自己一个不后悔的未来
       name: 贰猹的小窝
-- class_name: 巨佬们
-  class_descr: 
+- class_name: 大伙伴们orz
+  class_descr: 膜就完事了
   link_list:
-    - link: https://www.cnblogs.com/et3-tsy/
-      avatar:  
-      name: et3_tsy
-      descr: 
-    - link: https://www.cnblogs.com/leachim/
-      avatar:  
-      name: Leachim
-      descr: 
-    - link: https://www.cnblogs.com/cdcq/
-      avatar:  
+    
+    - link: https://cdcq.github.io/
+      avatar: https://cdcq.github.io/images/cdcq.png
       name: cdcq
       descr: 
+      beizhu: 柴东辰
     - link: https://rqdmap.top/
-      avatar:  
+      avatar: https://rqdmap.top/uploads/huiye.png
       name: rqd
       descr: https://rqdmap.top/
+      beizhu:
     - link: https://xdbirdie.github.io/
-      avatar:  
+      avatar: https://xdbirdie.github.io/images/avatar.png
       name: Rain Chen
       descr: https://xdbirdie.github.io/
+      beizhu: 陈德创
+    - link: https://akilar.top/
+      name: Akilarの糖果屋
+      avatar: https://akilar.top/img/siteicon/favicon.png
+      descr: 期待您的光临！
+      siteshot: https://cdn.jsdelivr.net/gh/Akilarlxh/ScreenShot@gh-pages/akilar.top.jpg
+      beizhu:
+# - class_name: 失联的小伙伴
+#   class_descr:
+#   link_list:
+    # - link: https://www.cnblogs.com/214txdy/
+    #   avatar: https://i.loli.net/2020/11/26/rQuqkmH5eWSxj7D.png
+    #   name: のNice
+    #   descr: 
+    #   beizhu谢洺松
+    # - link: https://blog.csdn.net/qq_45753808
+    #   avatar:  
+    #   name: Flyzz
+    #   descr: 
+    #   beizhu: 向泽致
+    # - link: https://www.cnblogs.com/jaszzz/
+    #   avatar: https://images.cnblogs.com/cnblogs_com/jaszzz/1686865/o_200530030710Screenshot_20200412_102749.jpg
+    #   name: ジャスミン
+    #   descr: 
+    #   beizhu: 李玥沜
+    # - link: https://
+    # - link: https://www.cnblogs.com/leachim/
+    #   avatar:  
+    #   name: Leachim
+    #   descr: 
+    #   beizhu: 
     
-# - class_name: 友情鏈接
-#   class_descr: 那些人，那些事
-#   link_list:
-#     - name: Hexo
-#       link: https://hexo.io/zh-tw/
-#       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-#       descrr: 快速、簡單且強大的網誌框架
-
-# - class_name: 網站
-#   class_descr: 值得推薦的網站
-#   link_list:
-#     - name: Youtube
-#       link: https://www.youtube.com/
-#       avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-#       descrr: 視頻網站
-#     - name: Weibo
-#       link: https://www.weibo.com/
-#       avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-#       descrr: 中國最大社交分享平台
-#     - name: Twitter
-#       link: https://twitter.com/
-#       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-#       descrr: 社交分享平台

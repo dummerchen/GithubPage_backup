@@ -11,8 +11,9 @@ menu:
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   # 分类: /categories/ || fas fa-folder-open
-  留言: /comment/ || fa fa-comments
+  # 留言: /comment/ || fa fa-comments
   友链: /links/ || fas fa-link
+  朋友圈: /circle/ || fas fa-user-friends
   说说: /shuoshuo/ || fas fa-bullhorn
   # icon-entypocomment
 # Hide the child menu items in mobile sidebar
@@ -74,12 +75,12 @@ local_search:
 # MathJax
 mathjax:
   enable: true
-  per_page: false
+  per_page: true
 
 # KaTeX
 katex:
   enable: true
-  per_page: false
+  per_page: true
   hide_scrollbar: true
 
 # Image (圖片設置)
@@ -133,10 +134,8 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - /img/lazyload.svg
-    - 
-    # - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/1.png
-    # - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/2.jpg
+    - /img/lazyload.svg 
+    - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/2.jpg
     # - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/3.jpg
     # - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/4.jpg
     # - https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/cover/5.jpg
@@ -725,6 +724,9 @@ aside:
   card_webinfo:
     enable: true
     post_count: true
+    article_name: 文章
+    site_uv_name: 网站访客量
+    wordcount: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
 
@@ -969,6 +971,7 @@ inject:
     - <script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@latest/source/js/issues.min.js"></script>
     # 生肖时间轴
     # - <script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js"></script>
+    - <script src="/js/moments.js"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
