@@ -13,7 +13,7 @@ if theme.post_copyright.enable && page.copyright !== false
     .post-copyright-m
       .post-copyright-m-info
         .post-copyright-a
-            h 作者
+            h 作者:
             .post-copyright-cc-info
                 h=author
         .post-copyright-c
@@ -30,3 +30,27 @@ if theme.post_copyright.enable && page.copyright !== false
                 a.icon(rel='noopener' target='_blank' title='Creative Commons' href='https://creativecommons.org/')
                   i.fab.fa-creative-commons
                 a(rel='noopener' target='_blank' title=license href=url_for(license_url))=license
+if theme.post_copyright.enable_mycopyright && page.copyright !== false
+  - let author = page.copyright_author ? page.copyright_author : config.author
+  - let url = page.copyright_url ? page.copyright_url : page.permalink
+  - let license = page.license ? page.license : theme.post_copyright.license
+  - let license_url = page.license_url ? page.license_url : theme.post_copyright.license_url
+  .essaySuffix-box 
+    .essaySuffix-box-left 
+       img(src=url_for(theme.avatar.img) onerror=`onerror=null;src='${theme.error_img.flink}'` alt="avatar")
+    .essaySuffix-box-right 
+      span.essaySuffix-right-title 本文作者：
+      strong 
+        span
+          a(href=url_for('https:dummerfu.top') target='_blank' one-link-mark="yes")=author
+      br
+      //- span(style={"font-weight":"blod","white-space":"nowrap"}) 本文链接：
+      span.essaySuffix-right-title 本文链接：
+      a(href=url_for(url) target=_blank)= theme.post_copyright.decode ? decodeURI(url) : url 
+      br  
+      span.essaySuffix-right-title 版权声明: 
+      |
+      | 本博客所有文章除特别声明外，均采用
+      a(rel='noopener' target='_blank' href=url_for(license_url))=license+'许可协议'
+      |
+      | 转载请注明出处！

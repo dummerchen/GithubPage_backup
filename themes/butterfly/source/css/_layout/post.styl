@@ -31,7 +31,7 @@ beautify()
 
     &:hover
       &:before
-        color: $light-blue
+        color: $light-red
 
   h1
     headStyle(1)
@@ -149,7 +149,8 @@ no-beautify()
     color: $theme-link-color
 
     &:hover
-      text-decoration: underline
+      color: rgba(255, 167, 2, 0.966)
+      // text-decoration: underline
 
   img
     display: block
@@ -209,24 +210,24 @@ no-beautify()
           line-height: w
 
   .post-copyright
+    color: #ffffffc4
     position: relative
     margin: 2rem 0 .5rem
     padding: .5rem .8rem
     border: 1px solid var(--light-grey)
     transition: box-shadow .3s ease-in-out
     overflow: hidden
-    border-radius: 12px!important
-    background-color: rgb(239 241 243)
+    background-image: url(https://cdn.jsdelivr.net/gh/dummerchen/My_Image_Bed01@master/img/20201221160615.jpg)
 
     &:before
       background var(--heo-post-blockquote-bg)
       position absolute
-      right -26px
-      top -120px
+      right .3rem
+      top .1rem
       content '\f25e'
-      font-size 200px
+      color: $theme-color
+      font-size 1rem
       font-family 'Font Awesome 5 Brands'
-      opacity .2
 
     &:hover
       box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5)

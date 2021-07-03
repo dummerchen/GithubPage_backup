@@ -836,8 +836,8 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/lazyload
 lazyload:
-  enable: false
-  post: /img/loading.gif
+  enable: true
+  post: /img/lazyload.svg
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
