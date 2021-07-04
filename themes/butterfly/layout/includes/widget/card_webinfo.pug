@@ -31,6 +31,6 @@ if theme.aside.card_webinfo.enable
       if theme.aside.card_webinfo.last_push_date
         .webinfo-item
           //- .item-name= _p('aside.card_webinfo.last_push_date.name') + " :"
-          .item-name= _p('上次提交时间') + " :"
+          .item-name= _p('上次提交') + " :"
           .item-count#last-push-date(data-lastPushDate=date_xml(Date.now()))
 
