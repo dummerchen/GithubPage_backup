@@ -957,7 +957,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     #动画标签anima的依赖
     # 
-    - <link rel="stylesheet" href="/css/mycss.css"> >
+    - <link rel="stylesheet" href="/css/mycss.css"> 
     - <script src='https://cdn.jsdelivr.net/npm/butterfly-friend@1.0.4/dist/friend.min.js'></script>
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="https://at.alicdn.com/t/font_2134734_qu549vixs5f.css?spm=a313x.7781069.1998910419.60&file=font_2134734_qu549vixs5f.css" medis="defer" onload="this.media='all'">

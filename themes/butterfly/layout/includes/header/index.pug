@@ -38,7 +38,7 @@ header#page-header(class=isHomeClass style=imgSource)
       include ./post-info.pug
     else if is_home() 
       #site-info
-        h1#site-title=site_title
+        h1#site-title(style={'white-space':'pre'})='  '+site_title
         
         if theme.subtitle.enable
           - var loadSubJs = true
