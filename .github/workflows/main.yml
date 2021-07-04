@@ -5,15 +5,14 @@ on:
       - backup
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
 
-    - name: use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v1
       with:
-          node-version: ${{ matrix.node_version }}
-    
+        node_version: '14.x'
+          
     - name: Setup hexo
       env: 
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
@@ -24,7 +23,6 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.email "1179502349@qq.com"
         git config --global user.name "dummerchen"
-        chown -R $USER /usr/local 
         npm install hexo-cli -g
         npm install
     
