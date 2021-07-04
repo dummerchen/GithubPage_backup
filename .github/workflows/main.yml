@@ -5,14 +5,14 @@ on:
       - backup
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
 
     - uses: actions/setup-node@v1
       with:
-        node_version: '12.x'
-    
+        node-version: '13.x'
+          
     - name: Setup hexo
       env: 
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
@@ -27,4 +27,4 @@ jobs:
         npm install
     
     - name: Generate
-      run: hexo clean && hexo g && hexo d
+      run: hexo generate && hexo deploy
