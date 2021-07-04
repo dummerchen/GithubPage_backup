@@ -15,7 +15,15 @@
       avatar: http://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
       descr: 用这生命中的每一秒，给自己一个不后悔的未来
       name: 贰猹的小窝
-- class_name: 大伙伴们orz
+    - name: 青葱雅亭
+      link: 'https://itciraos.cn'
+      avatar: 'https://itciraos.cn/mysource/avatar.jpg'
+      descr: 天动万象！
+      siteshot: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://itciraos.cn/
+      beizhu: 
+    
+
+- class_name: orz
   class_descr: 膜就完事了
   link_list:
     
@@ -40,6 +48,12 @@
       descr: 期待您的光临！
       siteshot: https://cdn.jsdelivr.net/gh/Akilarlxh/ScreenShot@gh-pages/akilar.top.jpg
       beizhu:
+    - name: 小N同学
+      link: https://www.nesxc.com/
+      avatar: https://cdn-1.nesxc.com/img/avatar.gif
+      descr: 青石落晚巷 故人未还乡
+
+
 # - class_name: 失联的小伙伴
 #   class_descr:
 #   link_list:

@@ -64,11 +64,24 @@ type: 'link'
 ---
 
 ## 欢迎交换友链 ꉂ(ˊᗜˋ)
-### 友链格式如下
 
+{% tabs 欢迎互换友链 %}
+<!-- tab 友链格式-->
+```yml
+ - name: 必选
+   link: 必选
+   avatar: 必选
+   descr: 可选
+   siteshot: 可选
+```
+<!-- endtab -->
+
+<!-- tab 我的友链信息-->
 ``` yml
-    name: dummerfu
+  - name: dummerfu
     link: https://dummerfu.top/
     avatar: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/custom/avatar.jpg
     descr: 一个兴趣使然的programmer
 ```
+<!-- endtab -->
+{% endtabs %}
