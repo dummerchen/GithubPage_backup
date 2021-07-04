@@ -52,7 +52,12 @@
       link: https://www.nesxc.com/
       avatar: https://cdn-1.nesxc.com/img/avatar.gif
       descr: 青石落晚巷 故人未还乡
-
+    - name: T1s3c's Bl0g
+      link: https://iori-yimaga.top
+      avatar: https://iori-yimaga.top/img/avatar.jpg
+      descr: 当程序运行的那一刻，我知道是编译器对我的温柔
+      # 选填，这个是网页截图
+      siteshot: https://cdn.jsdelivr.net/gh/Iori-yimaga/ScreenShot@gh-pages/iori-yimaga.top.jpg
 
 # - class_name: 失联的小伙伴
 #   class_descr:

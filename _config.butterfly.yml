@@ -694,7 +694,7 @@ aside:
       link: https://github.com/dummerchen
   card_announcement:
     enable: true
-    content: 本博客由博客园<a href="https://www.cnblogs.com/cherrypill/" target="_blank">cherrypill</a>迁移
+    content: 本博客由博客园<a href="https://www.cnblogs.com/cherrypill/" target=" _blank">cherrypill</a>迁移
   card_clock:
     enable: false
   card_shuo:
