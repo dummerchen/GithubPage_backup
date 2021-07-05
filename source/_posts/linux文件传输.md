@@ -118,19 +118,20 @@ pkill firefox
 因为可能会文件名字乱码出现invaid argument奇怪bug，所以建议文件夹不要用中文命名
 
 ```bash
-wget -c -r -np -nH -nc -k url
+wget -c -r -np -nH -nc -k --restrict-file-names=nocontrol "url"
 
 # 参数可以wget -h查看
 # 常用参数如下
 # 注意 -O 只能在下载单个文件的时候才能起到重命名的作用
 # -O newname 将文档写入newname
-# -c 断电续传
+# -c 断点续传
 # -r 递归下载
 # -t 设置重试次数
 # -np noparent
 # -nH 不要创建主目录。
 # -nc 不下载已经下载的文件
 # -k 修复相对链接为绝对链接
-
+# --restrict-file-names=nocontrol 网上都说能解决中文乱码问题（我没有解决/(ㄒoㄒ)/~~
 ```
 
+~~发现还是打包压缩再下载方便，弄什么文件夹递归下载，不好使~~
