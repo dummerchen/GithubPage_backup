@@ -58,6 +58,15 @@
       descr: 当程序运行的那一刻，我知道是编译器对我的温柔
       # 选填，这个是网页截图
       siteshot: https://cdn.jsdelivr.net/gh/Iori-yimaga/ScreenShot@gh-pages/iori-yimaga.top.jpg
+    - name: 极东魔术昼寝结社
+      link: https://bilibilianime.com
+      avatar: https://thirdqq.qlogo.cn/g?b=sdk&nk=1103670381&s=140
+      descr: 19 岁，是学生
+
+#  - name: dummerfu
+# link: https://dummerfu.top/
+# avatar: https://cdn.jsdelivr.net/gh/dummerchen/cdn@master/img/custom/avatar.jpg
+# descr: 一个兴趣使然的programmer
 
 # - class_name: 失联的小伙伴
 #   class_descr:
